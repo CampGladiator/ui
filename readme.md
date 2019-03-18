@@ -1,0 +1,2 @@
+# CGUI
+The CG Global UI is a universal design system developed to be the foundational framework for all major UI projects within the company. This framework should act as the base for all major UI projects to ensure brand consistency and minimize code repetition. This practice also allows updates to our global UI to a single source of truth which will then trickle down to all sites/applications using these dependencies.
