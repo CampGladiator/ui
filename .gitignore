@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Dependencies
+node_modules
+
+# Generated
+build
+
+npm-debug.log
+yarn-error.log

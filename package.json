@@ -1,0 +1,35 @@
+{
+  "name": "CGUI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CampGladiator/CGUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CampGladiator/CGUI/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "clean-css-cli": "^4.2.1",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.1",
+    "rimraf": "^2.6.3",
+    "sass-lint": "^1.12.1"
+  },
+  "scripts": {
+    "build": "npm run build:clean && npm run build:sass && npm run build:autoprefix && npm run build:cleancss",
+    "build:autoprefix": "postcss --use autoprefixer --map false --output build/main.css build/main.css",
+    "build:cleancss": "cleancss -o build/main.min.css build/main.css",
+    "build:clean": "rimraf css",
+    "build:sass": "node-sass --output-style expanded --source-map true main.sass build/main.css",
+    "deploy": "npm run build",
+    "start": "npm run build:sass -- --watch",
+    "lint": "sass-lint sass/**/*.sass -v"
+  },
+  "homepage": "https://github.com/CampGladiator/CGUI#readme"
+}
