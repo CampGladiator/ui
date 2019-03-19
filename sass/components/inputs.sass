@@ -1,0 +1,63 @@
+@import '~/sass/settings/variables'
+
+.field
+  display: flex
+
+  & + &
+    margin-top: 32px
+
+.input
+  font-family: $gotham
+  background-color: white
+  border: 0
+  border-bottom: 2px solid
+  border-color: #ccc
+  border-radius: 0
+  box-shadow: none
+  box-sizing: content-box
+  color: $navy
+  display: block
+  font-weight: 400
+  height: 38px
+  min-width: 1px
+  padding-bottom: 8px
+  position: relative
+  transition: border-color ease 0.2s
+  width: 100%
+  outline: 0
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-calendar-picker-indicator
+    -webkit-appearance: none
+    display: none
+
+  &::placeholder,
+    font-weight: 300
+    color: #ccc
+    opacity: 1
+
+  &:focus
+    border-color: #233746
+
+  &--two-thirds
+    flex: 0 0 66%
+
+  &--rounded
+    border: 2px solid
+    border-color: #ccc
+    border-radius: 999px
+    box-sizing: border-box
+    height: 41px
+    line-height: 36px
+    padding: 0 16px
+
+  select&
+    -moz-appearance: none
+    -webkit-appearance: none
+    appearance: none
+    background: url("https://s3.amazonaws.com/cgcdn/global-ui/images/icons/arrow-down-solid.svg")
+    background-position: 95% 50%
+    background-repeat: no-repeat
+    background-size: 16px
+    background-color: white
+    cursor: pointer

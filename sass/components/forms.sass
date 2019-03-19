@@ -26,82 +26,9 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 input[type="color"],
-textareainput[type="search"]::-webkit-search-cancel-button,
+textarea[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration
   -webkit-appearance: none
-
-
-.form-fieldset
-  display: flex
-
-
-.form-fieldset + .form-fieldset
-  margin-top: 32px
-
-
-.form-field
-  font-family: "Gotham", sans-serif
-  background-color: white
-  border: 0
-  border-bottom: 2px solid
-  border-color: #ccc
-  border-radius: 0
-  box-shadow: none
-  box-sizing: content-box
-  color: #233746
-  display: block
-  font-weight: 400
-  height: 38px
-  min-width: 1px
-  padding-bottom: 8px
-  position: relative
-  transition: border-color ease 0.2s
-  width: 100%
-  outline: 0
-
-
-.form-field::-webkit-inner-spin-button,
-.form-field::-webkit-calendar-picker-indicator
-  -webkit-appearance: none
-  display: none
-
-
-.form-field::placeholder,
-textarea::placeholder
-  font-weight: 300
-  color: #ccc
-  opacity: 1
-
-
-.form-field:focus
-  border-color: #233746
-
-
-.form-field--two-thirds
-  flex: 0 0 66%
-
-
-.form-field--rounded
-  border: 2px solid
-  border-color: #ccc
-  border-radius: 999px
-  box-sizing: border-box
-  height: 41px
-  line-height: 36px
-  padding: 0 16px
-
-
-.form-field--select
-  -moz-appearance: none
-  -webkit-appearance: none
-  appearance: none
-  background: url("https://s3.amazonaws.com/cgcdn/global-ui/images/icons/arrow-down-solid.svg")
-  background-position: 95% 50%
-  background-repeat: no-repeat
-  background-size: 16px
-  background-color: white
-  cursor: pointer
-
 
 .label
   font-family: "Gotham", sans-serif
@@ -118,49 +45,6 @@ textarea::placeholder
   line-height: 12px
   letter-spacing: 0
   font-weight: 700
-
-
-.pin-input
-  align-items: center
-  display: flex
-
-
-.pin-input-part
-  position: relative
-
-
-.pin-input-part + .pin-input-part
-  margin: 0 0 0 16px
-
-
-.pin-input-part__char
-  -moz-appearance: textfield
-  border: 2px solid #ccc
-  border-radius: 999px
-  box-sizing: border-box
-  height: 37px
-  padding: 0 !important
-  text-align: center
-  width: 37px
-
-
-.pin-input-part__char::-webkit-inner-spin-button,
-.pin-input-part__char::-webkit-outer-spin-button
-  -webkit-appearance: none
-  -moz-appearance: none
-  appearance: none
-  margin: 0
-
-
-.pin-input-part__toggle-visibility
-  border: 0
-  cursor: pointer
-  margin-left: 16px
-  opacity: 0.4
-  padding: 0
-  transition: 0.2s
-  background: transparent
-
 
 @media (min-width: 600px)
   .form-field + .form-field:nth-child(2):last-child
@@ -211,37 +95,6 @@ textarea::placeholder
 
 .radio-list__input:checked
   background-color: #233746
-
-
-.checkbox__item
-  -webkit-appearance: none
-  height: 27px
-  width: 27px
-  min-width: 27px
-  border: 2px solid #ccc
-  border-radius: 4px
-  transition: background-color ease 0.2s, border ease 0.2s
-  margin: 6px 20px 6px 0
-  cursor: pointer
-
-
-.checkbox__label
-  display: flex
-  align-items: center
-  font-family: "Gotham"
-  font-weight: 300
-  font-size: 14px
-  letter-spacing: 0.5px
-  cursor: pointer
-
-
-.checkbox__item:checked
-  background: url("https://s3.amazonaws.com/cgcdn/global-ui/images/icons/check-solid.svg") no-repeat
-  color: #233746
-  background-size: 20px 20px
-  background-position: center center
-  border: 2px solid #233746
-
 
 .validation-msg
   font-family: "Gotham", sans-serif

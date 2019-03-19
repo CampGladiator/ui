@@ -17,6 +17,7 @@
     "@babel/core": "^7.3.4",
     "@storybook/addon-actions": "^5.0.3",
     "@storybook/addon-centered": "^5.0.3",
+    "@storybook/addon-info": "^5.0.3",
     "@storybook/addon-links": "^5.0.3",
     "@storybook/addons": "^5.0.3",
     "@storybook/react": "^5.0.3",
@@ -26,6 +27,7 @@
     "concurrently": "^4.1.0",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.1",
+    "react-storybook-decorator-background": "^1.0.5",
     "rimraf": "^2.6.3",
     "sass-lint": "^1.12.1"
   },
@@ -34,10 +36,10 @@
     "build:autoprefix": "postcss --use autoprefixer --map false --output build/main.css build/main.css",
     "build:cleancss": "cleancss -o build/main.min.css build/main.css",
     "build:clean": "rimraf css",
-    "build:sass": "node-sass --output-style expanded --source-map true main.sass build/main.css",
+    "build:sass": "node-sass --error-bell --output-style expanded --source-map true main.sass build/main.css",
     "build:watch": "npm run build:sass -- --watch",
     "deploy": "npm run build",
-    "start": "concurrently \"yarn run build:watch\" \"yarn run storybook\"",
+    "start": "concurrently \"yarn run storybook\" \"yarn run build:watch\"",
     "lint": "sass-lint sass/**/*.sass -v",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
