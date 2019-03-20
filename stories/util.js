@@ -1,6 +1,13 @@
 import React from 'react'
 
-export const StoryLayout = ({ children, background, rows = 1, columns = 1, gap }) => (
+export const StoryLayout = ({
+  children,
+  background,
+  rows = 1,
+  columns = 1,
+  template,
+  gap,
+}) => (
   <div
     style={{
       background,
@@ -8,7 +15,7 @@ export const StoryLayout = ({ children, background, rows = 1, columns = 1, gap }
       height: '100vh',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
     }}
   >
     <div
@@ -17,7 +24,7 @@ export const StoryLayout = ({ children, background, rows = 1, columns = 1, gap }
         maxHeight: '100%',
         display: 'grid',
         gridTemplateRows: `repeat(${rows}, 1fr)`,
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
+        gridTemplateColumns: template || `repeat(${columns}, 1fr)`,
         gridAutoFlow: 'column',
         justifyItems: 'left',
         alignItems: 'center',

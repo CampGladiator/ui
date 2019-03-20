@@ -9,7 +9,7 @@ import { StoryLayout } from './util'
 
 storiesOf('Buttons', module)
   .add('Primary', () => (
-    <StoryLayout rows={5} columns={3} gap="0 100px">
+    <StoryLayout rows={5} columns={3} gap="24px 100px">
       <button className="button button--solid button--primary button--xlarge">extra large</button>
       <button className="button button--solid button--primary button--large">large</button>
       <button className="button button--solid button--primary">default</button>
@@ -28,7 +28,7 @@ storiesOf('Buttons', module)
     </StoryLayout>
   ))
   .add('Secondary', () => (
-    <StoryLayout rows={5} columns={3} gap="0 100px">
+    <StoryLayout rows={5} columns={3} gap="24px 100px">
       <button className="button button--solid button--secondary button--xlarge">extra large</button>
       <button className="button button--solid button--secondary button--large">large</button>
       <button className="button button--solid button--secondary">default</button>
@@ -47,7 +47,7 @@ storiesOf('Buttons', module)
     </StoryLayout>
   ))
   .add('Disabled', () => (
-    <StoryLayout rows={5} columns={3} gap="0 100px">
+    <StoryLayout rows={5} columns={3} gap="24px 100px">
       <button disabled className="button button--solid button--xlarge">extra large</button>
       <button disabled className="button button--solid button--large">large</button>
       <button disabled className="button button--solid">default</button>
@@ -66,7 +66,7 @@ storiesOf('Buttons', module)
     </StoryLayout>
   ))
   .add('Dark', () => (
-    <StoryLayout rows={5} gap="0 100px">
+    <StoryLayout rows={5} gap="24px 100px">
       <button className="button button--solid button--dark button--xlarge">extra large</button>
       <button className="button button--solid button--dark button--large">large</button>
       <button className="button button--solid button--dark">default</button>
@@ -75,7 +75,7 @@ storiesOf('Buttons', module)
     </StoryLayout>
   ))
   .add('White', () => (
-    <StoryLayout rows={5} gap="0 100px" background="#333">
+    <StoryLayout rows={5} gap="24px 100px" background="#333">
       <button className="button button--outline button--white button--xlarge">extra large</button>
       <button className="button button--outline button--white button--large">large</button>
       <button className="button button--outline button--white">default</button>
@@ -84,7 +84,7 @@ storiesOf('Buttons', module)
     </StoryLayout>
   ))
   .add('Gray', () => (
-    <StoryLayout rows={5} gap="0 100px">
+    <StoryLayout rows={5} gap="24px 100px">
       <button className="button button--gray button--outline button--xlarge">extra large</button>
       <button className="button button--gray button--outline button--large">large</button>
       <button className="button button--gray button--outline">default</button>

@@ -1,10 +1,21 @@
-@import '~/sass/settings/variables'
+@import '../settings/variables'
 
 .field
   display: flex
 
   & + &
     margin-top: 32px
+
+  &__addon
+    align-items: center
+    border-bottom: 2px solid #ccc
+    color: $light-gray
+    display: flex
+    transition: border-color ease .2s
+    padding: 0 3px
+
+  &:focus-within &__addon
+    border-color: $navy
 
 .input
   font-family: $gotham
@@ -31,13 +42,16 @@
     -webkit-appearance: none
     display: none
 
-  &::placeholder,
+  &::placeholder
     font-weight: 300
     color: #ccc
     opacity: 1
 
   &:focus
     border-color: #233746
+
+  &--centered
+    text-align: center
 
   &--two-thirds
     flex: 0 0 66%
@@ -51,7 +65,7 @@
     line-height: 36px
     padding: 0 16px
 
-  select&
+  &--dropdown
     -moz-appearance: none
     -webkit-appearance: none
     appearance: none

@@ -27,6 +27,7 @@
     "concurrently": "^4.1.0",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.1",
+    "prettier": "^1.16.4",
     "react-storybook-decorator-background": "^1.0.5",
     "rimraf": "^2.6.3",
     "sass-lint": "^1.12.1"
@@ -43,6 +44,11 @@
     "lint": "sass-lint sass/**/*.sass -v",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
   },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
   "dependencies": {}
