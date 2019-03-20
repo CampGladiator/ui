@@ -10,12 +10,11 @@ $my-var: red
   line-height: 1
   color: var(--base-color)
   text-align: center
-  border: 0
+  border: 2px solid white
   border-radius: 50px
   text-transform: uppercase
   text-decoration: none
   padding: 12px 21px
-  margin: 10px
   letter-spacing: 0px
   display: inline-block
   opacity: 1
@@ -25,11 +24,6 @@ $my-var: red
 
   &:hover:not([disabled])
     opacity: .7
-
-  &--solid,
-  &--outline
-    border-width: 2px
-    border-style: solid
 
   &--solid
     color: white
@@ -49,6 +43,10 @@ $my-var: red
 
   &--light
     --base-color: #{$light-gray}
+
+  &--gray
+    --base-color: #{$dark-gray}
+    border-color: $medium-gray
 
   &--dark
     --base-color: #{$pavement}
