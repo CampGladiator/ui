@@ -5,6 +5,7 @@ export const StoryLayout = ({
   background,
   rows = 1,
   columns = 1,
+  justify = 'left',
   template,
   gap,
 }) => (
@@ -26,7 +27,7 @@ export const StoryLayout = ({
         gridTemplateRows: `repeat(${rows}, 1fr)`,
         gridTemplateColumns: template || `repeat(${columns}, 1fr)`,
         gridAutoFlow: 'column',
-        justifyItems: 'left',
+        justifyItems: justify,
         alignItems: 'center',
         gap,
       }}

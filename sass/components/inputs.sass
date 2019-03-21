@@ -1,21 +1,21 @@
 @import '../settings/variables'
 
-.field
+$input-border: 2px solid #ccc
+
+.fieldset
   display: flex
+  width: 100%
 
   & + &
     margin-top: 32px
 
   &__addon
     align-items: center
-    border-bottom: 2px solid #ccc
+    border-bottom: $input-border
     color: $light-gray
     display: flex
     transition: border-color ease .2s
     padding: 0 3px
-
-  &:focus-within &__addon
-    border-color: $navy
 
 .input
   font-family: $gotham
@@ -27,15 +27,15 @@
   box-shadow: none
   box-sizing: content-box
   color: $navy
-  display: block
+  display: inline-block
   font-weight: 400
   height: 38px
   min-width: 1px
   padding-bottom: 8px
   position: relative
   transition: border-color ease 0.2s
-  width: 100%
   outline: 0
+  width: 100%
 
   &::-webkit-inner-spin-button,
   &::-webkit-calendar-picker-indicator
@@ -47,14 +47,16 @@
     color: #ccc
     opacity: 1
 
-  &:focus
-    border-color: #233746
+  &:focus,
+  &:focus ~ .fieldset__addon
+    border-color: $navy
 
   &--centered
     text-align: center
 
-  &--two-thirds
-    flex: 0 0 66%
+  &--separator
+    border-left: $input-border
+    padding-left: 16px
 
   &--rounded
     border: 2px solid
@@ -64,6 +66,7 @@
     height: 41px
     line-height: 36px
     padding: 0 16px
+    width: 270px
 
   &--dropdown
     -moz-appearance: none
@@ -75,3 +78,7 @@
     background-size: 16px
     background-color: white
     cursor: pointer
+
+  &[disabled]
+    cursor: default
+    color: $medium-gray

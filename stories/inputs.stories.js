@@ -8,25 +8,73 @@ import '../build/main.css'
 import { StoryLayout } from './util'
 
 storiesOf('Inputs', module)
-  .add('Primary', () => (
-    <StoryLayout rows={5} template="300px" gap="50px 0">
+  .add('Default', () => (
+    <StoryLayout rows={4} template="300px" gap="50px 0">
       <input className="input" placeholder="Placeholder" />
       <input className="input" value="Filled" />
       <input className="input input--centered" placeholder="Placeholder" />
       <input className="input input--centered" value="Filled" />
-      <div className="field">
+    </StoryLayout>
+  ))
+  .add('Rounded', () => (
+    <StoryLayout rows={2} template="300px" gap="50px 0">
+      <input className="input input--rounded" placeholder="Placeholder" />
+      <input className="input input--rounded" value="Filled" />
+    </StoryLayout>
+  ))
+  .add('Labeled', () => (
+    <StoryLayout rows={2} template="500px" justify="stretch">
+      <div className="fieldset">
+        <label className="label" htmlFor="1">
+          label:
+        </label>
+        <input
+          id="1"
+          className="input input--rounded"
+          placeholder="Placeholder"
+        />
+      </div>
+      <div className="fieldset">
+        <label className="label" htmlFor="1">
+          label:
+        </label>
+        <input id="1" className="input input--rounded" value="Filled" />
+      </div>
+    </StoryLayout>
+  ))
+  .add('Addon', () => (
+    <StoryLayout rows={2} template="300px">
+      <div className="fieldset">
         <input className="input" placeholder="Placeholder" />
-        <div className="field__addon">
+        <div className="fieldset__addon">
           <button className="button button--small button--solid button--secondary">
+            action
+          </button>
+        </div>
+      </div>
+      <div className="fieldset">
+        <input className="input" placeholder="Placeholder" />
+        <div className="fieldset__addon">
+          <button className="button button--xsmall button--outline button--gray">
             action
           </button>
         </div>
       </div>
     </StoryLayout>
   ))
-  .add('Rounded', () => (
-    <StoryLayout rows={5} template="300px" gap="50px 0">
-      <input className="input input--rounded" placeholder="Placeholder" />
-      <input className="input input--rounded" value="Filled" />
+  .add('Grouped', () => (
+    <StoryLayout rows={2} template="500px" justify="stretch">
+      <div className="fieldset">
+        <input className="input" placeholder="Placeholder" />
+        <input className="input input--separator" placeholder="Placeholder" />
+      </div>
+      <div className="fieldset">
+        <input
+          className="input"
+          style={{ flex: '0 0 66%' }}
+          placeholder="Placeholder"
+        />
+        <input className="input input--separator" placeholder="Placeholder" />
+      </div>
     </StoryLayout>
   ))
