@@ -1,17 +1,28 @@
 .checkbox
-  -webkit-appearance: none
-  height: 27px
-  width: 27px
-  min-width: 27px
-  border: 2px solid #ccc
-  border-radius: 4px
-  transition: background-color ease 0.2s, border ease 0.2s
-  margin: 6px 20px 6px 0
-  cursor: pointer
+  display: flex
+  margin: 0 -10px
 
-  &:checked
-    background: url("https://s3.amazonaws.com/cgcdn/global-ui/images/icons/check-solid.svg") no-repeat
-    color: #233746
+  &__input,
+  &__label,
+  &[type="checkbox"]
+    cursor: pointer
+    margin: 0 10px
+
+  &__label
+    font-size: 14px
+    line-height: 27px
+
+  &__input,
+  &[type="checkbox"]
+    -webkit-appearance: none
+    height: 27px
+    width: 27px
+    min-width: 27px
+    border: 2px solid #ccc
+    border-radius: 4px
+
+  &__input:checked,
+  &[type="checkbox"]:checked
+    background: url('../assets/check.svg') no-repeat
     background-size: 20px 20px
     background-position: center center
-    border: 2px solid #233746
