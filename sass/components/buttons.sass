@@ -2,6 +2,8 @@
 
 .button
   --base-color: #{$gladiator}
+  --shadow-color: rgba(37, 55, 70, .4)
+  --shadow-size: 3px
   font-family: $gotham
   font-weight: 700
   font-size: 12px
@@ -23,6 +25,9 @@
   &:hover:not([disabled])
     opacity: .7
 
+  &:focus
+    box-shadow: 0 0 0 var(--shadow-size) var(--shadow-color)
+
   &--solid
     color: white
     border-color: var(--base-color)
@@ -35,6 +40,7 @@
 
   &--primary
     --base-color: #{$gladiator}
+    --shadow-color: rgba(200, 16, 46, .4)
 
   &--secondary
     --base-color: #{$navy}
@@ -75,5 +81,6 @@
     padding: 11px 31px
 
   &--xsmall
+    --shadow-size: 2px
     font-size: 10px
     padding: 8px 14px
