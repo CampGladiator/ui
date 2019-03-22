@@ -2,12 +2,15 @@
 
 .flash-message
   display: flex
-  align-items: flex-start
+  align-items: center
   padding: 16px 20px
   min-height: 60px
   background: $gladiator
   color: white
   width: 100%
+
+  @media (max-width: 768px)
+    align-items: flex-start
 
   &__content > * + *
     margin: 0 0 0 20px

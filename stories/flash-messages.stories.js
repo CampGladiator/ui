@@ -18,7 +18,7 @@ storiesOf('Flash Messages', module)
             action
           </button>
         </section>
-        <span>close</span>
+        <span>&times;</span>
       </div>
     </StoryLayout>
   ))
