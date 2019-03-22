@@ -1,0 +1,42 @@
+$tooltip-color: #2A2A2A
+
+.tooltip
+  position: relative
+
+  &__content
+    height: 64px
+    width: auto
+    white-space: nowrap
+    padding: 0 16px
+    background: $tooltip-color
+    filter: drop-shadow(0 0 4px $tooltip-color)
+    border-radius: 2px
+    color: white
+    display: block
+    font-weight: 300
+    line-height: 64px
+    opacity: 0
+    position: absolute
+    text-align: center
+    right: 50%
+    transform: translate(50%, -170%)
+    transition: transform ease .1s, opacity .2s ease
+    max-width: none
+
+    &::before
+      border-left: 12px solid transparent
+      border-right: 12px solid transparent
+      border-top: 10px solid #2A2A2A
+      top: 100%
+      right: 50%
+      transform: translateX(50%)
+      content: ' '
+      font-size: 0
+      line-height: 0
+      position: absolute
+      width: 0
+
+  &--fixed &__content,
+  &__trigger:hover + &__content
+    transform: translate(50%, -160%)
+    opacity: 1
