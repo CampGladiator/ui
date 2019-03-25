@@ -19,7 +19,7 @@ storiesOf('Tooltips', module)
   .add('Fixed', () => (
     <StoryLayout>
       <figure className="tooltip tooltip--fixed">
-        <span className="tooltip__trigger">Hover me</span>
+        <span className="tooltip__trigger">Fixed</span>
         <legend className="tooltip__content">Tooltip message</legend>
       </figure>
     </StoryLayout>
