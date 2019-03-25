@@ -19,7 +19,7 @@ storiesOf('Modals', module)
       <div id="modal" className="modal">
         <div className="modal__container">
           <button className="modal__close" onClick={toggleModal}>
-            <i className="icon icon--close-solid" />
+            <i className="icon icon--close" />
           </button>
           <header className="modal__header">
             <h3>modal title</h3>
@@ -47,7 +47,7 @@ storiesOf('Modals', module)
       <div className="modal modal--open">
         <div className="modal__container">
           <button className="modal__close" onClick={toggleModal}>
-            <i className="icon icon--close-solid" />
+            <i className="icon icon--close" />
           </button>
           <header className="modal__header">
             <h3>modal title</h3>

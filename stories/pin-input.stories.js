@@ -47,7 +47,7 @@ storiesOf('Pin Input', module).add('Default', () => (
         />
       </span>
       <button className="pin-input__toggle-visibility" type="button">
-        <i className="icon icon--view-solid" />
+        <i className="icon icon--view" />
       </button>
     </div>
     <div className="pin-input">
@@ -92,7 +92,7 @@ storiesOf('Pin Input', module).add('Default', () => (
         />
       </span>
       <button className="pin-input__toggle-visibility" type="button">
-        <i className="icon icon--view-solid" />
+        <i className="icon icon--view" />
       </button>
     </div>
   </StoryLayout>

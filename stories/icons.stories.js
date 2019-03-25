@@ -21,182 +21,182 @@ storiesOf('Icons', module).add('List', () => (
         }
       `}
     </style>
-    <span data-tooltip="alert-solid">
-      <i className="icon icon--alert-solid" />
+    <span data-tooltip="alert">
+      <i className="icon icon--alert" />
     </span>
-    <span data-tooltip="arrow-down-solid">
-      <i className="icon icon--arrow-down-solid" />
+    <span data-tooltip="arrow-down">
+      <i className="icon icon--arrow-down" />
     </span>
-    <span data-tooltip="arrow-left-solid">
-      <i className="icon icon--arrow-left-solid" />
+    <span data-tooltip="arrow-left">
+      <i className="icon icon--arrow-left" />
     </span>
-    <span data-tooltip="arrow-right-solid">
-      <i className="icon icon--arrow-right-solid" />
+    <span data-tooltip="arrow-right">
+      <i className="icon icon--arrow-right" />
     </span>
-    <span data-tooltip="arrow-up-solid">
-      <i className="icon icon--arrow-up-solid" />
+    <span data-tooltip="arrow-up">
+      <i className="icon icon--arrow-up" />
     </span>
-    <span data-tooltip="arrow-up-circle-solid">
-      <i className="icon icon--arrow-up-circle-solid" />
+    <span data-tooltip="arrow-up-circle">
+      <i className="icon icon--arrow-up-circle" />
     </span>
-    <span data-tooltip="backspace-solid">
-      <i className="icon icon--backspace-solid" />
+    <span data-tooltip="backspace">
+      <i className="icon icon--backspace" />
     </span>
-    <span data-tooltip="birthday-solid">
-      <i className="icon icon--birthday-solid" />
+    <span data-tooltip="birthday">
+      <i className="icon icon--birthday" />
     </span>
-    <span data-tooltip="calendar-solid">
-      <i className="icon icon--calendar-solid" />
+    <span data-tooltip="calendar">
+      <i className="icon icon--calendar" />
     </span>
-    <span data-tooltip="camera-solid">
-      <i className="icon icon--camera-solid" />
+    <span data-tooltip="camera">
+      <i className="icon icon--camera" />
     </span>
-    <span data-tooltip="check-solid">
-      <i className="icon icon--check-solid" />
+    <span data-tooltip="check">
+      <i className="icon icon--check" />
     </span>
-    <span data-tooltip="clock-solid">
-      <i className="icon icon--clock-solid" />
+    <span data-tooltip="clock">
+      <i className="icon icon--clock" />
     </span>
-    <span data-tooltip="close-solid">
-      <i className="icon icon--close-solid" />
+    <span data-tooltip="close">
+      <i className="icon icon--close" />
     </span>
-    <span data-tooltip="close-circle-solid">
-      <i className="icon icon--close-circle-solid" />
+    <span data-tooltip="close-circle">
+      <i className="icon icon--close-circle" />
     </span>
-    <span data-tooltip="code-solid">
-      <i className="icon icon--code-solid" />
+    <span data-tooltip="code">
+      <i className="icon icon--code" />
     </span>
-    <span data-tooltip="download-solid">
-      <i className="icon icon--download-solid" />
+    <span data-tooltip="download">
+      <i className="icon icon--download" />
     </span>
-    <span data-tooltip="edit-solid">
-      <i className="icon icon--edit-solid" />
+    <span data-tooltip="edit">
+      <i className="icon icon--edit" />
     </span>
-    <span data-tooltip="email-solid">
-      <i className="icon icon--email-solid" />
+    <span data-tooltip="email">
+      <i className="icon icon--email" />
     </span>
-    <span data-tooltip="facebook-solid">
-      <i className="icon icon--facebook-solid" />
+    <span data-tooltip="facebook">
+      <i className="icon icon--facebook" />
     </span>
-    <span data-tooltip="female-solid">
-      <i className="icon icon--female-solid" />
+    <span data-tooltip="female">
+      <i className="icon icon--female" />
     </span>
-    <span data-tooltip="female-male-solid">
-      <i className="icon icon--female-male-solid" />
+    <span data-tooltip="female-male">
+      <i className="icon icon--female-male" />
     </span>
-    <span data-tooltip="file-solid">
-      <i className="icon icon--file-solid" />
+    <span data-tooltip="file">
+      <i className="icon icon--file" />
     </span>
-    <span data-tooltip="filter-solid">
-      <i className="icon icon--filter-solid" />
+    <span data-tooltip="filter">
+      <i className="icon icon--filter" />
     </span>
-    <span data-tooltip="grid-solid">
-      <i className="icon icon--grid-solid" />
+    <span data-tooltip="grid">
+      <i className="icon icon--grid" />
     </span>
-    <span data-tooltip="headset-solid">
-      <i className="icon icon--headset-solid" />
+    <span data-tooltip="headset">
+      <i className="icon icon--headset" />
     </span>
-    <span data-tooltip="help-solid">
-      <i className="icon icon--help-solid" />
+    <span data-tooltip="help">
+      <i className="icon icon--help" />
     </span>
-    <span data-tooltip="help-circle-solid">
-      <i className="icon icon--help-circle-solid" />
+    <span data-tooltip="help-circle">
+      <i className="icon icon--help-circle" />
     </span>
-    <span data-tooltip="info-solid">
-      <i className="icon icon--info-solid" />
+    <span data-tooltip="info">
+      <i className="icon icon--info" />
     </span>
-    <span data-tooltip="laptop-solid">
-      <i className="icon icon--laptop-solid" />
+    <span data-tooltip="laptop">
+      <i className="icon icon--laptop" />
     </span>
-    <span data-tooltip="list-solid">
-      <i className="icon icon--list-solid" />
+    <span data-tooltip="list">
+      <i className="icon icon--list" />
     </span>
-    <span data-tooltip="location-solid">
-      <i className="icon icon--location-solid" />
+    <span data-tooltip="location">
+      <i className="icon icon--location" />
     </span>
-    <span data-tooltip="lock-solid">
-      <i className="icon icon--lock-solid" />
+    <span data-tooltip="lock">
+      <i className="icon icon--lock" />
     </span>
-    <span data-tooltip="long-arrow-solid">
-      <i className="icon icon--long-arrow-solid" />
+    <span data-tooltip="long-arrow">
+      <i className="icon icon--long-arrow" />
     </span>
-    <span data-tooltip="male-solid">
-      <i className="icon icon--male-solid" />
+    <span data-tooltip="male">
+      <i className="icon icon--male" />
     </span>
-    <span data-tooltip="menu-solid">
-      <i className="icon icon--menu-solid" />
+    <span data-tooltip="menu">
+      <i className="icon icon--menu" />
     </span>
-    <span data-tooltip="minimize-solid">
-      <i className="icon icon--minimize-solid" />
+    <span data-tooltip="minimize">
+      <i className="icon icon--minimize" />
     </span>
-    <span data-tooltip="notes-solid">
-      <i className="icon icon--notes-solid" />
+    <span data-tooltip="notes">
+      <i className="icon icon--notes" />
     </span>
-    <span data-tooltip="notification-solid">
-      <i className="icon icon--notification-solid" />
+    <span data-tooltip="notification">
+      <i className="icon icon--notification" />
     </span>
-    <span data-tooltip="pause-solid">
-      <i className="icon icon--pause-solid" />
+    <span data-tooltip="pause">
+      <i className="icon icon--pause" />
     </span>
-    <span data-tooltip="payment-solid">
-      <i className="icon icon--payment-solid" />
+    <span data-tooltip="payment">
+      <i className="icon icon--payment" />
     </span>
-    <span data-tooltip="phone-solid">
-      <i className="icon icon--phone-solid" />
+    <span data-tooltip="phone">
+      <i className="icon icon--phone" />
     </span>
-    <span data-tooltip="pin-solid">
-      <i className="icon icon--pin-solid" />
+    <span data-tooltip="pin">
+      <i className="icon icon--pin" />
     </span>
-    <span data-tooltip="play-solid">
-      <i className="icon icon--play-solid" />
+    <span data-tooltip="play">
+      <i className="icon icon--play" />
     </span>
-    <span data-tooltip="plus-solid">
-      <i className="icon icon--plus-solid" />
+    <span data-tooltip="plus">
+      <i className="icon icon--plus" />
     </span>
-    <span data-tooltip="power-solid">
-      <i className="icon icon--power-solid" />
+    <span data-tooltip="power">
+      <i className="icon icon--power" />
     </span>
-    <span data-tooltip="print-solid">
-      <i className="icon icon--print-solid" />
+    <span data-tooltip="print">
+      <i className="icon icon--print" />
     </span>
-    <span data-tooltip="refresh-solid">
-      <i className="icon icon--refresh-solid" />
+    <span data-tooltip="refresh">
+      <i className="icon icon--refresh" />
     </span>
-    <span data-tooltip="search-solid">
-      <i className="icon icon--search-solid" />
+    <span data-tooltip="search">
+      <i className="icon icon--search" />
     </span>
-    <span data-tooltip="settings-solid">
-      <i className="icon icon--settings-solid" />
+    <span data-tooltip="settings">
+      <i className="icon icon--settings" />
     </span>
-    <span data-tooltip="shirt-solid">
-      <i className="icon icon--shirt-solid" />
+    <span data-tooltip="shirt">
+      <i className="icon icon--shirt" />
     </span>
-    <span data-tooltip="shopping-cart-solid">
-      <i className="icon icon--shopping-cart-solid" />
+    <span data-tooltip="shopping-cart">
+      <i className="icon icon--shopping-cart" />
     </span>
-    <span data-tooltip="survey-solid">
-      <i className="icon icon--survey-solid" />
+    <span data-tooltip="survey">
+      <i className="icon icon--survey" />
     </span>
-    <span data-tooltip="thumbs-down-solid">
-      <i className="icon icon--thumbs-down-solid" />
+    <span data-tooltip="thumbs-down">
+      <i className="icon icon--thumbs-down" />
     </span>
-    <span data-tooltip="thumbs-up-solid">
-      <i className="icon icon--thumbs-up-solid" />
+    <span data-tooltip="thumbs-up">
+      <i className="icon icon--thumbs-up" />
     </span>
-    <span data-tooltip="trash-solid">
-      <i className="icon icon--trash-solid" />
+    <span data-tooltip="trash">
+      <i className="icon icon--trash" />
     </span>
-    <span data-tooltip="truck-solid">
-      <i className="icon icon--truck-solid" />
+    <span data-tooltip="truck">
+      <i className="icon icon--truck" />
     </span>
-    <span data-tooltip="user-solid">
-      <i className="icon icon--user-solid" />
+    <span data-tooltip="user">
+      <i className="icon icon--user" />
     </span>
-    <span data-tooltip="user-corp-solid">
-      <i className="icon icon--user-corp-solid" />
+    <span data-tooltip="user-corp">
+      <i className="icon icon--user-corp" />
     </span>
-    <span data-tooltip="view-solid">
-      <i className="icon icon--view-solid" />
+    <span data-tooltip="view">
+      <i className="icon icon--view" />
     </span>
     <span data-tooltip="alert-outline">
       <i className="icon icon--alert-outline" />
