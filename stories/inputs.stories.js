@@ -53,7 +53,7 @@ storiesOf('Inputs', module)
     </StoryLayout>
   ))
   .add('Addon', () => (
-    <StoryLayout rows={2} template="300px">
+    <StoryLayout rows={3} template="300px">
       <div className="fieldset fieldset--row">
         <input className="input" placeholder="Placeholder" />
         <div className="fieldset fieldset__addon">
@@ -68,6 +68,12 @@ storiesOf('Inputs', module)
           <button className="button button--xsmall button--outline button--gray">
             action
           </button>
+        </div>
+      </div>
+      <div className="fieldset fieldset--row">
+        <input className="input" placeholder="Placeholder" />
+        <div className="fieldset fieldset__addon">
+          <i className="icon icon--check-solid" />
         </div>
       </div>
     </StoryLayout>

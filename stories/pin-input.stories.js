@@ -47,7 +47,7 @@ storiesOf('Pin Input', module).add('Default', () => (
         />
       </span>
       <button className="pin-input__toggle-visibility" type="button">
-        <i className="icon" />
+        <i className="icon icon--view-solid" />
       </button>
     </div>
     <div className="pin-input">
@@ -57,6 +57,7 @@ storiesOf('Pin Input', module).add('Default', () => (
           className="pin-input__char form-field"
           placeholder="-"
           type="tel"
+          value="1"
           inputmode="numeric"
         />
       </span>
@@ -66,6 +67,7 @@ storiesOf('Pin Input', module).add('Default', () => (
           className="pin-input__char form-field"
           placeholder="-"
           type="tel"
+          value="1"
           inputmode="numeric"
         />
       </span>
@@ -75,6 +77,7 @@ storiesOf('Pin Input', module).add('Default', () => (
           className="pin-input__char form-field"
           placeholder="-"
           type="tel"
+          value="1"
           inputmode="numeric"
         />
       </span>
@@ -84,11 +87,12 @@ storiesOf('Pin Input', module).add('Default', () => (
           className="pin-input__char form-field"
           placeholder="-"
           type="tel"
+          value="1"
           inputmode="numeric"
         />
       </span>
       <button className="pin-input__toggle-visibility" type="button">
-        <i className="icon" />
+        <i className="icon icon--view-solid" />
       </button>
     </div>
   </StoryLayout>
