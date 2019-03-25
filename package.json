@@ -41,7 +41,7 @@
     "build:sass": "node-sass --error-bell --output-style expanded --source-map true main.sass build/main.css",
     "build:watch": "npm run build:sass -- --watch",
     "deploy": "npm run build",
-    "start": "concurrently \"yarn run storybook\" \"yarn run build:watch\"",
+    "start": "yarn run build && concurrently \"yarn run storybook\" \"yarn run build:watch\"",
     "lint": "sass-lint sass/**/*.sass -v",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook"

@@ -73,7 +73,7 @@ storiesOf('Inputs', module)
       <div className="fieldset fieldset--row">
         <input className="input" placeholder="Placeholder" />
         <div className="fieldset fieldset__addon">
-          <i className="icon icon--check-solid" />
+          <i className="icon icon--check" />
         </div>
       </div>
     </StoryLayout>

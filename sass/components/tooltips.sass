@@ -27,11 +27,11 @@ $tooltip-color: #2A2A2A
   text-align: center
   right: 50%
   max-width: none
-  transform: translate(50%, calc(-100% - 16px))
+  transform: translate(50%, -200%)
 
 .tooltip__content
   filter: drop-shadow(0 0 4px $tooltip-color)
-  transition: transform ease .1s, opacity .2s ease
+  transition: transform ease .1s, opacity .15s ease
 
 [data-tooltip]::after,
 .tooltip__content::before

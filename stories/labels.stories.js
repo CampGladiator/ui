@@ -69,8 +69,15 @@ storiesOf('Labels', module)
       </figure>
     </StoryLayout>
   ))
-  .add('Small', () => (
+  .add('Sizes', () => (
     <StoryLayout>
+      <figure style={{ position: 'relative' }}>
+        <img
+          src="https://cgui.campgladiator.com/images/shirt.jpg"
+          width="200"
+        />
+        <legend className="image-label image-label--tr">Label</legend>
+      </figure>
       <figure style={{ position: 'relative' }}>
         <img
           src="https://cgui.campgladiator.com/images/shirt.jpg"

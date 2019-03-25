@@ -33,7 +33,7 @@ storiesOf('Flash Messages', module)
             action
           </button>
         </section>
-        <span>&times;</span>
+        <i className="icon icon--close" />
       </div>
     ),
     { viewport: { defaultViewport: 'iphone5' } },
