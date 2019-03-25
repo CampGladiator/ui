@@ -23,7 +23,7 @@ storiesOf('Inputs', module)
     </StoryLayout>
   ))
   .add('Labeled', () => (
-    <StoryLayout rows={2} template="500px" justify="stretch">
+    <StoryLayout rows={3} template="500px" justify="stretch">
       <div className="fieldset">
         <label className="label" htmlFor="1">
           label:
@@ -34,7 +34,17 @@ storiesOf('Inputs', module)
           placeholder="Placeholder"
         />
       </div>
-      <div className="fieldset">
+      <div className="fieldset fieldset--row">
+        <label className="label" htmlFor="1">
+          label:
+        </label>
+        <input
+          id="1"
+          className="input input--rounded"
+          placeholder="Placeholder"
+        />
+      </div>
+      <div className="fieldset fieldset--row">
         <label className="label" htmlFor="1">
           label:
         </label>
@@ -44,17 +54,17 @@ storiesOf('Inputs', module)
   ))
   .add('Addon', () => (
     <StoryLayout rows={2} template="300px">
-      <div className="fieldset">
+      <div className="fieldset fieldset--row">
         <input className="input" placeholder="Placeholder" />
-        <div className="fieldset__addon">
+        <div className="fieldset fieldset__addon">
           <button className="button button--small button--solid button--secondary">
             action
           </button>
         </div>
       </div>
-      <div className="fieldset">
+      <div className="fieldset fieldset--row">
         <input className="input" placeholder="Placeholder" />
-        <div className="fieldset__addon">
+        <div className="fieldset fieldset__addon">
           <button className="button button--xsmall button--outline button--gray">
             action
           </button>
@@ -64,11 +74,11 @@ storiesOf('Inputs', module)
   ))
   .add('Grouped', () => (
     <StoryLayout rows={2} template="500px" justify="stretch">
-      <div className="fieldset">
+      <div className="fieldset fieldset--row">
         <input className="input" placeholder="Placeholder" />
         <input className="input input--separator" placeholder="Placeholder" />
       </div>
-      <div className="fieldset">
+      <div className="fieldset fieldset--row">
         <input
           className="input"
           style={{ flex: '0 0 66%' }}

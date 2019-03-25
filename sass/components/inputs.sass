@@ -5,6 +5,10 @@ $input-border: 2px solid #ccc
 .fieldset
   display: flex
   width: 100%
+  flex-direction: column
+
+  &--row
+    flex-direction: row
 
   & + &
     margin-top: 32px
@@ -16,6 +20,7 @@ $input-border: 2px solid #ccc
     display: flex
     transition: border-color ease .2s
     padding: 0 3px
+    flex-basis: 0%
 
 .input
   font-family: $gotham
