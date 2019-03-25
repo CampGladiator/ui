@@ -8,7 +8,19 @@ import '../build/main.css'
 import { StoryLayout } from './util'
 
 storiesOf('Icons', module).add('List', () => (
-  <StoryLayout rows={6} gap="20px">
+  <StoryLayout rows={6}>
+    <style>
+      {`
+        span {
+          padding: 15px;
+        }
+
+        span:hover i {
+          color: #263746;
+          transform: scale(1.8);
+        }
+      `}
+    </style>
     <span data-tooltip="alert-solid">
       <i className="icon icon--alert-solid" />
     </span>

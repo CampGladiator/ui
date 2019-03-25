@@ -5,6 +5,7 @@ $tooltip-color: #2A2A2A
   position: relative
 
 .tooltip__content,
+[data-tooltip]:hover,
 [data-tooltip]::after,
 [data-tooltip]::before
   z-index: 1
@@ -37,7 +38,7 @@ $tooltip-color: #2A2A2A
   border-left: 12px solid transparent
   border-right: 12px solid transparent
   border-top: 10px solid #2A2A2A
-  top: 0
+  top: 10px
   right: 50%
   content: ' '
   font-size: 0
