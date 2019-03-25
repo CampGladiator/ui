@@ -52,5 +52,7 @@
     "trailingComma": "all"
   },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
-  "dependencies": {}
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
