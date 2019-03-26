@@ -29,9 +29,12 @@ $tooltip-color: #2A2A2A
   max-width: none
   transform: translate(50%, -200%)
 
+[data-tooltip]:hover::before
+  transform: translate(50%, calc(-100% - 20px))
+
 .tooltip__content
   filter: drop-shadow(0 0 4px $tooltip-color)
-  transition: transform ease .1s, opacity .15s ease
+  transition: transform ease .2s, opacity .3s ease
 
 [data-tooltip]::after,
 .tooltip__content::before
