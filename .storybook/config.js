@@ -1,9 +1,28 @@
-import { configure } from '@storybook/react';
+import React from 'react'
 
-// automatically import all files ending in *.stories.js
-const req = require.context('../stories', true, /.stories.js$/);
+import { configure, addDecorator } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { StoryLayout } from '../stories/util'
+
+addDecorator(
+  withInfo({
+    header: false,
+    inline: true,
+    propTablesExclude: [StoryLayout],
+  }),
+)
+
+addDecorator((story, { parameters }) => {
+  return parameters.layout ? (
+    <StoryLayout {...parameters.layout}>{story()}</StoryLayout>
+  ) : (
+    story()
+  )
+})
+
+const req = require.context('../stories', true, /.stories.js$/)
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStories, module);
+configure(loadStories, module)

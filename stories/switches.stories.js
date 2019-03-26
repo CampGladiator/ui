@@ -5,16 +5,21 @@ import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
 import '../build/main.css'
-import { StoryLayout } from './util'
 
-storiesOf('Switches', module).add('Default', () => (
-  <StoryLayout rows={2} gap="50px">
-    <span
-      className="switch"
-      onClick={e => e.target.classList.toggle('switch--on')}
-      role="button"
-      aria-pressed="false"
-    />
-    <span className="switch switch--on" role="button" aria-pressed="true" />
-  </StoryLayout>
-))
+const toggleSwitch = e => e.target.classList.toggle('switch--on')
+
+storiesOf('Switches', module).add(
+  'Default',
+  () => (
+    <>
+      <span
+        className="switch"
+        onClick={toggleSwitch}
+        role="button"
+        aria-pressed="false"
+      />
+      <span className="switch switch--on" role="button" aria-pressed="true" />
+    </>
+  ),
+  { layout: { rows: 2, gap: '50px' } },
+)

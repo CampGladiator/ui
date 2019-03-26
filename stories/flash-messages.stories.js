@@ -5,11 +5,11 @@ import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
 import '../build/main.css'
-import { StoryLayout } from './util'
 
 storiesOf('Flash Messages', module)
-  .add('Default', () => (
-    <StoryLayout template="80vw">
+  .add(
+    'Default',
+    () => (
       <div className="flash-message">
         <span className="flash-message__badge">0</span>
         <section className="flash-message__content">
@@ -20,8 +20,9 @@ storiesOf('Flash Messages', module)
         </section>
         <i className="icon icon--close" />
       </div>
-    </StoryLayout>
-  ))
+    ),
+    { layout: { template: '80vw' } },
+  )
   .add(
     'Mobile',
     () => (
@@ -36,5 +37,7 @@ storiesOf('Flash Messages', module)
         <i className="icon icon--close" />
       </div>
     ),
-    { viewport: { defaultViewport: 'iphone5' } },
+    {
+      viewport: { defaultViewport: 'iphone5' },
+    },
   )
