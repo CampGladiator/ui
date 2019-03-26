@@ -1,0 +1,74 @@
+$tooltip-color: #2A2A2A
+
+.tooltip,
+[data-tooltip]
+  position: relative
+
+.tooltip__content,
+[data-tooltip]:hover,
+[data-tooltip]::after,
+[data-tooltip]::before
+  z-index: 1
+
+.tooltip__content,
+[data-tooltip]::before
+  height: 64px
+  width: auto
+  white-space: nowrap
+  padding: 0 16px
+  background: $tooltip-color
+  border-radius: 2px
+  color: white
+  display: block
+  font-weight: 300
+  line-height: 64px
+  opacity: 0
+  position: absolute
+  text-align: center
+  right: 50%
+  max-width: none
+  transform: translate(50%, -200%)
+
+[data-tooltip]:hover::before
+  transform: translate(50%, calc(-100% - 20px))
+
+.tooltip__content
+  filter: drop-shadow(0 0 4px $tooltip-color)
+  transition: transform ease .2s, opacity .3s ease
+
+[data-tooltip]::after,
+.tooltip__content::before
+  border-left: 12px solid transparent
+  border-right: 12px solid transparent
+  border-top: 10px solid #2A2A2A
+  top: 10px
+  right: 50%
+  content: ' '
+  font-size: 0
+  line-height: 0
+  position: absolute
+  width: 0
+
+.tooltip__content::before
+  top: 100%
+
+[data-tooltip]:hover::after,
+.tooltip--fixed .tooltip__content,
+.tooltip__trigger:hover + .tooltip__content
+  transform: translate(50%, -160%)
+  opacity: 1
+
+.tooltip__content::before
+  transform: translateX(50%)
+
+[data-tooltip]::after
+  display: none
+
+[data-tooltip]::before
+  content: attr(data-tooltip)
+  display: none
+
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before
+  display: inline-block
+  opacity: 1

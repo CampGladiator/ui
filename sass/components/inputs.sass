@@ -1,0 +1,89 @@
+@import '../settings/variables'
+
+$input-border: 2px solid #ccc
+
+.fieldset
+  display: flex
+  width: 100%
+  flex-direction: column
+
+  &--row
+    flex-direction: row
+
+  & + &
+    margin-top: 32px
+
+  &__addon
+    border-bottom: $input-border
+    display: flex
+    flex-direction: row
+    align-items: center
+    transition: border-color ease .2s
+    padding: 0 3px
+    flex-basis: 0%
+
+.input
+  font-family: $gotham
+  background-color: white
+  border: 0
+  border-bottom: 2px solid
+  border-color: #ccc
+  border-radius: 0
+  box-shadow: none
+  box-sizing: content-box
+  color: $navy
+  display: inline-block
+  font-weight: 400
+  height: 38px
+  min-width: 1px
+  padding-bottom: 8px
+  position: relative
+  transition: border-color ease 0.2s
+  outline: 0
+  width: 100%
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-calendar-picker-indicator
+    -webkit-appearance: none
+    display: none
+
+  &::placeholder
+    font-weight: 300
+    color: #ccc
+    opacity: 1
+
+  &:focus,
+  &:focus ~ .fieldset__addon
+    border-color: $navy
+
+  &--centered
+    text-align: center
+
+  &--separator
+    border-left: $input-border
+    padding-left: 16px
+
+  &--rounded
+    border: 2px solid
+    border-color: #ccc
+    border-radius: 999px
+    box-sizing: border-box
+    height: 41px
+    line-height: 36px
+    padding: 0 16px
+    width: 270px
+
+  &--dropdown
+    -moz-appearance: none
+    -webkit-appearance: none
+    appearance: none
+    background: url("https://s3.amazonaws.com/cgcdn/global-ui/images/icons/arrow-down-solid.svg")
+    background-position: 95% 50%
+    background-repeat: no-repeat
+    background-size: 16px
+    background-color: white
+    cursor: pointer
+
+  &[disabled]
+    cursor: default
+    color: $medium-gray

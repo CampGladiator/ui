@@ -1,163 +1,86 @@
-.btn
-  font-family: 'Gotham', Arial, sans-serif
+@import '../settings/variables'
+
+.button
+  --base-color: #{$gladiator}
+  --shadow-color: rgba(37, 55, 70, .4)
+  --shadow-size: 3px
+  font-family: $gotham
   font-weight: 700
   font-size: 12px
   line-height: 1
-  color: white
+  color: var(--base-color)
   text-align: center
-  border-width: 2px
-  border-style: solid
+  border: 2px solid white
   border-radius: 50px
   text-transform: uppercase
   text-decoration: none
   padding: 12px 21px
-  margin: 10px
   letter-spacing: 0px
   display: inline-block
   opacity: 1
   outline: 0
-  -webkit-transition: .15s linear all
-  -moz-transition: .15s linear all
   transition: .15s linear all
-
-
-.btn:hover
-  opacity: .7
   cursor: pointer
 
+  &:hover:not([disabled])
+    opacity: .7
 
-.btn--primary
-  border-color: #c8102e
-  background: #c8102e
+  &:focus
+    box-shadow: 0 0 0 var(--shadow-size) var(--shadow-color)
 
+  &--solid
+    color: white
+    border-color: var(--base-color)
+    background-color: var(--base-color)
 
-.btn--secondary
-  background-color: #263746
-  border-color: #263746
+  &--outline
+    color: var(--base-color)
+    border-color: var(--base-color)
+    background-color: transparent
 
+  &--primary
+    --base-color: #{$gladiator}
+    --shadow-color: rgba(200, 16, 46, .4)
 
-.btn--light
-  background-color: #EDEDED
-  border-color: #EDEDED
+  &--secondary
+    --base-color: #{$navy}
 
+  &--light
+    --base-color: #{$light-gray}
 
-.btn--dark
-  background-color: #231F20
-  border-color: #231F20
+  &--gray
+    --base-color: #{$dark-gray}
+    border-color: $medium-gray
 
+  &--dark
+    --base-color: #{$pavement}
 
-.btn--disabled
-  background-color: #99999a
-  border-color: #99999a
+  &--white
+    --base-color: white
 
+  &[disabled]
+    --base-color: #{$medium-gray}
+    cursor: default
 
-.btn--disabled:hover
-  cursor: not-allowed
-  opacity: 1
+  &--xlarge
+    font-size: 17px
+    padding-top: 25px
+    padding-bottom: 25px
+    padding-left: 38px
+    padding-right: 38px
 
+  &--large
+    font-size: 14px
+    padding-top: 18px
+    padding-bottom: 18px
+    padding-left: 46px
+    padding-right: 46px
 
-.btn__secondary-white
-  background-color: white
-  border-color: white
-  color: #263746
+  &--small
+    font-size: 11px
+    padding: 11px 31px
 
-
-.btn__primary-white
-  background-color: white
-  border-color: white
-  color: #c8102e
-
-
-.btn__primary--outline
-  color: #c8102e !important
-  background-color: transparent !important
-
-
-.btn__secondary--outline
-  color: #263746 !important
-  background-color: transparent !important
-
-
-.btn__dark--outline
-  color: #231F20 !important
-  background-color: transparent !important
-
-
-.btn__light--outline
-  color: #EDEDED !important
-  background-color: transparent !important
-
-
-.btn__disabled--outline
-  color: #99999a !important
-  background-color: transparent !important
-
-
-.btn__white--outline
-  color: white !important
-  background-color: transparent !important
-
-
-.btn--xlarge
-  font-size: 17px
-  padding-top: 25px
-  padding-bottom: 25px
-  padding-left: 38px
-  padding-right: 38px
-
-
-.btn--large
-  font-size: 14px
-  padding-top: 18px
-  padding-bottom: 18px
-  padding-left: 46px
-  padding-right: 46px
-
-
-.btn--small
-  font-size: 11px
-  padding: 11px 31px
-
-
-.btn--xsmall
-  font-size: 10px
-  padding: 8px 14px
-
-
-
-/* Segemented Buttons */
-.btn-segmented
-  margin-left: 0
-  margin-right: 0
-
-
-.btn-segmented:nth-child(1)
-  border-top-right-radius: 0
-  border-bottom-right-radius: 0
-
-
-.btn-segmented:nth-child(2)
-  border-top-left-radius: 0
-  border-bottom-left-radius: 0
-
-
-.btn-segmented__primary
-  color: #c8102e
-  border-color: #c8102e
-  background-color: transparent
-
-
-.btn-segmented__secondary
-  color: #263746
-  border-color: #263746
-  background-color: transparent
-
-
-.btn-segmented__primary.btn-segmented--active
-  color: #fff
-  background-color: #c8102e
-
-
-.btn-segmented__secondary.btn-segmented--active
-  color: #fff
-  background-color: #263746
+  &--xsmall
+    --shadow-size: 2px
+    font-size: 10px
+    padding: 8px 14px
