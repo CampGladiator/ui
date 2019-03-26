@@ -4,8 +4,6 @@ import { storiesOf, addDecorator } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import '../build/main.css'
-
 storiesOf('Tooltips', module)
   .addParameters({ layout: { offsetTop: 64 } })
   .add('Default', () => (

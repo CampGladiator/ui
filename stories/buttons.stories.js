@@ -5,8 +5,6 @@ import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 import { withInfo } from '@storybook/addon-info'
 
-import '../build/main.css'
-
 storiesOf('Buttons', module)
   .addParameters({ layout: { rows: 5, columns: 3, gap: '24px 100px' } })
   .add('Primary', () => (
