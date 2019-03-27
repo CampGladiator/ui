@@ -1,0 +1,67 @@
+version: 2.1
+
+dockerhub_auth: &dockerhub_auth
+  auth:
+    username: $DOCKERHUB_USERNAME
+    password: $DOCKERHUB_PASSWORD
+
+executors:
+  browser:
+    docker:
+      - image: campgladiatortech/browser:latest
+        <<: *dockerhub_auth
+
+  deployer:
+    docker:
+      - image: campgladiatortech/deployer:latest
+        <<: *dockerhub_auth
+
+jobs:
+  lint:
+    executor: browser
+    steps:
+      - checkout
+      - run:
+          name: Ensure dependencies are present
+          command: yarn install
+      - run:
+          name: Run unit tests
+          command: yarn run lint
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - project
+            - .cache
+  deploy:
+    executor: deployer
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - run:
+          name: Compile Sass
+          command: yarn run build
+      - run:
+          name: Deploy Storybook to GitHub Pages
+          command: yarn run deploy
+
+tag_regex: &tag_regex /^v[0-9]+\.[0-9]+\.[0-9]+$/
+
+workflows:
+  version: 2
+  continous_integration:
+    jobs:
+      - lint:
+          filters:
+            branches:
+              only: /.*/
+            tags:
+              only: *tag_regex
+
+      - deploy:
+          requires:
+            - lint
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: *tag_regex
