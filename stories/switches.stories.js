@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { storiesOf, addDecorator } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { linkTo } from '@storybook/addon-links'
+import { storiesOf } from '@storybook/react'
 
 const toggleSwitch = e => e.target.classList.toggle('switch--on')
 

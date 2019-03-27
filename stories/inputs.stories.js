@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { storiesOf, addDecorator } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { linkTo } from '@storybook/addon-links'
+import { storiesOf } from '@storybook/react'
 
 storiesOf('Inputs', module)
   .addParameters({ layout: { rows: 2, template: '300px', gap: '50px 0' } })
