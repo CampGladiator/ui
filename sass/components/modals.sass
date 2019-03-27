@@ -2,7 +2,7 @@
 
 .modal
   width: 100vw
-  height: 100vh
+  height: 100%
   position: fixed
   top: 0
   left: 0
@@ -12,6 +12,9 @@
   &--open
     transform: translateY(0)
 
+  &--relative
+    position: absolute
+
   &::before
     content: ''
     display: block
@@ -19,7 +22,7 @@
     position: absolute
     top: 0
     left: 0
-    height: 100vh
+    height: 100%
     width: 100vw
     background: rgba(0, 0, 0, 0.5)
     transition: ease opacity .3s .2s

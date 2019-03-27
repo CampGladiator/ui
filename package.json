@@ -15,13 +15,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
+    "@storybook/addon-a11y": "^5.0.5",
     "@storybook/addon-actions": "^5.0.3",
     "@storybook/addon-centered": "^5.0.3",
-    "@storybook/addon-info": "^5.0.3",
+    "@storybook/addon-info": "^5.0.5",
     "@storybook/addon-links": "^5.0.3",
     "@storybook/addon-viewport": "^5.0.3",
     "@storybook/addons": "^5.0.3",
     "@storybook/react": "^5.0.3",
+    "@storybook/storybook-deployer": "^2.8.1",
     "autoprefixer": "^9.4.7",
     "babel-loader": "^8.0.5",
     "clean-css-cli": "^4.2.1",
@@ -40,11 +42,11 @@
     "build:clean": "rimraf css",
     "build:sass": "node-sass --error-bell --output-style expanded --source-map true main.sass build/main.css",
     "build:watch": "npm run build:sass -- --watch",
-    "deploy": "npm run build",
     "start": "yarn run build && concurrently \"yarn run storybook\" \"yarn run build:watch\"",
     "lint": "sass-lint sass/**/*.sass -v",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook",
+    "deploy": "storybook-to-ghpages"
   },
   "prettier": {
     "singleQuote": true,
