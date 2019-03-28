@@ -40,27 +40,15 @@
     position: absolute
     right: 50%
     top: 50%
-    transform: translate(50%, -50%) scale(0)
-    opacity: 0
-    z-index: 1
-
-  &--open &__container
-    transform: translate(50%, -50%) scale(1)
-    opacity: 1
-
-  &__container
-    top: 50%
-    right: 50%
     transform: translate(50%, -50%)
-    position: absolute
-    background-color: white
-    border-top: 10px $navy solid
+    opacity: 0
     margin: auto
     z-index: 1000
-    width: 560px
     max-width: 90%
-    padding: 40px
-    text-align: center
+
+  &--open &__container
+    transform: translate(50%, -50%)
+    opacity: 1
 
   &__header
     margin-bottom: 32px
