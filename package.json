@@ -34,7 +34,6 @@
     "prettier": "^1.16.4",
     "react-storybook-decorator-background": "^1.0.5",
     "rimraf": "^2.6.3",
-    "sass-lint": "^1.12.1",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-scss": "^3.5.4"
