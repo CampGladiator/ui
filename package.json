@@ -36,6 +36,7 @@
     "rimraf": "^2.6.3",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.5.4"
   },
   "scripts": {
@@ -45,8 +46,9 @@
     "build:clean": "rimraf css",
     "build:sass": "node-sass --error-bell --output-style expanded --source-map true main.sass build/main.css",
     "build:watch": "npm run build:sass -- --watch",
-    "start": "yarn run build && concurrently \"yarn run storybook\" \"yarn run build:watch\"",
-    "lint": "stylelint sass/**/*.sass -s sass",
+    "start": "yarn run build:sass && concurrently \"yarn run storybook\" \"yarn run build:watch\"",
+    "lint": "stylelint sass/**/*.sass --syntax sass",
+    "lint:fix": "yarn run lint -- --fix",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "deploy": "storybook-to-ghpages"

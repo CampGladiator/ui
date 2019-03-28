@@ -1,4 +1,3 @@
-@import '../settings/variables'
 
 .modal
   width: 100vw
@@ -7,7 +6,7 @@
   top: 0
   left: 0
   transform: translateY(-100%)
-  transition: ease-out 0s .2s
+  transition: ease-out 0s 0.2s
 
   &--open
     transform: translateY(0)
@@ -25,17 +24,17 @@
     height: 100%
     width: 100vw
     background: rgba(0, 0, 0, 0.5)
-    transition: ease opacity .3s .2s
+    transition: ease opacity 0.3s 0.2s
 
   &--open::before
     opacity: 1
 
   &__container
-    border-top: 10px $navy solid
+    border-top: 10px navy solid
     background-color: white
     padding: 40px
     text-align: center
-    transition: ease all .3s
+    transition: ease all 0.3s
     width: 560px
     position: absolute
     right: 50%
@@ -85,5 +84,5 @@
     transition: 0.15s linear background-color
 
   &__close:hover
-    background-color: #c8102e
+    background-color: #C8102E
     cursor: pointer

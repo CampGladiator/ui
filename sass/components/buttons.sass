@@ -1,8 +1,7 @@
-@import '../settings/variables'
 
 .button
-  --base-color: #{$gladiator}
-  --shadow-color: rgba(37, 55, 70, .4)
+  --base-color: $gladiator
+  --shadow-color: rgba(37, 55, 70, 0.4)
   --shadow-size: 3px
   font-family: $gotham
   font-weight: 700
@@ -15,11 +14,11 @@
   text-transform: uppercase
   text-decoration: none
   padding: 12px 21px
-  letter-spacing: 0px
+  letter-spacing: 0
   display: inline-block
   opacity: 1
   outline: 0
-  transition: .15s linear all
+  transition: 0.15s linear all
   cursor: pointer
   white-space: nowrap
 
@@ -27,7 +26,7 @@
     box-shadow: 0 0 0 var(--shadow-size) var(--shadow-color)
 
   &:hover:not([disabled])
-    opacity: .7
+    opacity: 0.7
 
   &--solid
     color: white
@@ -40,27 +39,27 @@
     background-color: transparent
 
   &--primary
-    --base-color: #{$gladiator}
-    --shadow-color: rgba(200, 16, 46, .4)
+    --base-color: $gladiator
+    --shadow-color: rgba(200, 16, 46, 0.4)
 
   &--secondary
-    --base-color: #{$navy}
+    --base-color: $navy
 
   &--light
-    --base-color: #{$light-gray}
+    --base-color: $light-gray
 
   &--gray
-    --base-color: #{$dark-gray}
+    --base-color: $dark-gray
     border-color: $medium-gray
 
   &--dark
-    --base-color: #{$pavement}
+    --base-color: $pavement
 
   &--white
     --base-color: white
 
   &[disabled]
-    --base-color: #{$medium-gray}
+    --base-color: $medium-gray
     cursor: default
 
   &--xlarge
