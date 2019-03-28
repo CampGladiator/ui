@@ -1,9 +1,10 @@
+@import '../settings/variables'
 
 .button
-  --base-color: $gladiator
+  --base-color: #{$gladiator}
   --shadow-color: rgba(37, 55, 70, 0.4)
   --shadow-size: 3px
-  font-family: $gotham
+  font-family: #{$gotham}
   font-weight: 700
   font-size: 12px
   line-height: 1
@@ -39,27 +40,27 @@
     background-color: transparent
 
   &--primary
-    --base-color: $gladiator
+    --base-color: #{$gladiator}
     --shadow-color: rgba(200, 16, 46, 0.4)
 
   &--secondary
-    --base-color: $navy
+    --base-color: #{$navy}
 
   &--light
-    --base-color: $light-gray
+    --base-color: #{$light-gray}
 
   &--gray
-    --base-color: $dark-gray
-    border-color: $medium-gray
+    --base-color: #{$dark-gray}
+    border-color: #{$medium-gray}
 
   &--dark
-    --base-color: $pavement
+    --base-color: #{$pavement}
 
   &--white
     --base-color: white
 
   &[disabled]
-    --base-color: $medium-gray
+    --base-color: #{$medium-gray}
     cursor: default
 
   &--xlarge
