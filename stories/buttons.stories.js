@@ -3,7 +3,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 storiesOf('Buttons', module)
-  .addParameters({ layout: { rows: 5, columns: 3, gap: '24px 100px' } })
+  .addParameters({ layout: { rows: 5, columns: 3, gap: '24px 0' } })
   .add('Primary', () => (
     <>
       <button className="button button--solid button--primary button--xlarge">
@@ -41,6 +41,23 @@ storiesOf('Buttons', module)
       <button className="button button--primary">default</button>
       <button className="button button--primary button--small">small</button>
       <button className="button button--primary button--xsmall">
+        extra small
+      </button>
+      <button className="button button--solid button--xlarge">
+        <i className="button__icon icon icon--check" />
+        extra large
+      </button>
+      <button className="button button--solid button--large">
+        <i className="button__icon icon icon--check" /> large
+      </button>
+      <button className="button button--solid">
+        <i className="button__icon icon icon--check" /> default
+      </button>
+      <button className="button button--solid button--small">
+        <i className="button__icon icon icon--check" /> small
+      </button>
+      <button className="button button--solid button--xsmall">
+        <i className="button__icon icon icon--check" />
         extra small
       </button>
     </>
