@@ -16,6 +16,14 @@ export const infoAddonStyles = styles => ({
       letterSpacing: '2px',
       borderBottom: 'none',
       textTransform: 'uppercase',
+      fontFamily: 'Gotham',
+    },
+    h2: {
+      ...styles.source.h2,
+      letterSpacing: '2px',
+      borderBottom: 'none',
+      textTransform: 'uppercase',
+      fontFamily: 'Gotham',
     },
   },
 })
