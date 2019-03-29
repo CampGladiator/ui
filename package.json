@@ -1,6 +1,6 @@
 {
   "name": "@campgladiator/ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "style": "build/main.css",
   "sass": "main.sass",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/CampGladiator/CGUI/issues"
   },
@@ -60,6 +60,7 @@
   },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
   "dependencies": {
+    "normalize-scss": "^7.0.1",
     "normalize.css": "^8.0.1"
   }
 }
