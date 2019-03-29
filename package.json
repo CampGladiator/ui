@@ -60,7 +60,6 @@
   },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
   "dependencies": {
-    "normalize-scss": "^7.0.1",
-    "normalize.css": "^8.0.1"
+    "normalize-scss": "^7.0.1"
   }
 }
