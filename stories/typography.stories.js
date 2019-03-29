@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Typography', module)
+storiesOf('Base|Typography', module)
   .add(
     'Headings',
     () => (

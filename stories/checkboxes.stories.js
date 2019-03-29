@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Checkboxes', module)
+storiesOf('Components|Checkboxes', module)
   .addParameters({ layout: { rows: 2, justify: 'center', gap: '20px' } })
   .add('Default', () => (
     <>

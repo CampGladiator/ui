@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Flash Messages', module)
+storiesOf('Components|Flash Messages', module)
   .add(
     'Default',
     () => (

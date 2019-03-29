@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Utilities', module).add(
+storiesOf('Utility|Text', module).add(
   'Color',
   () => (
     <>

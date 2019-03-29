@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Radio Buttons', module).add(
+storiesOf('Elements|Radio Buttons', module).add(
   'Default',
   () => (
     <>

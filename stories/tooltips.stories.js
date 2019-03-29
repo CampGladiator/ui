@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Tooltips', module)
+storiesOf('Components|Tooltips', module)
   .addParameters({ layout: { offsetTop: 64 } })
   .add('Default', () => (
     <figure className="tooltip">

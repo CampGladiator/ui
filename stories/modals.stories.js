@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 const toggleModal = () =>
   document.getElementById('modal').classList.toggle('modal--open')
 
-storiesOf('Modals', module)
+storiesOf('Components|Modals', module)
   .addParameters({ layout: { rows: 1 } })
   .add('Default', () => (
     <>
