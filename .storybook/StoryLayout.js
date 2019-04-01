@@ -3,7 +3,7 @@ import React from 'react'
 const makeColumnTemplate = (template, columns) =>
   template ? template : columns ? `repeat(${columns}, 1fr)` : 'auto'
 
-export const StoryLayout = ({
+export default ({
   children,
   background,
   rows = 1,
