@@ -52,7 +52,7 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "deploy": "storybook-to-ghpages",
-    "prepublish": "yarn build"
+    "prepare": "yarn build"
   },
   "prettier": {
     "singleQuote": true,

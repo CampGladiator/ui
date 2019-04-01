@@ -11,11 +11,6 @@ executors:
       - image: campgladiatortech/browser:latest
         <<: *dockerhub_auth
 
-  deployer:
-    docker:
-      - image: campgladiatortech/deployer:latest
-        <<: *dockerhub_auth
-
 jobs:
   lint:
     executor: browser
@@ -33,13 +28,10 @@ jobs:
             - project
             - .cache
   deploy:
-    executor: deployer
+    executor: browser
     steps:
       - attach_workspace:
           at: /home/circleci
-      - run:
-          name: Compile Sass
-          command: yarn run build
       - run:
           name: Add NPM token
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
@@ -68,6 +60,6 @@ workflows:
             - lint
           filters:
             branches:
-              only: cgui-114-setup-ci
+              ignore: /.*/
             tags:
               only: *tag_regex
