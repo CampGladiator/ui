@@ -40,7 +40,7 @@
     "stylelint-scss": "^3.5.4"
   },
   "scripts": {
-    "build": "npm run build:clean && npm run build:sass && npm run build:autoprefix && npm run build:cleancss",
+    "build": "yarn build:clean && yarn build:sass && yarn build:autoprefix && yarn build:cleancss",
     "build:autoprefix": "postcss --use autoprefixer --map false --output build/main.css build/main.css",
     "build:cleancss": "cleancss -o build/main.min.css build/main.css",
     "build:clean": "rimraf css",
@@ -51,12 +51,16 @@
     "lint:fix": "yarn run lint --fix",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
-    "deploy": "storybook-to-ghpages"
+    "deploy": "storybook-to-ghpages",
+    "prepublish": "yarn build"
   },
   "prettier": {
     "singleQuote": true,
     "semi": false,
     "trailingComma": "all"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
   "dependencies": {

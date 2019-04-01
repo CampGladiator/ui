@@ -41,6 +41,12 @@ jobs:
           name: Compile Sass
           command: yarn run build
       - run:
+          name: Add NPM token
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run:
+          name: Publish package to NPM
+          command: npm publish
+      - run:
           name: Deploy Storybook to GitHub Pages
           command: yarn run deploy
 
@@ -62,6 +68,6 @@ workflows:
             - lint
           filters:
             branches:
-              ignore: /.*/
+              only: cgui-114-setup-ci
             tags:
               only: *tag_regex
