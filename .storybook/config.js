@@ -22,7 +22,7 @@ addDecorator(
   withInfo({
     header: false,
     inline: true,
-    propTablesExclude: [StoryLayout],
+    propTablesExclude: [StoryLayout, React.Fragment],
   }),
 )
 
