@@ -1,0 +1,65 @@
+version: 2.1
+
+dockerhub_auth: &dockerhub_auth
+  auth:
+    username: $DOCKERHUB_USERNAME
+    password: $DOCKERHUB_PASSWORD
+
+executors:
+  browser:
+    docker:
+      - image: campgladiatortech/browser:latest
+        <<: *dockerhub_auth
+
+jobs:
+  lint:
+    executor: browser
+    steps:
+      - checkout
+      - run:
+          name: Ensure dependencies are present
+          command: yarn install
+      - run:
+          name: Lint styles
+          command: yarn run lint
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - project
+            - .cache
+  deploy:
+    executor: browser
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - run:
+          name: Add NPM token
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run:
+          name: Publish package to NPM
+          command: npm publish
+      - run:
+          name: Deploy Storybook to GitHub Pages
+          command: yarn run deploy
+
+tag_regex: &tag_regex /^v[0-9]+\.[0-9]+\.[0-9]+$/
+
+workflows:
+  version: 2
+  continous_integration:
+    jobs:
+      - lint:
+          filters:
+            branches:
+              only: /.*/
+            tags:
+              only: *tag_regex
+
+      - deploy:
+          requires:
+            - lint
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: *tag_regex

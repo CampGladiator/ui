@@ -3,7 +3,7 @@ import React from 'react'
 import { configure, addDecorator, addParameters } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withA11y } from '@storybook/addon-a11y'
-import { StoryLayout } from '../stories/util'
+import StoryLayout from './StoryLayout'
 import { storybookTheme, infoAddonStyles } from './theming'
 import '../build/main.css'
 
@@ -22,7 +22,7 @@ addDecorator(
   withInfo({
     header: false,
     inline: true,
-    propTablesExclude: [StoryLayout],
+    propTablesExclude: [StoryLayout, React.Fragment],
   }),
 )
 

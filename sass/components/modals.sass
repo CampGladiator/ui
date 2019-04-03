@@ -7,7 +7,7 @@
   top: 0
   left: 0
   transform: translateY(-100%)
-  transition: ease-out 0s .2s
+  transition: ease-out 0s 0.2s
 
   &--open
     transform: translateY(0)
@@ -25,7 +25,7 @@
     height: 100%
     width: 100vw
     background: rgba(0, 0, 0, 0.5)
-    transition: ease opacity .3s .2s
+    transition: ease opacity 0.3s 0.2s
 
   &--open::before
     opacity: 1
@@ -35,32 +35,20 @@
     background-color: white
     padding: 40px
     text-align: center
-    transition: ease all .3s
+    transition: ease all 0.3s
     width: 560px
     position: absolute
     right: 50%
     top: 50%
-    transform: translate(50%, -50%) scale(0)
-    opacity: 0
-    z-index: 1
-
-  &--open &__container
-    transform: translate(50%, -50%) scale(1)
-    opacity: 1
-
-  &__container
-    top: 50%
-    right: 50%
     transform: translate(50%, -50%)
-    position: absolute
-    background-color: white
-    border-top: 10px $navy solid
+    opacity: 0
     margin: auto
     z-index: 1000
-    width: 560px
     max-width: 90%
-    padding: 40px
-    text-align: center
+
+  &--open &__container
+    transform: translate(50%, -50%)
+    opacity: 1
 
   &__header
     margin-bottom: 32px
@@ -97,5 +85,5 @@
     transition: 0.15s linear background-color
 
   &__close:hover
-    background-color: #c8102e
+    background-color: #C8102E
     cursor: pointer

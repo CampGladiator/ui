@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Set Selectors', module).add(
+storiesOf('Components|Set Selectors', module).add(
   'Default',
   () => (
     <>

@@ -29,18 +29,15 @@ $tooltip-color: #2A2A2A
   max-width: none
   transform: translate(50%, -200%)
 
-[data-tooltip]:hover::before
-  transform: translate(50%, calc(-100% - 20px))
-
 .tooltip__content
   filter: drop-shadow(0 0 4px $tooltip-color)
-  transition: transform ease .2s, opacity .3s ease
+  transition: transform ease 0.2s, opacity 0.3s ease
 
 [data-tooltip]::after,
 .tooltip__content::before
   border-left: 12px solid transparent
   border-right: 12px solid transparent
-  border-top: 10px solid #2A2A2A
+  border-top: 10px solid $tooltip-color
   top: 10px
   right: 50%
   content: ' '
@@ -50,16 +47,8 @@ $tooltip-color: #2A2A2A
   width: 0
 
 .tooltip__content::before
-  top: 100%
-
-[data-tooltip]:hover::after,
-.tooltip--fixed .tooltip__content,
-.tooltip__trigger:hover + .tooltip__content
-  transform: translate(50%, -160%)
-  opacity: 1
-
-.tooltip__content::before
   transform: translateX(50%)
+  top: 100%
 
 [data-tooltip]::after
   display: none
@@ -67,6 +56,15 @@ $tooltip-color: #2A2A2A
 [data-tooltip]::before
   content: attr(data-tooltip)
   display: none
+
+[data-tooltip]:hover::after,
+.tooltip--fixed .tooltip__content,
+.tooltip__trigger:hover + .tooltip__content
+  transform: translate(50%, -160%)
+  opacity: 1
+
+[data-tooltip]:hover::before
+  transform: translate(50%, calc(-100% - 20px))
 
 [data-tooltip]:hover::after,
 [data-tooltip]:hover::before

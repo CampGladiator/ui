@@ -2,14 +2,14 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Flash Messages', module)
+storiesOf('Components|Flash Messages', module)
   .add(
     'Default',
     () => (
       <div className="flash-message">
         <span className="flash-message__badge">0</span>
         <section className="flash-message__content">
-          <p>Link alert message goes here</p>
+          <span>Link alert message goes here</span>
           <button className="button button--outline button--white">
             action
           </button>
@@ -25,7 +25,7 @@ storiesOf('Flash Messages', module)
       <div className="flash-message">
         <span className="flash-message__badge">0</span>
         <section className="flash-message__content">
-          <p>Link alert message goes here</p>
+          <span>Link alert message goes here</span>
           <button className="button button--outline button--white">
             action
           </button>

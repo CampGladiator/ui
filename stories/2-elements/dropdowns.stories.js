@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Dropdowns', module).add(
+storiesOf('Elements|Dropdowns', module).add(
   'Default',
   () => (
     <>

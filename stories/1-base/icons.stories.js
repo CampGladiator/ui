@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Icons', module).add(
+storiesOf('Base|Icons', module).add(
   'List',
   () => (
     <>

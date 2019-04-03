@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 const toggleSwitch = e => e.target.classList.toggle('switch--on')
 
-storiesOf('Switches', module).add(
+storiesOf('Components|Switches', module).add(
   'Default',
   () => (
     <>

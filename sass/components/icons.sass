@@ -115,10 +115,12 @@ $icon-user-corp: "\e971"
 $icon-user-corp-outline: "\e972"
 $icon-view: "\e973"
 
+$gladicons: 'gladicons' !important
 
 .icon
   display: inline-block
-  font-family: 'icomoon' !important
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: $gladicons
   speak: none
   font-style: normal
   font-weight: normal
@@ -129,350 +131,350 @@ $icon-view: "\e973"
   -moz-osx-font-smoothing: grayscale
   color: inherit
 
-  &--alert:before
+  &--alert::before
     content: $icon-alert
 
-  &--alert-outline:before
+  &--alert-outline::before
     content: $icon-alert-outline
 
-  &--arrow-down:before
+  &--arrow-down::before
     content: $icon-arrow-down
 
-  &--arrow-down-outline:before
+  &--arrow-down-outline::before
     content: $icon-arrow-down-outline
 
-  &--arrow-left:before
+  &--arrow-left::before
     content: $icon-arrow-left
 
-  &--arrow-left-outline:before
+  &--arrow-left-outline::before
     content: $icon-arrow-left-outline
 
-  &--arrow-right:before
+  &--arrow-right::before
     content: $icon-arrow-right
 
-  &--arrow-right-outline:before
+  &--arrow-right-outline::before
     content: $icon-arrow-right-outline
 
-  &--arrow-up-outline:before
+  &--arrow-up-outline::before
     content: $icon-arrow-up-outline
 
-  &--arrow-up:before
+  &--arrow-up::before
     content: $icon-arrow-up
 
-  &--arrow-up-circle-outline:before
+  &--arrow-up-circle-outline::before
     content: $icon-arrow-up-circle-outline
 
-  &--arrow-up-circle:before
+  &--arrow-up-circle::before
     content: $icon-arrow-up-circle
 
-  &--backspace:before
+  &--backspace::before
     content: $icon-backspace
 
-  &--backspace-outline:before
+  &--backspace-outline::before
     content: $icon-backspace-outline
 
-  &--birthday-outline:before
+  &--birthday-outline::before
     content: $icon-birthday-outline
 
-  &--birthday:before
+  &--birthday::before
     content: $icon-birthday
 
-  &--calendar:before
+  &--calendar::before
     content: $icon-calendar
 
-  &--calendar-outline:before
+  &--calendar-outline::before
     content: $icon-calendar-outline
 
-  &--camera:before
+  &--camera::before
     content: $icon-camera
 
-  &--camera-outline:before
+  &--camera-outline::before
     content: $icon-camera-outline
 
-  &--check:before
+  &--check::before
     content: $icon-check
 
-  &--check-outline:before
+  &--check-outline::before
     content: $icon-check-outline
 
-  &--clock:before
+  &--clock::before
     content: $icon-clock
 
-  &--clock-outline:before
+  &--clock-outline::before
     content: $icon-clock-outline
 
-  &--close-outline:before
+  &--close-outline::before
     content: $icon-close-outline
 
-  &--close:before
+  &--close::before
     content: $icon-close
 
-  &--close-circle:before
+  &--close-circle::before
     content: $icon-close-circle
 
-  &--close-circle-outline:before
+  &--close-circle-outline::before
     content: $icon-close-circle-outline
 
-  &--code:before
+  &--code::before
     content: $icon-code
 
-  &--code-outline:before
+  &--code-outline::before
     content: $icon-code-outline
 
-  &--download:before
+  &--download::before
     content: $icon-download
 
-  &--download-outline:before
+  &--download-outline::before
     content: $icon-download-outline
 
-  &--edit:before
+  &--edit::before
     content: $icon-edit
 
-  &--edit-outline:before
+  &--edit-outline::before
     content: $icon-edit-outline
 
-  &--email-outline:before
+  &--email-outline::before
     content: $icon-email-outline
 
-  &--email:before
+  &--email::before
     content: $icon-email
 
-  &--facebook:before
+  &--facebook::before
     content: $icon-facebook
 
-  &--female:before
+  &--female::before
     content: $icon-female
 
-  &--female-outline:before
+  &--female-outline::before
     content: $icon-female-outline
 
-  &--female-male-outline:before
+  &--female-male-outline::before
     content: $icon-female-male-outline
 
-  &--female-male:before
+  &--female-male::before
     content: $icon-female-male
 
-  &--file:before
+  &--file::before
     content: $icon-file
 
-  &--file-outline:before
+  &--file-outline::before
     content: $icon-file-outline
 
-  &--filter-outline:before
+  &--filter-outline::before
     content: $icon-filter-outline
 
-  &--filter:before
+  &--filter::before
     content: $icon-filter
 
-  &--grid:before
+  &--grid::before
     content: $icon-grid
 
-  &--grid-outline:before
+  &--grid-outline::before
     content: $icon-grid-outline
 
-  &--headset:before
+  &--headset::before
     content: $icon-headset
 
-  &--headset-outline:before
+  &--headset-outline::before
     content: $icon-headset-outline
 
-  &--help-outline:before
+  &--help-outline::before
     content: $icon-help-outline
 
-  &--help:before
+  &--help::before
     content: $icon-help
 
-  &--help-circle:before
+  &--help-circle::before
     content: $icon-help-circle
 
-  &--help-circle-outline:before
+  &--help-circle-outline::before
     content: $icon-help-circle-outline
 
-  &--info-outline:before
+  &--info-outline::before
     content: $icon-info-outline
 
-  &--info:before
+  &--info::before
     content: $icon-info
 
-  &--laptop-outline:before
+  &--laptop-outline::before
     content: $icon-laptop-outline
 
-  &--laptop:before
+  &--laptop::before
     content: $icon-laptop
 
-  &--list-outline:before
+  &--list-outline::before
     content: $icon-list-outline
 
-  &--list:before
+  &--list::before
     content: $icon-list
 
-  &--location-outline:before
+  &--location-outline::before
     content: $icon-location-outline
 
-  &--location:before
+  &--location::before
     content: $icon-location
 
-  &--lock:before
+  &--lock::before
     content: $icon-lock
 
-  &--lock-outline:before
+  &--lock-outline::before
     content: $icon-lock-outline
 
-  &--long-arrow:before
+  &--long-arrow::before
     content: $icon-long-arrow
 
-  &--long-arrow-outline:before
+  &--long-arrow-outline::before
     content: $icon-long-arrow-outline
 
-  &--male-outline:before
+  &--male-outline::before
     content: $icon-male-outline
 
-  &--male:before
+  &--male::before
     content: $icon-male
 
-  &--menu:before
+  &--menu::before
     content: $icon-menu
 
-  &--menu-outline:before
+  &--menu-outline::before
     content: $icon-menu-outline
 
-  &--minimize-outline:before
+  &--minimize-outline::before
     content: $icon-minimize-outline
 
-  &--minimize:before
+  &--minimize::before
     content: $icon-minimize
 
-  &--notes:before
+  &--notes::before
     content: $icon-notes
 
-  &--notes-outline:before
+  &--notes-outline::before
     content: $icon-notes-outline
 
-  &--notification:before
+  &--notification::before
     content: $icon-notification
 
-  &--notification-outline:before
+  &--notification-outline::before
     content: $icon-notification-outline
 
-  &--pause-outline:before
+  &--pause-outline::before
     content: $icon-pause-outline
 
-  &--pause:before
+  &--pause::before
     content: $icon-pause
 
-  &--payment-outline:before
+  &--payment-outline::before
     content: $icon-payment-outline
 
-  &--payment:before
+  &--payment::before
     content: $icon-payment
 
-  &--phone:before
+  &--phone::before
     content: $icon-phone
 
-  &--phone-outline:before
+  &--phone-outline::before
     content: $icon-phone-outline
 
-  &--pin-outline:before
+  &--pin-outline::before
     content: $icon-pin-outline
 
-  &--pin:before
+  &--pin::before
     content: $icon-pin
 
-  &--play-outline:before
+  &--play-outline::before
     content: $icon-play-outline
 
-  &--play:before
+  &--play::before
     content: $icon-play
 
-  &--plus-outline:before
+  &--plus-outline::before
     content: $icon-plus-outline
 
-  &--plus:before
+  &--plus::before
     content: $icon-plus
 
-  &--power-outline:before
+  &--power-outline::before
     content: $icon-power-outline
 
-  &--power:before
+  &--power::before
     content: $icon-power
 
-  &--print:before
+  &--print::before
     content: $icon-print
 
-  &--print-outline:before
+  &--print-outline::before
     content: $icon-print-outline
 
-  &--refresh:before
+  &--refresh::before
     content: $icon-refresh
 
-  &--refresh-outline:before
+  &--refresh-outline::before
     content: $icon-refresh-outline
 
-  &--search-outline:before
+  &--search-outline::before
     content: $icon-search-outline
 
-  &--search:before
+  &--search::before
     content: $icon-search
 
-  &--settings-outline:before
+  &--settings-outline::before
     content: $icon-settings-outline
 
-  &--settings:before
+  &--settings::before
     content: $icon-settings
 
-  &--shirt-outline:before
+  &--shirt-outline::before
     content: $icon-shirt-outline
 
-  &--shirt:before
+  &--shirt::before
     content: $icon-shirt
 
-  &--shopping-cart:before
+  &--shopping-cart::before
     content: $icon-shopping-cart
 
-  &--shopping-cart-outline:before
+  &--shopping-cart-outline::before
     content: $icon-shopping-cart-outline
 
-  &--survey:before
+  &--survey::before
     content: $icon-survey
 
-  &--survey-outline:before
+  &--survey-outline::before
     content: $icon-survey-outline
 
-  &--thumbs-down-outline:before
+  &--thumbs-down-outline::before
     content: $icon-thumbs-down-outline
 
-  &--thumbs-down:before
+  &--thumbs-down::before
     content: $icon-thumbs-down
 
-  &--thumbs-up:before
+  &--thumbs-up::before
     content: $icon-thumbs-up
 
-  &--thumbs-up-outline:before
+  &--thumbs-up-outline::before
     content: $icon-thumbs-up-outline
 
-  &--trash-outline:before
+  &--trash-outline::before
     content: $icon-trash-outline
 
-  &--trash:before
+  &--trash::before
     content: $icon-trash
 
-  &--truck-outline:before
+  &--truck-outline::before
     content: $icon-truck-outline
 
-  &--truck:before
+  &--truck::before
     content: $icon-truck
 
-  &--user-outline:before
+  &--user-outline::before
     content: $icon-user-outline
 
-  &--user:before
+  &--user::before
     content: $icon-user
 
-  &--user-corp:before
+  &--user-corp::before
     content: $icon-user-corp
 
-  &--user-corp-outline:before
+  &--user-corp-outline::before
     content: $icon-user-corp-outline
 
-  &--view:before
+  &--view::before
     content: $icon-view

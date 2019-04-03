@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Button groups', module)
+storiesOf('Components|Button groups', module)
   .addParameters({
     layout: { rows: 4, gap: '20px 0' },
   })

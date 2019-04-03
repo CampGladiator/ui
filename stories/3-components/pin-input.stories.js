@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-storiesOf('Pin Input', module).add(
+storiesOf('Components|Pin Input', module).add(
   'Default',
   () => (
     <>
