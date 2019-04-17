@@ -1,12 +1,14 @@
 {
   "plugins": ["stylelint-scss"],
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-prettier",
   "rules": {
-    "block-closing-brace-newline-before": "never-multi-line",
-    "block-opening-brace-space-after": "never-single-line",
-    "block-opening-brace-space-before": "never-single-line",
     "color-hex-case": "upper",
-    "declaration-block-trailing-semicolon": "never",
-    "declaration-empty-line-before": "never"
+    "declaration-empty-line-before": "never",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["if", "each", "else", "include", "mixin", "warn"]
+      }
+    ]
   }
 }
