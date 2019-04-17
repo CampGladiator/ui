@@ -1,0 +1,31 @@
+@import '../settings/variables';
+
+.switch {
+  background: $medium-gray;
+  padding: 2px;
+  border-radius: 100px;
+  width: 55px;
+  height: 27px;
+  cursor: pointer;
+  transition: 0.15s linear background;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    background: white;
+    width: 23px;
+    height: 23px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transform: translateX(0);
+    transition: 0.15s linear transform;
+  }
+
+  &--on {
+    background: $navy;
+  }
+
+  &--on::before {
+    transform: translateX(27px);
+  }
+}

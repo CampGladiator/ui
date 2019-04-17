@@ -1,0 +1,56 @@
+@import '../settings/variables';
+
+.flash-message {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  min-height: 60px;
+  background: $gladiator;
+  color: white;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
+
+  &__content > * + * {
+    margin: 0 0 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 20px 0 0 0;
+  }
+
+  &__badge {
+    border-radius: 100px;
+    background-color: white;
+    color: $gladiator;
+    height: 35px;
+    min-width: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      height: 30px;
+      min-width: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}

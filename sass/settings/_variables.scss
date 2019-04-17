@@ -1,0 +1,96 @@
+$gladiator: #c8102e;
+$navy: #263746;
+$pavement: #231f20;
+$dark-gray: #333;
+$medium-gray: #99999a;
+$light-gray: #ededed;
+
+$gladiator-gradient: linear-gradient(215.85deg, #ea3855 9.33%, #c8102e 97.69%);
+
+$gotham: 'Gotham', Arial, sans-serif;
+$united: 'United', sans-serif;
+
+$size-xxl: 48px;
+$size-xl: 32px;
+$size-l: 24px;
+$size-m: 18px;
+$size-s: 16px;
+$size-xs: 14px;
+
+$spacer: 10px !default;
+
+$spacer-0: 0 !default; // 0
+$spacer-1: $spacer / 4 !default; // 2.5px
+$spacer-2: round($spacer / 2) !default; // 5px
+$spacer-3: $spacer !default; // 10px
+$spacer-4: $spacer * 2 !default; // 20px
+$spacer-5: $spacer * 3 !default; // 30px
+$spacer-6: $spacer * 4 !default; // 40px
+$spacer-7: $spacer * 10 !default; // 100px
+
+$spacers: (
+  $spacer-0,
+  $spacer-1,
+  $spacer-2,
+  $spacer-3,
+  $spacer-4,
+  $spacer-5,
+  $spacer-6,
+  $spacer-7
+) !default;
+
+$spacer-map: (
+  0: $spacer-0,
+  1: $spacer-1,
+  2: $spacer-2,
+  3: $spacer-3,
+  4: $spacer-4,
+  5: $spacer-5,
+  6: $spacer-6,
+  7: $spacer-6,
+) !default;
+
+$width-sm: 599px !default;
+$width-md: 600px !default;
+$width-lg: 900px !default;
+$width-xl: 1200px !default;
+$width-xxl: 1679px !default;
+
+$breakpoints: (
+  phone-only: $width-sm,
+  tablet-portrait: $width-md,
+  tablet-landscape: $width-lg,
+  desktop: $width-xl,
+  big-desktop: $width-xxl,
+) !default;
+
+$responsive-variants: (
+  '': '',
+  phone-only: '\\@phone-only',
+  tablet-portrait: '\\@tablet-portrait',
+  tablet-landscape: '\\@tablet-landscape',
+  desktop: '\\desktop',
+  big-desktop: '\\big-desktop',
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == '' {
+    @content;
+  } @else {
+    $value: map-get($breakpoints, $breakpoint);
+
+    @if $value != null {
+      @if $breakpoint == 'phone-only' {
+        @media (max-width: $value) {
+          @content;
+        }
+      } @else {
+        @media (min-width: $value) {
+          @content;
+        }
+      }
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.";
+  }
+}

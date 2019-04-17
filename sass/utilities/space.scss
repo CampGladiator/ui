@@ -1,0 +1,183 @@
+@import '../settings/variables';
+
+@each $breakpoint, $variant in $responsive-variants {
+  @include breakpoint($breakpoint) {
+    .space-inset-xs#{$variant} {
+      padding: $spacer-1;
+    }
+
+    .space-inset-s#{$variant} {
+      padding: $spacer-2;
+    }
+
+    .space-inset-m#{$variant} {
+      padding: $spacer-3;
+    }
+
+    .space-inset-l#{$variant} {
+      padding: $spacer-4;
+    }
+
+    .space-inset-xl#{$variant} {
+      padding: $spacer-5;
+    }
+
+    .space-inset-xxl#{$variant} {
+      padding: $spacer-6;
+    }
+
+    .space-inset-xxxl#{$variant} {
+      padding: $spacer-7;
+    }
+
+    .space-x-xs#{$variant} {
+      padding-left: $spacer-1;
+      padding-right: $spacer-1;
+    }
+
+    .space-x-s#{$variant} {
+      padding-left: $spacer-2;
+      padding-right: $spacer-2;
+    }
+
+    .space-x-m#{$variant} {
+      padding-left: $spacer-3;
+      padding-right: $spacer-3;
+    }
+
+    .space-x-l#{$variant} {
+      padding-left: $spacer-4;
+      padding-right: $spacer-4;
+    }
+
+    .space-x-xl#{$variant} {
+      padding-left: $spacer-5;
+      padding-right: $spacer-5;
+    }
+
+    .space-x-xxl#{$variant} {
+      padding-left: $spacer-6;
+      padding-right: $spacer-6;
+    }
+
+    .space-x-xxxl#{$variant} {
+      padding-left: $spacer-7;
+      padding-right: $spacer-7;
+    }
+
+    .space-y-xs#{$variant} {
+      padding-bottom: $spacer-1;
+      padding-top: $spacer-1;
+    }
+
+    .space-y-s#{$variant} {
+      padding-bottom: $spacer-2;
+      padding-top: $spacer-2;
+    }
+
+    .space-y-m#{$variant} {
+      padding-bottom: $spacer-3;
+      padding-top: $spacer-3;
+    }
+
+    .space-y-l#{$variant} {
+      padding-bottom: $spacer-4;
+      padding-top: $spacer-4;
+    }
+
+    .space-y-xl#{$variant} {
+      padding-bottom: $spacer-5;
+      padding-top: $spacer-5;
+    }
+
+    .space-y-xxl#{$variant} {
+      padding-bottom: $spacer-6;
+      padding-top: $spacer-6;
+    }
+
+    .space-y-xxxl#{$variant} {
+      padding-bottom: $spacer-7;
+      padding-top: $spacer-7;
+    }
+
+    .space-stack-xs#{$variant} {
+      margin-bottom: $spacer-1;
+    }
+
+    .space-stack-s#{$variant} {
+      margin-bottom: $spacer-2;
+    }
+
+    .space-stack-m#{$variant} {
+      margin-bottom: $spacer-3;
+    }
+
+    .space-stack-l#{$variant} {
+      margin-bottom: $spacer-4;
+    }
+
+    .space-stack-xl#{$variant} {
+      margin-bottom: $spacer-5;
+    }
+
+    .space-stack-xxl#{$variant} {
+      margin-bottom: $spacer-6;
+    }
+
+    .space-stack-xxxl#{$variant} {
+      margin-bottom: $spacer-7;
+    }
+
+    .space-between-xs#{$variant} > :not(:last-child) {
+      margin-bottom: $spacer-1;
+    }
+
+    .space-between-s#{$variant} > :not(:last-child) {
+      margin-bottom: $spacer-2;
+    }
+
+    .space-between-m#{$variant} > :not(:last-child) {
+      margin-bottom: $spacer-3;
+    }
+
+    .space-between-l#{$variant} > :not(:last-child) {
+      margin-bottom: $spacer-4;
+    }
+
+    .space-between-xl#{$variant} > :not(:last-child) {
+      margin-bottom: $spacer-5;
+    }
+
+    .space-between-xxl#{$variant} > :not(:last-child) {
+      margin-bottom: $spacer-6;
+    }
+
+    .space-between-inline-xs#{$variant} > :not(:last-child) {
+      margin-right: $spacer-1;
+    }
+
+    .space-between-inline-s#{$variant} > :not(:last-child) {
+      margin-right: $spacer-2;
+    }
+
+    .space-between-inline-m#{$variant} > :not(:last-child) {
+      margin-right: $spacer-3;
+    }
+
+    .space-between-inline-l#{$variant} > :not(:last-child) {
+      margin-right: $spacer-4;
+    }
+
+    .space-between-inline-xl#{$variant} > :not(:last-child) {
+      margin-right: $spacer-5;
+    }
+
+    .space-between-inline-xxl#{$variant} > :not(:last-child) {
+      margin-right: $spacer-6;
+    }
+
+    .space-between-inline-xxxl#{$variant} > :not(:last-child) {
+      margin-right: $spacer-7;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../settings/variables';
+
+.pin-input {
+  align-items: center;
+  display: flex;
+
+  &__char {
+    -moz-appearance: textfield;
+    border: 2px solid $light-gray;
+    border-radius: 999px;
+    box-sizing: border-box;
+    height: 37px;
+    padding: 0 !important;
+    text-align: center;
+    width: 37px;
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  &__toggle-visibility {
+    border: 0;
+    cursor: pointer;
+    margin-left: 16px;
+    opacity: 0.4;
+    padding: 0;
+    transition: 0.2s;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
+.pin-input-part {
+  position: relative;
+
+  & + & {
+    margin: 0 0 0 16px;
+  }
+
+  &--filled {
+    &::after {
+      content: '•';
+      font-weight: 600;
+      color: #233746;
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      line-height: 8px;
+    }
+
+    .pin-input__char {
+      color: white;
+      caret-color: black;
+    }
+  }
+}
