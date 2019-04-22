@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  text-transform: uppercase;
+  color: $navy;
+  margin: 0 0 1rem 0;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: $united;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1,
+.h1 {
+  font-size: $size-xxl;
+}
+
+h2,
+.h2 {
+  font-size: $size-xl;
+}
+
+h3,
+.h3 {
+  font-size: $size-l;
+}
+
+h4,
+.h4 {
+  font-size: $size-m;
+}
+
+h5,
+.h5 {
+  font-size: $size-s;
+}
+
+h6,
+.h6 {
+  font-size: $size-xs;
+}

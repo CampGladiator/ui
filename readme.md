@@ -24,11 +24,5 @@ $ npm install --save @campgladiator/ui
 The included source files are written in [Sass]. After [installing](#install) you can add your project's `node_modules` directory to your Sass [include paths](https://github.com/sass/node-sass#includepaths), then import it like this:
 
 ```scss
-@import '@campgladiator/ui/main.sass';
-```
-
-...or, in case you're using Webpack with sass-loader, import directly in a JavaScript file:
-
-```js
-import '@campgladiator/ui/main.sass'
+@import '@campgladiator/ui/main';
 ```
