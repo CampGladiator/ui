@@ -1,6 +1,4 @@
-@import '../settings/variables';
-
-$input-border: 2px solid #CCC;
+$input-border: 2px solid #ccc;
 
 .fieldset {
   display: flex;
@@ -54,7 +52,7 @@ $input-border: 2px solid #CCC;
 
   &::placeholder {
     font-weight: 300;
-    color: #CCC;
+    color: #ccc;
     opacity: 1;
   }
 
@@ -74,7 +72,7 @@ $input-border: 2px solid #CCC;
 
   &--rounded {
     border: 2px solid;
-    border-color: #CCC;
+    border-color: #ccc;
     border-radius: 999px;
     box-sizing: border-box;
     height: 41px;
