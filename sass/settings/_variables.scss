@@ -1,13 +1,13 @@
 /* stylelint-disable block-closing-brace-newline-after */
 /* stylelint-disable at-rule-empty-line-before */
-$gladiator: #C8102E;
+$gladiator: #c8102e;
 $navy: #263746;
-$pavement: #231F20;
+$pavement: #231f20;
 $dark-gray: #333;
-$medium-gray: #99999A;
-$light-gray: #EDEDED;
+$medium-gray: #99999a;
+$light-gray: #ededed;
 
-$gladiator-gradient: linear-gradient(215.85deg, #EA3855 9.33%, #C8102E 97.69%);
+$gladiator-gradient: linear-gradient(215.85deg, #ea3855 9.33%, #c8102e 97.69%);
 
 $gotham: 'Gotham', Arial, sans-serif;
 $united: 'United', sans-serif;
@@ -78,9 +78,7 @@ $responsive-variants: (
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == '' {
     @content;
-  }
-
-  @else {
+  } @else {
     $value: map-get($breakpoints, $breakpoint);
 
     @if $value != null {
@@ -88,17 +86,13 @@ $responsive-variants: (
         @media (max-width: $value) {
           @content;
         }
-      }
-
-      @else {
+      } @else {
         @media (min-width: $value) {
           @content;
         }
       }
+    } @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.";
     }
-  }
-
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.";
   }
 }

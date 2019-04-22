@@ -46,7 +46,7 @@
     "build:autoprefix": "postcss --use autoprefixer --map false --output build/main.css build/main.css",
     "build:cleancss": "cleancss -o build/main.min.css build/main.css",
     "build:clean": "rimraf css",
-    "build:sass": "node-sass --error-bell --output-style expanded --source-map true main.sass build/main.css",
+    "build:sass": "node-sass --error-bell --output-style expanded --source-map true main.scss ./build/main.css",
     "build:watch": "yarn run build:sass --watch",
     "start": "yarn run build:sass && concurrently \"yarn run storybook\" \"yarn run build:watch\"",
     "lint": "stylelint sass/**/*.scss ",
