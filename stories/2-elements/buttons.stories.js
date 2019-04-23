@@ -208,7 +208,20 @@ storiesOf('Elements|Buttons', module)
         <button className="button button--outline button--white button--xsmall">
           extra small
         </button>
+        <button className="button button--solid button--white button--xlarge">
+          extra large
+        </button>
+        <button className="button button--solid button--white button--large">
+          large
+        </button>
+        <button className="button button--solid button--white">default</button>
+        <button className="button button--solid button--white button--small">
+          small
+        </button>
+        <button className="button button--solid button--white button--xsmall">
+          extra small
+        </button>
       </>
     ),
-    { layout: { background: '#231F20' } },
+    { layout: { rows: 5, columns: 2, gap: '24px 0', background: '#231F20' } },
   )
