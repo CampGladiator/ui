@@ -1,6 +1,9 @@
+$red-tint: rgba(200, 16, 46, 0.4);
+$blue-tint: rgba(37, 55, 70, 0.4);
+
 .button {
   --base-color: #{$gladiator};
-  --shadow-color: rgba(37, 55, 70, 0.4);
+  --shadow-color: #{$red-tint};
   --shadow-size: 3px;
   font-family: #{$gotham};
   font-weight: 700;
@@ -9,10 +12,11 @@
   color: var(--base-color);
   text-align: center;
   border: 2px solid white;
+  height: 35px;
   border-radius: 50px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 12px 21px;
+  padding: 0 21px;
   letter-spacing: 0;
   display: inline-block;
   opacity: 1;
@@ -25,14 +29,24 @@
     box-shadow: 0 0 0 var(--shadow-size) var(--shadow-color);
   }
 
-  &:hover:not([disabled]) {
+  &:active {
     opacity: 0.7;
+  }
+
+  &--dark,
+  &--gray,
+  &--secondary {
+    --shadow-color: #{$blue-tint};
   }
 
   &--solid {
     color: white;
     border-color: var(--base-color);
     background-color: var(--base-color);
+  }
+
+  &--white {
+    color: $pavement;
   }
 
   &--outline {
@@ -43,7 +57,7 @@
 
   &--primary {
     --base-color: #{$gladiator};
-    --shadow-color: rgba(200, 16, 46, 0.4);
+    --shadow-color: #{$red-tint};
   }
 
   &--secondary {
@@ -74,29 +88,27 @@
 
   &--xlarge {
     font-size: 17px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 38px;
-    padding-right: 38px;
+    height: 60px;
+    padding: 0 38px;
   }
 
   &--large {
     font-size: 14px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 46px;
-    padding-right: 46px;
+    height: 48px;
+    padding: 0 46px;
   }
 
   &--small {
     font-size: 11px;
-    padding: 11px 31px;
+    height: 30px;
+    padding: 0 31px;
   }
 
   &--xsmall {
     --shadow-size: 2px;
     font-size: 10px;
-    padding: 8px 14px;
+    height: 25px;
+    padding: 0 14px;
   }
 
   &__icon {
