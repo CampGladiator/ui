@@ -86,32 +86,36 @@ $blue-tint: rgba(37, 55, 70, 0.4);
     cursor: default;
   }
 
-  &--xlarge {
-    font-size: 17px;
-    height: 60px;
-    padding: 0 38px;
-  }
-
-  &--large {
-    font-size: 14px;
-    height: 48px;
-    padding: 0 46px;
-  }
-
-  &--small {
-    font-size: 11px;
-    height: 30px;
-    padding: 0 31px;
-  }
-
-  &--xsmall {
-    --shadow-size: 2px;
-    font-size: 10px;
-    height: 25px;
-    padding: 0 14px;
-  }
-
   &__icon {
     margin-right: 10px;
+  }
+
+  @each $breakpoint, $variant in $responsive-variants {
+    @include breakpoint($breakpoint) {
+      &--xlarge#{$variant} {
+        font-size: 17px;
+        height: 60px;
+        padding: 0 38px;
+      }
+
+      &--large#{$variant} {
+        font-size: 14px;
+        height: 48px;
+        padding: 0 46px;
+      }
+
+      &--small#{$variant} {
+        font-size: 11px;
+        height: 30px;
+        padding: 0 31px;
+      }
+
+      &--xsmall#{$variant} {
+        --shadow-size: 2px;
+        font-size: 10px;
+        height: 25px;
+        padding: 0 14px;
+      }
+    }
   }
 }
