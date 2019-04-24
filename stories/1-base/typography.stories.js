@@ -27,13 +27,47 @@ storiesOf('Base|Typography', module)
     ),
     { layout: { rows: 1, gap: '0 100px' } },
   )
-  .add('Sizes', () => (
-    <>
-      <p className="text-xxl">The quick brown fox jumps over the lazy dog</p>
-      <p className="text-xl">The quick brown fox jumps over the lazy dog</p>
-      <p className="text-l">The quick brown fox jumps over the lazy dog</p>
-      <p className="text-m">The quick brown fox jumps over the lazy dog</p>
-      <p className="text-s">The quick brown fox jumps over the lazy dog</p>
-      <p className="text-xs">The quick brown fox jumps over the lazy dog</p>
-    </>
-  ))
+  .add(
+    'Sizes',
+    () => (
+      <>
+        <span>
+          <code class="text-navy">.text-xxl</code> <small>(48px)</small>
+        </span>
+        <span>
+          <code class="text-navy">.text-xl</code> <small>(32px)</small>
+        </span>
+        <span>
+          <code class="text-navy">.text-l</code> <small>(24px)</small>
+        </span>
+        <span>
+          <code class="text-navy">.text-m</code> <small>(18px)</small>
+        </span>
+        <span>
+          <code class="text-navy">.text-s</code> <small>(16px)</small>
+        </span>
+        <span>
+          <code class="text-navy">.text-xs</code> <small>(14px)</small>
+        </span>
+        <span className="text-truncate text-xxl">
+          The quick brown fox jumps over the lazy dog
+        </span>
+        <span className="text-truncate text-xl">
+          The quick brown fox jumps over the lazy dog
+        </span>
+        <span className="text-truncate text-l">
+          The quick brown fox jumps over the lazy dog
+        </span>
+        <span className="text-truncate text-m">
+          The quick brown fox jumps over the lazy dog
+        </span>
+        <span className="text-truncate text-s">
+          The quick brown fox jumps over the lazy dog
+        </span>
+        <span className="text-truncate text-xs">
+          The quick brown fox jumps over the lazy dog
+        </span>
+      </>
+    ),
+    { layout: { template: '200px 700px', rows: 6, gap: '20px' } },
+  )

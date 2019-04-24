@@ -44,3 +44,11 @@
 .text-xs {
   font-size: $size-xs;
 }
+
+.text-truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
