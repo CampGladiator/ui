@@ -24,6 +24,7 @@ $blue-tint: rgba(37, 55, 70, 0.4);
   transition: 0.15s linear all;
   cursor: pointer;
   white-space: nowrap;
+  min-width: 100px;
 
   &:focus {
     box-shadow: 0 0 0 var(--shadow-size) var(--shadow-color);
@@ -96,18 +97,21 @@ $blue-tint: rgba(37, 55, 70, 0.4);
         font-size: 17px;
         height: 60px;
         padding: 0 38px;
+        min-width: 200px;
       }
 
       &--large#{$variant} {
         font-size: 14px;
         height: 48px;
         padding: 0 46px;
+        min-width: 140px;
       }
 
       &--small#{$variant} {
         font-size: 11px;
         height: 30px;
         padding: 0 31px;
+        min-width: 100px;
       }
 
       &--xsmall#{$variant} {
@@ -115,6 +119,7 @@ $blue-tint: rgba(37, 55, 70, 0.4);
         font-size: 10px;
         height: 25px;
         padding: 0 14px;
+        min-width: 80px;
       }
     }
   }
