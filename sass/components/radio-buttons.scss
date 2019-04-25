@@ -13,6 +13,9 @@
     flex: 1;
     cursor: pointer;
     line-height: 27px;
+  }
+
+  &--inline &__item {
     white-space: nowrap;
   }
 
@@ -27,7 +30,7 @@
     height: 27px;
     padding: 2px;
     transition: background-color ease 0.2s;
-    width: 27px;
+    min-width: 27px;
     margin-right: 8px;
 
     &--checked,
