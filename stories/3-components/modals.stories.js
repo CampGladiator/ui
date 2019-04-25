@@ -18,7 +18,7 @@ storiesOf('Components|Modals', module)
             <i className="icon icon--close" />
           </button>
           <header className="modal__header">
-            <h3>modal title</h3>
+            <h2>modal title</h2>
           </header>
           <section className="modal__content">
             <p>
@@ -48,7 +48,7 @@ storiesOf('Components|Modals', module)
               <i className="icon icon--close" />
             </button>
             <header className="modal__header">
-              <h3>modal title</h3>
+              <h2>modal title</h2>
             </header>
             <section className="modal__content">
               <p>

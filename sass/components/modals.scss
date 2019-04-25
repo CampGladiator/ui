@@ -33,7 +33,6 @@
   }
 
   &__container {
-    border-top: 10px $navy solid;
     background-color: white;
     padding: 40px;
     text-align: center;
@@ -74,25 +73,14 @@
 
   &__close {
     position: absolute;
-    top: -25px;
-    right: -20px;
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 50px;
-    background-color: $navy;
-    color: white;
+    top: 0;
+    right: 0;
+    border: 0;
+    padding: 0;
+    margin: 20px;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     outline: 0;
-    z-index: 1001;
-    transition: 0.15s linear background-color;
-  }
-
-  &__close:hover {
-    background-color: #c8102e;
     cursor: pointer;
+    color: $navy;
   }
 }
