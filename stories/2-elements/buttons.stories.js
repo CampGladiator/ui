@@ -223,7 +223,14 @@ storiesOf('Elements|Buttons', module)
         </button>
       </>
     ),
-    { layout: { rows: 5, columns: 2, gap: '24px 0', background: '#231F20' } },
+    {
+      layout: {
+        rows: 5,
+        template: 'repeat(2, auto)',
+        gap: '24px 50px',
+        background: '#231F20',
+      },
+    },
   )
   .add(
     'Responsive',
