@@ -1,5 +1,6 @@
 $red-tint: rgba(200, 16, 46, 0.4);
 $blue-tint: rgba(37, 55, 70, 0.4);
+$white-tint: rgba(255, 255, 255, 0.4);
 
 .button {
   --base-color: #{$gladiator};
@@ -80,6 +81,7 @@ $blue-tint: rgba(37, 55, 70, 0.4);
 
   &--white {
     --base-color: white;
+    --shadow-color: #{$white-tint};
   }
 
   &[disabled] {
