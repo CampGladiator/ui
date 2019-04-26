@@ -22,32 +22,21 @@ $size-xs: 14px;
 $spacer: 10px !default;
 
 $spacer-0: 0 !default; // 0
-$spacer-1: $spacer / 4 !default; // 2.5px
-$spacer-2: round($spacer / 2) !default; // 5px
-$spacer-3: $spacer !default; // 10px
-$spacer-4: $spacer * 2 !default; // 20px
-$spacer-5: $spacer * 3 !default; // 30px
-$spacer-6: $spacer * 4 !default; // 40px
-$spacer-7: $spacer * 10 !default; // 100px
+$spacer-xs: $spacer / 4 !default; // 2.5px
+$spacer-s: round($spacer / 2) !default; // 5px
+$spacer-m: $spacer !default; // 10px
+$spacer-l: $spacer * 2 !default; // 20px
+$spacer-xl: $spacer * 3 !default; // 30px
+$spacer-xxl: $spacer * 4 !default; // 40px
+$spacer-xxxl: $spacer * 10 !default; // 100px
 
 $spacers: (
   $spacer-0,
-  $spacer-1,
-  $spacer-2,
-  $spacer-3,
-  $spacer-4,
-  $spacer-5,
-  $spacer-6,
-  $spacer-7
-) !default;
-
-$spacer-map: (
-  0: $spacer-0,
-  1: $spacer-1,
-  2: $spacer-2,
-  3: $spacer-3,
-  4: $spacer-4,
-  5: $spacer-5,
-  6: $spacer-6,
-  7: $spacer-6,
+  $spacer-xs,
+  $spacer-s,
+  $spacer-m,
+  $spacer-l,
+  $spacer-xl,
+  $spacer-xxl,
+  $spacer-xxxl
 ) !default;

@@ -1,0 +1,14 @@
+.container {
+  max-width: 960px;
+  width: 100%;
+  padding: 0 $spacer-m;
+  margin: 0 auto;
+
+  &--small {
+    max-width: 560px;
+  }
+
+  &--large {
+    max-width: 1160px;
+  }
+}

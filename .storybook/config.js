@@ -27,6 +27,7 @@ addDecorator(
 )
 
 addDecorator((story, { parameters }) => {
+  console.log(story())
   return parameters.layout ? (
     <StoryLayout {...parameters.layout}>{story()}</StoryLayout>
   ) : (

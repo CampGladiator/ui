@@ -1,101 +1,101 @@
 @each $breakpoint, $variant in $responsive-variants {
   @include breakpoint($breakpoint) {
     .space-inset-xs#{$variant} {
-      padding: $spacer-1;
+      padding: $spacer-xs;
     }
 
     .space-inset-s#{$variant} {
-      padding: $spacer-2;
+      padding: $spacer-s;
     }
 
     .space-inset-m#{$variant} {
-      padding: $spacer-3;
+      padding: $spacer-m;
     }
 
     .space-inset-l#{$variant} {
-      padding: $spacer-4;
+      padding: $spacer-l;
     }
 
     .space-inset-xl#{$variant} {
-      padding: $spacer-5;
+      padding: $spacer-xl;
     }
 
     .space-inset-xxl#{$variant} {
-      padding: $spacer-6;
+      padding: $spacer-xxl;
     }
 
     .space-inset-xxxl#{$variant} {
-      padding: $spacer-7;
+      padding: $spacer-xxxl;
     }
 
     .space-x-xs#{$variant} {
-      padding-left: $spacer-1;
-      padding-right: $spacer-1;
+      padding-left: $spacer-xs;
+      padding-right: $spacer-xs;
     }
 
     .space-x-s#{$variant} {
-      padding-left: $spacer-2;
-      padding-right: $spacer-2;
+      padding-left: $spacer-s;
+      padding-right: $spacer-s;
     }
 
     .space-x-m#{$variant} {
-      padding-left: $spacer-3;
-      padding-right: $spacer-3;
+      padding-left: $spacer-m;
+      padding-right: $spacer-m;
     }
 
     .space-x-l#{$variant} {
-      padding-left: $spacer-4;
-      padding-right: $spacer-4;
+      padding-left: $spacer-l;
+      padding-right: $spacer-l;
     }
 
     .space-x-xl#{$variant} {
-      padding-left: $spacer-5;
-      padding-right: $spacer-5;
+      padding-left: $spacer-xl;
+      padding-right: $spacer-xl;
     }
 
     .space-x-xxl#{$variant} {
-      padding-left: $spacer-6;
-      padding-right: $spacer-6;
+      padding-left: $spacer-xxl;
+      padding-right: $spacer-xxl;
     }
 
     .space-x-xxxl#{$variant} {
-      padding-left: $spacer-7;
-      padding-right: $spacer-7;
+      padding-left: $spacer-xxxl;
+      padding-right: $spacer-xxxl;
     }
 
     .space-y-xs#{$variant} {
-      padding-bottom: $spacer-1;
-      padding-top: $spacer-1;
+      padding-bottom: $spacer-xs;
+      padding-top: $spacer-xs;
     }
 
     .space-y-s#{$variant} {
-      padding-bottom: $spacer-2;
-      padding-top: $spacer-2;
+      padding-bottom: $spacer-s;
+      padding-top: $spacer-s;
     }
 
     .space-y-m#{$variant} {
-      padding-bottom: $spacer-3;
-      padding-top: $spacer-3;
+      padding-bottom: $spacer-m;
+      padding-top: $spacer-m;
     }
 
     .space-y-l#{$variant} {
-      padding-bottom: $spacer-4;
-      padding-top: $spacer-4;
+      padding-bottom: $spacer-l;
+      padding-top: $spacer-l;
     }
 
     .space-y-xl#{$variant} {
-      padding-bottom: $spacer-5;
-      padding-top: $spacer-5;
+      padding-bottom: $spacer-xl;
+      padding-top: $spacer-xl;
     }
 
     .space-y-xxl#{$variant} {
-      padding-bottom: $spacer-6;
-      padding-top: $spacer-6;
+      padding-bottom: $spacer-xxl;
+      padding-top: $spacer-xxl;
     }
 
     .space-y-xxxl#{$variant} {
-      padding-bottom: $spacer-7;
-      padding-top: $spacer-7;
+      padding-bottom: $spacer-xxxl;
+      padding-top: $spacer-xxxl;
     }
 
     .space-stack-0#{$variant} {
@@ -103,83 +103,83 @@
     }
 
     .space-stack-xs#{$variant} {
-      margin-bottom: $spacer-1;
+      margin-bottom: $spacer-xs;
     }
 
     .space-stack-s#{$variant} {
-      margin-bottom: $spacer-2;
+      margin-bottom: $spacer-s;
     }
 
     .space-stack-m#{$variant} {
-      margin-bottom: $spacer-3;
+      margin-bottom: $spacer-m;
     }
 
     .space-stack-l#{$variant} {
-      margin-bottom: $spacer-4;
+      margin-bottom: $spacer-l;
     }
 
     .space-stack-xl#{$variant} {
-      margin-bottom: $spacer-5;
+      margin-bottom: $spacer-xl;
     }
 
     .space-stack-xxl#{$variant} {
-      margin-bottom: $spacer-6;
+      margin-bottom: $spacer-xxl;
     }
 
     .space-stack-xxxl#{$variant} {
-      margin-bottom: $spacer-7;
+      margin-bottom: $spacer-xxxl;
     }
 
     .space-between-xs#{$variant} > :not(:last-child) {
-      margin-bottom: $spacer-1;
+      margin-bottom: $spacer-xs;
     }
 
     .space-between-s#{$variant} > :not(:last-child) {
-      margin-bottom: $spacer-2;
+      margin-bottom: $spacer-s;
     }
 
     .space-between-m#{$variant} > :not(:last-child) {
-      margin-bottom: $spacer-3;
+      margin-bottom: $spacer-m;
     }
 
     .space-between-l#{$variant} > :not(:last-child) {
-      margin-bottom: $spacer-4;
+      margin-bottom: $spacer-l;
     }
 
     .space-between-xl#{$variant} > :not(:last-child) {
-      margin-bottom: $spacer-5;
+      margin-bottom: $spacer-xl;
     }
 
     .space-between-xxl#{$variant} > :not(:last-child) {
-      margin-bottom: $spacer-6;
+      margin-bottom: $spacer-xxl;
     }
 
     .space-between-inline-xs#{$variant} > :not(:last-child) {
-      margin-right: $spacer-1;
+      margin-right: $spacer-xs;
     }
 
     .space-between-inline-s#{$variant} > :not(:last-child) {
-      margin-right: $spacer-2;
+      margin-right: $spacer-s;
     }
 
     .space-between-inline-m#{$variant} > :not(:last-child) {
-      margin-right: $spacer-3;
+      margin-right: $spacer-m;
     }
 
     .space-between-inline-l#{$variant} > :not(:last-child) {
-      margin-right: $spacer-4;
+      margin-right: $spacer-l;
     }
 
     .space-between-inline-xl#{$variant} > :not(:last-child) {
-      margin-right: $spacer-5;
+      margin-right: $spacer-xl;
     }
 
     .space-between-inline-xxl#{$variant} > :not(:last-child) {
-      margin-right: $spacer-6;
+      margin-right: $spacer-xxl;
     }
 
     .space-between-inline-xxxl#{$variant} > :not(:last-child) {
-      margin-right: $spacer-7;
+      margin-right: $spacer-xxxl;
     }
   }
 }
