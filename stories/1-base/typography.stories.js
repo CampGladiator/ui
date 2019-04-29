@@ -72,7 +72,7 @@ storiesOf('Base|Typography', module)
     { layout: { template: '200px 700px', rows: 6, gap: '20px' } },
   )
   .add(
-    'Sizes',
+    'Weights',
     () => (
       <>
         <span className="weight-3 text-xxl">Aa</span>
