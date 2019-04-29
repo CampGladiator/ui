@@ -1,7 +1,7 @@
 @import 'sass/settings/fonts';
 @import 'sass/settings/variables';
 
-@import 'sass/tools/mixins';
+@import 'sass/tools/breakpoints';
 
 @import 'sass/generic/normalize';
 @import 'sass/generic/box-sizing';
@@ -9,6 +9,8 @@
 
 @import 'sass/elements/headings';
 @import 'sass/elements/paragraphs';
+
+@import 'sass/layout/container';
 
 @import 'sass/components/buttons';
 @import 'sass/components/button-groups';
@@ -27,6 +29,6 @@
 
 @import 'sass/utilities/text';
 @import 'sass/utilities/color';
-@import 'sass/utilities/space';
 @import 'sass/utilities/flex';
 @import 'sass/utilities/hide';
+@import 'sass/utilities/space';

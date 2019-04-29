@@ -36,7 +36,7 @@ storiesOf('Elements|Inputs', module)
             placeholder="Placeholder"
           />
         </div>
-        <div className="fieldset fieldset--row">
+        <div className="fieldset fieldset--inline">
           <label className="label" htmlFor="1">
             label:
           </label>
@@ -46,7 +46,7 @@ storiesOf('Elements|Inputs', module)
             placeholder="Placeholder"
           />
         </div>
-        <div className="fieldset fieldset--row">
+        <div className="fieldset fieldset--inline">
           <label className="label" htmlFor="1">
             label:
           </label>
@@ -54,13 +54,15 @@ storiesOf('Elements|Inputs', module)
         </div>
       </>
     ),
-    { layout: { rows: 3, template: '500px', justify: 'stretch' } },
+    {
+      layout: { rows: 3, template: 'minmax(auto, 500px)', justify: 'stretch' },
+    },
   )
   .add(
     'Addon',
     () => (
       <>
-        <div className="fieldset fieldset--row">
+        <div className="fieldset fieldset--inline">
           <input className="input" placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
             <button className="button button--small button--solid button--secondary">
@@ -68,7 +70,7 @@ storiesOf('Elements|Inputs', module)
             </button>
           </div>
         </div>
-        <div className="fieldset fieldset--row">
+        <div className="fieldset fieldset--inline">
           <input className="input" placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
             <button className="button button--xsmall button--outline button--gray">
@@ -76,7 +78,7 @@ storiesOf('Elements|Inputs', module)
             </button>
           </div>
         </div>
-        <div className="fieldset fieldset--row">
+        <div className="fieldset fieldset--inline">
           <input className="input" placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
             <i className="icon icon--check" />
@@ -90,11 +92,11 @@ storiesOf('Elements|Inputs', module)
     'Grouped',
     () => (
       <>
-        <div className="fieldset fieldset--row">
+        <div className="fieldset fieldset--inline">
           <input className="input" placeholder="Placeholder" />
           <input className="input input--separator" placeholder="Placeholder" />
         </div>
-        <div className="fieldset fieldset--row">
+        <div className="fieldset fieldset--inline">
           <input
             className="input"
             style={{ flex: '0 0 66%' }}

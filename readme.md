@@ -13,15 +13,15 @@
 
 ## Install
 
-This repository is distributed with [npm]. After [installing npm][install-npm], you can install `@campgladiator/ui` with this command:
+This repository is distributed with npm, you can install `@campgladiator/ui` with this command:
 
-```sh
-$ npm install --save @campgladiator/ui
-```
+<pre>
+  $ npm install --save <a href="https://www.npmjs.com/package/@campgladiator/ui">@campgladiator/ui</a>
+</pre>
 
-## Usage (:rotating_light: not available yet)
+## Usage
 
-The included source files are written in [Sass]. After [installing](#install) you can add your project's `node_modules` directory to your Sass [include paths](https://github.com/sass/node-sass#includepaths), then import it like this:
+The included source files are written in [Sass]. After installing you can add your project's `node_modules` directory to your Sass [include paths](https://github.com/sass/node-sass#includepaths), then import it like this:
 
 ```scss
 @import '@campgladiator/ui/main';

@@ -5,8 +5,20 @@ $input-border: 2px solid #ccc;
   width: 100%;
   flex-direction: column;
 
-  &--row {
+  &--inline {
     flex-direction: row;
+
+    @include breakpoint(phone-only) {
+      flex-direction: column;
+    }
+  }
+
+  &--inline .label {
+    flex: 0 0 40%;
+  }
+
+  &--inline .input {
+    flex: 1;
   }
 
   & + & {
@@ -78,7 +90,6 @@ $input-border: 2px solid #ccc;
     height: 41px;
     line-height: 36px;
     padding: 0 16px;
-    width: 270px;
   }
 
   &--dropdown {
