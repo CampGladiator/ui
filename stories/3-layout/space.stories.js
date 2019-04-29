@@ -51,7 +51,7 @@ const StoryStyles = () => (
   </style>
 )
 
-storiesOf('Utility|Space', module)
+storiesOf('Layout|Space', module)
   .add(
     'Padding',
     () => (

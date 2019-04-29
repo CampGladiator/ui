@@ -16,6 +16,10 @@ export default ({
 }) => (
   <>
     <style>{`
+      html {
+        overflow-x: hidden;
+      }
+
       #story-root {
         background: ${background};
         margin: auto;

@@ -3,8 +3,10 @@ import React from 'react'
 import { configure, addDecorator, addParameters } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withA11y } from '@storybook/addon-a11y'
-import StoryLayout from './StoryLayout'
+import { withOmission } from 'storybook-react-omit'
+
 import { storybookTheme, infoAddonStyles } from './theming'
+import StoryLayout from './StoryLayout'
 import '../build/main.css'
 
 addParameters({
@@ -22,18 +24,17 @@ addDecorator(
   withInfo({
     header: false,
     inline: true,
-    propTablesExclude: [StoryLayout, React.Fragment],
+    propTablesExclude: withOmission([React.Fragment]),
   }),
 )
 
-addDecorator((story, { parameters }) => {
-  console.log(story())
-  return parameters.layout ? (
+addDecorator((story, { parameters }) =>
+  parameters.layout ? (
     <StoryLayout {...parameters.layout}>{story()}</StoryLayout>
   ) : (
     story()
-  )
-})
+  ),
+)
 
 addDecorator(withA11y)
 
