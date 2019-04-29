@@ -1,6 +1,6 @@
 {
   "name": "@campgladiator/ui",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "",
   "style": "build/main.css",
   "sass": "main.sass",
@@ -54,7 +54,8 @@
     "format": "prettier --write sass/**/*.scss",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
-    "deploy": "storybook-to-ghpages --ci",
+    "deploy": "storybook-to-ghpages --ci -t",
+    "helpp": "storybook-to-ghpages --help",
     "prepare": "yarn build"
   },
   "prettier": {
