@@ -17,8 +17,8 @@ $responsive-variants: (
   phone-only: '\\@phone-only',
   tablet-portrait: '\\@tablet-portrait',
   tablet-landscape: '\\@tablet-landscape',
-  desktop: '\\desktop',
-  big-desktop: '\\big-desktop',
+  desktop: '\\@desktop',
+  big-desktop: '\\@big-desktop',
 ) !default;
 
 @mixin breakpoint($breakpoint) {

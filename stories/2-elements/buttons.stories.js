@@ -223,5 +223,55 @@ storiesOf('Elements|Buttons', module)
         </button>
       </>
     ),
-    { layout: { rows: 5, columns: 2, gap: '24px 0', background: '#231F20' } },
+    {
+      layout: {
+        rows: 5,
+        template: 'repeat(2, auto)',
+        gap: '24px 50px',
+        background: '#231F20',
+      },
+    },
+  )
+  .add(
+    'Responsive',
+    () => (
+      <div className="text-center">
+        <p>Change the viewport and watch the button size change</p>
+        <button className="button button--xlarge@big-desktop button--xlarge@desktop button--large@tablet-landscape button--small@tablet-portrait button--xsmall@phone-only button--solid">
+          button
+        </button>
+        <style>{`
+          @media (max-width: 599px) {
+            .button--xsmall\\@phone-only::after {
+              content: "@phone-only";
+            }
+          }
+
+          @media (min-width: 600px) {
+            .button--small\\@tablet-portrait::after {
+              content: "@tablet-portrait";
+            }
+          }
+
+          @media (min-width: 900px) {
+            .button--large\\@tablet-landscape::after {
+              content: "@tablet-landscape";
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .button--xlarge\\@desktop::after {
+              content: "@desktop";
+            }
+          }
+
+          @media (min-width: 1679px) {
+            .button--xlarge\\@big-desktop::after {
+              content: "@big-desktop";
+            }
+          }
+        `}</style>
+      </div>
+    ),
+    { layout: { rows: 1 } },
   )
