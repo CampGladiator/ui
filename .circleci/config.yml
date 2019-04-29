@@ -34,7 +34,7 @@ jobs:
           at: /home/circleci
       - add_ssh_keys:
           fingerprints:
-            - 'af:cf:43:82:37:ee:ca:ba:bf:aa:73:c8:f2:e7:a1:ab'
+            - 'a6d:92:f9:6e:b7:4e:05:34:df:a8:e6:c2:4d:32:a4:78'
       - run:
           name: Add NPM token
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
