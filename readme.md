@@ -11,7 +11,7 @@
     <img alt="" src="https://img.shields.io/github/last-commit/CampGladiator/cgui.svg">
   </a>
 </p>
->The implementation of Camp Gladiator's Design System
+> The implementation of Camp Gladiator's Design System
 
 ## Install
 
