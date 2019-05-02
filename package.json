@@ -1,18 +1,14 @@
 {
-  "name": "@campgladiator/ui",
   "version": "1.0.0",
   "description": "",
-  "style": "build/main.css",
-  "sass": "main.sass",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CampGladiator/CGUI.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/CampGladiator/CGUI/issues"
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"yarn run storybook\" \"lerna run start --stream\"",
+    "build": "lerna run build",
+    "test": "",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "deploy": "storybook-to-ghpages --ci -t"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -25,49 +21,26 @@
     "@storybook/addons": "^5.0.10",
     "@storybook/react": "^5.0.10",
     "@storybook/storybook-deployer": "^2.8.1",
-    "autoprefixer": "^9.4.7",
     "babel-loader": "^8.0.5",
-    "clean-css-cli": "^4.2.1",
     "concurrently": "^4.1.0",
-    "node-sass": "^4.12.0",
-    "postcss-cli": "^6.1.1",
-    "prettier": "1.17.0",
-    "react-storybook-decorator-background": "^1.0.5",
-    "rimraf": "^2.6.3",
-    "stylelint": "^9.10.1",
-    "stylelint-config-prettier": "^5.0.0",
-    "stylelint-config-recommended": "^2.1.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-prettier": "^1.0.6",
-    "stylelint-scss": "^3.5.4"
+    "lerna": "^3.13.4",
+    "prettier": "1.17.0"
   },
-  "scripts": {
-    "build": "yarn build:clean && yarn build:sass && yarn build:autoprefix && yarn build:cleancss",
-    "build:autoprefix": "postcss --use autoprefixer --map false --output build/main.css build/main.css",
-    "build:cleancss": "cleancss -o build/main.min.css build/main.css",
-    "build:clean": "rimraf css",
-    "build:sass": "node-sass --output-style expanded --source-map true main.scss ./build/main.css",
-    "build:watch": "yarn run build:sass --watch",
-    "start": "yarn run build:sass && concurrently \"yarn run storybook\" \"yarn run build:watch\"",
-    "lint": "stylelint sass/**/*.scss ",
-    "lint:fix": "yarn run lint --fix",
-    "format": "prettier --write sass/**/*.scss",
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook",
-    "deploy": "storybook-to-ghpages --ci -t",
-    "helpp": "storybook-to-ghpages --help",
-    "prepare": "yarn build"
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   },
-  "prettier": {
-    "singleQuote": true,
-    "semi": false,
-    "trailingComma": "all"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CampGladiator/CGUI.git"
   },
-  "publishConfig": {
-    "access": "public"
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/CampGladiator/CGUI/issues"
   },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
-  "dependencies": {
-    "storybook-react-omit": "0.0.3"
-  }
+  "name": "CGUI"
 }

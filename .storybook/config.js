@@ -7,7 +7,7 @@ import { withOmission } from 'storybook-react-omit'
 
 import { storybookTheme, infoAddonStyles } from './theming'
 import StoryLayout from './StoryLayout'
-import '../build/main.css'
+import '../packages/ui/build/main.css'
 
 addParameters({
   options: {
