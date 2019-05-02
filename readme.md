@@ -1,6 +1,5 @@
 <img src="header.png">
 <br>
-<br>
 
 #  [Camp Gladiator UI](https://github.com/CampGladiator/ui)
 <p>
