@@ -1,0 +1,36 @@
+{
+  "name": "@campgladiator/components",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "author": "renanpvaz <renan.piresvz@gmail.com>",
+  "homepage": "https://github.com/CampGladiator/CGUI/tree/master/packages/components#readme",
+  "license": "",
+  "main": "lib/components.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CampGladiator/CGUI.git"
+  },
+  "scripts": {
+    "build": "babel lib -d build",
+    "start": "yarn build --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/CampGladiator/CGUI/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0"
+  }
+}

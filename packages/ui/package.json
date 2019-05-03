@@ -1,0 +1,56 @@
+{
+  "name": "@campgladiator/ui",
+  "version": "1.0.0",
+  "description": "",
+  "style": "build/main.css",
+  "sass": "main.sass",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CampGladiator/CGUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/CampGladiator/CGUI/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "clean-css-cli": "^4.2.1",
+    "lerna": "^3.13.4",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.1",
+    "rimraf": "^2.6.3",
+    "stylelint": "^9.10.1",
+    "stylelint-config-prettier": "^5.0.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-prettier": "^1.0.6",
+    "stylelint-scss": "^3.5.4"
+  },
+  "scripts": {
+    "build": "yarn build:clean && yarn build:sass && yarn build:autoprefix && yarn build:cleancss",
+    "build:autoprefix": "postcss --use autoprefixer --map false --output build/main.css build/main.css",
+    "build:cleancss": "cleancss -o build/main.min.css build/main.css",
+    "build:clean": "rimraf css",
+    "build:sass": "node-sass --output-style expanded --source-map true main.scss ./build/main.css",
+    "build:watch": "yarn run build:sass --watch",
+    "start": "yarn run build:sass && yarn run build:watch",
+    "lint": "stylelint sass/**/*.scss ",
+    "lint:fix": "yarn run lint --fix",
+    "format": "prettier --write sass/**/*.scss",
+    "prepare": "yarn build"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/CampGladiator/CGUI#readme",
+  "dependencies": {
+    "storybook-react-omit": "0.0.3"
+  }
+}
