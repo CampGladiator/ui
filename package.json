@@ -23,14 +23,13 @@
     "babel-loader": "^8.0.5",
     "concurrently": "^4.1.0",
     "lerna": "^3.13.4",
-    "prettier": "1.17.0"
+    "prettier": "1.17.0",
+    "storybook-react-omit": "^1.0.0"
   },
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CampGladiator/CGUI.git"
@@ -40,6 +39,12 @@
   "bugs": {
     "url": "https://github.com/CampGladiator/CGUI/issues"
   },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
+  },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
-  "name": "CGUI"
+  "name": "CGUI",
+  "dependencies": {}
 }

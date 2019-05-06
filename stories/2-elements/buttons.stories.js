@@ -2,225 +2,229 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
+import Button from '../../packages/components/src/Button'
+import bp from '../../packages/components/src/breakpoints'
+
+
 storiesOf('Elements|Buttons', module)
   .addParameters({ layout: { rows: 5, columns: 3, gap: '24px 0' } })
   .add('Primary', () => (
     <>
-      <button className="button button--solid button--primary button--xlarge">
+      <Button solid primary size="xlarge">
         extra large
-      </button>
-      <button className="button button--solid button--primary button--large">
+      </Button>
+      <Button solid primary size="large">
         large
-      </button>
-      <button className="button button--solid button--primary">default</button>
-      <button className="button button--solid button--primary button--small">
+      </Button>
+      <Button solid primary>default</Button>
+      <Button solid primary size="small">
         small
-      </button>
-      <button className="button button--solid button--primary button--xsmall">
+      </Button>
+      <Button solid primary size="xsmall">
         extra small
-      </button>
-      <button className="button button--primary button--outline button--xlarge">
+      </Button>
+      <Button primary outline size="xlarge">
         extra large
-      </button>
-      <button className="button button--primary button--outline button--large">
+      </Button>
+      <Button primary outline size="large">
         large
-      </button>
-      <button className="button button--primary button--outline">
+      </Button>
+      <Button primary outline>
         default
-      </button>
-      <button className="button button--primary button--outline button--small">
+      </Button>
+      <Button primary outline size="small">
         small
-      </button>
-      <button className="button button--primary button--outline button--xsmall">
+      </Button>
+      <Button primary outline size="xsmall">
         extra small
-      </button>
-      <button className="button button--primary button--xlarge">
+      </Button>
+      <Button primary size="xlarge">
         extra large
-      </button>
-      <button className="button button--primary button--large">large</button>
-      <button className="button button--primary">default</button>
-      <button className="button button--primary button--small">small</button>
-      <button className="button button--primary button--xsmall">
+      </Button>
+      <Button primary size="large">large</Button>
+      <Button primary>default</Button>
+      <Button primary size="small">small</Button>
+      <Button primary size="xsmall">
         extra small
-      </button>
-      <button className="button button--solid button--xlarge">
+      </Button>
+      <Button solid size="xlarge">
         <i className="button__icon icon icon--check" />
         extra large
-      </button>
-      <button className="button button--solid button--large">
+      </Button>
+      <Button solid size="large">
         <i className="button__icon icon icon--check" /> large
-      </button>
-      <button className="button button--solid">
+      </Button>
+      <Button solid>
         <i className="button__icon icon icon--check" /> default
-      </button>
-      <button className="button button--solid button--small">
+      </Button>
+      <Button solid size="small">
         <i className="button__icon icon icon--check" /> small
-      </button>
-      <button className="button button--solid button--xsmall">
+      </Button>
+      <Button solid size="xsmall">
         <i className="button__icon icon icon--check" />
         extra small
-      </button>
+      </Button>
     </>
   ))
   .add('Secondary', () => (
     <>
-      <button className="button button--solid button--secondary button--xlarge">
+      <Button solid secondary size="xlarge">
         extra large
-      </button>
-      <button className="button button--solid button--secondary button--large">
+      </Button>
+      <Button solid secondary size="large">
         large
-      </button>
-      <button className="button button--solid button--secondary">
+      </Button>
+      <Button solid secondary>
         default
-      </button>
-      <button className="button button--solid button--secondary button--small">
+      </Button>
+      <Button solid secondary size="small">
         small
-      </button>
-      <button className="button button--solid button--secondary button--xsmall">
+      </Button>
+      <Button solid secondary size="xsmall">
         extra small
-      </button>
-      <button className="button button--secondary button--outline button--xlarge">
+      </Button>
+      <Button secondary outline size="xlarge">
         extra large
-      </button>
-      <button className="button button--secondary button--outline button--large">
+      </Button>
+      <Button secondary outline size="large">
         large
-      </button>
-      <button className="button button--secondary button--outline">
+      </Button>
+      <Button secondary outline>
         default
-      </button>
-      <button className="button button--secondary button--outline button--small">
+      </Button>
+      <Button secondary outline size="small">
         small
-      </button>
-      <button className="button button--secondary button--outline button--xsmall">
+      </Button>
+      <Button secondary outline size="xsmall">
         extra small
-      </button>
-      <button className="button button--secondary button--xlarge">
+      </Button>
+      <Button secondary size="xlarge">
         extra large
-      </button>
-      <button className="button button--secondary button--large">large</button>
-      <button className="button button--secondary">default</button>
-      <button className="button button--secondary button--small">small</button>
-      <button className="button button--secondary button--xsmall">
+      </Button>
+      <Button secondary size="large">large</Button>
+      <Button secondary>default</Button>
+      <Button secondary size="small">small</Button>
+      <Button secondary size="xsmall">
         extra small
-      </button>
+      </Button>
     </>
   ))
   .add('Disabled', () => (
     <>
-      <button disabled className="button button--solid button--xlarge">
+      <Button disabled solid size="xlarge">
         extra large
-      </button>
-      <button disabled className="button button--solid button--large">
+      </Button>
+      <Button disabled solid size="large">
         large
-      </button>
-      <button disabled className="button button--solid">
+      </Button>
+      <Button disabled solid>
         default
-      </button>
-      <button disabled className="button button--solid button--small">
+      </Button>
+      <Button disabled solid size="small">
         small
-      </button>
-      <button disabled className="button button--solid button--xsmall">
+      </Button>
+      <Button disabled solid size="xsmall">
         extra small
-      </button>
-      <button disabled className="button button--outline button--xlarge">
+      </Button>
+      <Button disabled outline size="xlarge">
         extra large
-      </button>
-      <button disabled className="button button--outline button--large">
+      </Button>
+      <Button disabled outline size="large">
         large
-      </button>
-      <button disabled className="button button--outline">
+      </Button>
+      <Button disabled outline>
         default
-      </button>
-      <button disabled className="button button--outline button--small">
+      </Button>
+      <Button disabled outline size="small">
         small
-      </button>
-      <button disabled className="button button--outline button--xsmall">
+      </Button>
+      <Button disabled outline size="xsmall">
         extra small
-      </button>
-      <button disabled className="button button--xlarge">
+      </Button>
+      <Button disabled size="xlarge">
         extra large
-      </button>
-      <button disabled className="button button--large">
+      </Button>
+      <Button disabled size="large">
         large
-      </button>
-      <button disabled className="button">
+      </Button>
+      <Button disabled className="button">
         default
-      </button>
-      <button disabled className="button button--small">
+      </Button>
+      <Button disabled size="small">
         small
-      </button>
-      <button disabled className="button button--xsmall">
+      </Button>
+      <Button disabled size="xsmall">
         extra small
-      </button>
+      </Button>
     </>
   ))
   .addParameters({ layout: { rows: 5, gap: '24px 100px' } })
   .add('Dark', () => (
     <>
-      <button className="button button--solid button--dark button--xlarge">
+      <Button solid dark size="xlarge">
         extra large
-      </button>
-      <button className="button button--solid button--dark button--large">
+      </Button>
+      <Button solid dark size="large">
         large
-      </button>
-      <button className="button button--solid button--dark">default</button>
-      <button className="button button--solid button--dark button--small">
+      </Button>
+      <Button solid dark>default</Button>
+      <Button solid dark size="small">
         small
-      </button>
-      <button className="button button--solid button--dark button--xsmall">
+      </Button>
+      <Button solid dark size="xsmall">
         extra small
-      </button>
+      </Button>
     </>
   ))
   .add('Gray', () => (
     <>
-      <button className="button button--gray button--outline button--xlarge">
+      <Button gray outline size="xlarge">
         extra large
-      </button>
-      <button className="button button--gray button--outline button--large">
+      </Button>
+      <Button gray outline size="large">
         large
-      </button>
-      <button className="button button--gray button--outline">default</button>
-      <button className="button button--gray button--outline button--small">
+      </Button>
+      <Button gray outline>default</Button>
+      <Button gray outline size="small">
         small
-      </button>
-      <button className="button button--gray button--outline button--xsmall">
+      </Button>
+      <Button gray outline size="xsmall">
         extra small
-      </button>
+      </Button>
     </>
   ))
   .add(
     'White',
     () => (
       <>
-        <button className="button button--outline button--white button--xlarge">
+        <Button outline white size="xlarge">
           extra large
-        </button>
-        <button className="button button--outline button--white button--large">
+        </Button>
+        <Button outline white size="large">
           large
-        </button>
-        <button className="button button--outline button--white">
+        </Button>
+        <Button outline white>
           default
-        </button>
-        <button className="button button--outline button--white button--small">
+        </Button>
+        <Button outline white size="small">
           small
-        </button>
-        <button className="button button--outline button--white button--xsmall">
+        </Button>
+        <Button outline white size="xsmall">
           extra small
-        </button>
-        <button className="button button--solid button--white button--xlarge">
+        </Button>
+        <Button solid white size="xlarge">
           extra large
-        </button>
-        <button className="button button--solid button--white button--large">
+        </Button>
+        <Button solid white size="large">
           large
-        </button>
-        <button className="button button--solid button--white">default</button>
-        <button className="button button--solid button--white button--small">
+        </Button>
+        <Button solid white>default</Button>
+        <Button solid white size="small">
           small
-        </button>
-        <button className="button button--solid button--white button--xsmall">
+        </Button>
+        <Button solid white size="xsmall">
           extra small
-        </button>
+        </Button>
       </>
     ),
     {
@@ -240,6 +244,18 @@ storiesOf('Elements|Buttons', module)
         <button className="button button--xlarge@big-desktop button--xlarge@desktop button--large@tablet-landscape button--small@tablet-portrait button--xsmall@phone-only button--solid">
           button
         </button>
+        <Button
+          solid
+          media={{
+            [bp.bigDesktop]: 'xlarge',
+            [bp.desktop]: 'large',
+            [bp.tabletLandscape]: 'large',
+            [bp.tabletPortrait]: 'small',
+            [bp.phoneOnly]: 'xsmall',
+          }}
+        >
+          button
+        </Button>
         <style>{`
           @media (max-width: 599px) {
             .button--xsmall\\@phone-only::after {
