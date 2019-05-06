@@ -6,6 +6,7 @@ import Media from './internal/Media'
 import bp from './breakpoints'
 
 const Button = ({
+  className,
   primary,
   secondary,
   solid,
@@ -31,6 +32,7 @@ const Button = ({
       white && 'button--white',
       size && `button--${size}`,
       Media.toModifiers('button', media),
+      className,
     )}
     disabled={disabled}
     onClick={onClick}

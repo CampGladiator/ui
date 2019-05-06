@@ -10,6 +10,10 @@ describe('<Button />', () => {
     expect(() => shallow(<Button />)).not.toThrow()
   })
 
+  it('accepts any extra classes', () => {
+    expect(shallow(<Button className="my-button" />).hasClass('my-button')).toBe(true)
+  })
+
   it('renders button with modifier class', () => {
     expect(shallow(<Button solid />).hasClass('button--solid')).toBe(true)
   })
