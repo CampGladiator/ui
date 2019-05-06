@@ -1,8 +1,7 @@
 {
   "name": "@campgladiator/components",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "private": true,
   "author": "renanpvaz <renan.piresvz@gmail.com>",
   "homepage": "https://github.com/CampGladiator/CGUI/tree/master/packages/components#readme",
   "license": "",
