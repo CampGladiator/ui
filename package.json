@@ -5,7 +5,7 @@
   "scripts": {
     "start": "concurrently \"yarn run storybook\" \"lerna run start --stream\"",
     "build": "lerna run build",
-    "test": "",
+    "test": "lerna run test --stream --no-bail",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "deploy": "storybook-to-ghpages --ci -t"

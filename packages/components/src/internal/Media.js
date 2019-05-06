@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import bp from '../breakpoints'
 
 const toModifiers = (base, media) =>
-  Object.entries(media).map(([breakpoint, size]) => `${base}--${size}@${breakpoint}`)
+  Object.entries(media).map(
+    ([breakpoint, size]) => `${base}--${size}@${breakpoint}`,
+  )
 
 const propTypeFor = propType =>
   PropTypes.shape({
