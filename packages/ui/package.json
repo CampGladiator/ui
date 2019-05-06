@@ -1,7 +1,7 @@
 {
   "name": "@campgladiator/ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sass implementation of CampGladiator's Design System",
   "style": "build/main.css",
   "sass": "main.sass",
   "repository": {
