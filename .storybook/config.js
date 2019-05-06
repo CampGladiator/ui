@@ -25,6 +25,8 @@ addDecorator(
     header: false,
     inline: true,
     propTablesExclude: withOmission([React.Fragment]),
+    maxPropObjectKeys: 99,
+    maxPropStringLength: 99,
   }),
 )
 

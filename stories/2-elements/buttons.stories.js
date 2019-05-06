@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { storiesOf } from '@storybook/react'
+import omit from 'storybook-react-omit'
 
 import Button from '../../packages/components/src/Button'
 import bp from '../../packages/components/src/breakpoints'
-
 
 storiesOf('Elements|Buttons', module)
   .addParameters({ layout: { rows: 5, columns: 3, gap: '24px 0' } })
@@ -16,7 +16,9 @@ storiesOf('Elements|Buttons', module)
       <Button solid primary size="large">
         large
       </Button>
-      <Button solid primary>default</Button>
+      <Button solid primary>
+        default
+      </Button>
       <Button solid primary size="small">
         small
       </Button>
@@ -41,9 +43,13 @@ storiesOf('Elements|Buttons', module)
       <Button primary size="xlarge">
         extra large
       </Button>
-      <Button primary size="large">large</Button>
+      <Button primary size="large">
+        large
+      </Button>
       <Button primary>default</Button>
-      <Button primary size="small">small</Button>
+      <Button primary size="small">
+        small
+      </Button>
       <Button primary size="xsmall">
         extra small
       </Button>
@@ -101,9 +107,13 @@ storiesOf('Elements|Buttons', module)
       <Button secondary size="xlarge">
         extra large
       </Button>
-      <Button secondary size="large">large</Button>
+      <Button secondary size="large">
+        large
+      </Button>
       <Button secondary>default</Button>
-      <Button secondary size="small">small</Button>
+      <Button secondary size="small">
+        small
+      </Button>
       <Button secondary size="xsmall">
         extra small
       </Button>
@@ -167,7 +177,9 @@ storiesOf('Elements|Buttons', module)
       <Button solid dark size="large">
         large
       </Button>
-      <Button solid dark>default</Button>
+      <Button solid dark>
+        default
+      </Button>
       <Button solid dark size="small">
         small
       </Button>
@@ -184,7 +196,9 @@ storiesOf('Elements|Buttons', module)
       <Button gray outline size="large">
         large
       </Button>
-      <Button gray outline>default</Button>
+      <Button gray outline>
+        default
+      </Button>
       <Button gray outline size="small">
         small
       </Button>
@@ -218,7 +232,9 @@ storiesOf('Elements|Buttons', module)
         <Button solid white size="large">
           large
         </Button>
-        <Button solid white>default</Button>
+        <Button solid white>
+          default
+        </Button>
         <Button solid white size="small">
           small
         </Button>
@@ -245,7 +261,7 @@ storiesOf('Elements|Buttons', module)
           solid
           media={{
             [bp.bigDesktop]: 'xlarge',
-            [bp.desktop]: 'large',
+            [bp.desktop]: 'xlarge',
             [bp.tabletLandscape]: 'large',
             [bp.tabletPortrait]: 'small',
             [bp.phoneOnly]: 'xsmall',
@@ -253,7 +269,8 @@ storiesOf('Elements|Buttons', module)
         >
           button
         </Button>
-        <style>{`
+        {omit(
+          <style>{`
           @media (max-width: 599px) {
             .button--xsmall\\@phone-only::after {
               content: "@phone-only";
@@ -283,7 +300,8 @@ storiesOf('Elements|Buttons', module)
               content: "@big-desktop";
             }
           }
-        `}</style>
+        `}</style>,
+        )}
       </div>
     ),
     { layout: { rows: 1 } },
