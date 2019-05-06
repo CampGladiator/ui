@@ -2,6 +2,8 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
+import Button from '../../packages/components/src/Button'
+
 storiesOf('Components|Button groups', module)
   .addParameters({
     layout: { rows: 4, gap: '20px 0' },
@@ -9,108 +11,108 @@ storiesOf('Components|Button groups', module)
   .add('Primary', () => (
     <>
       <div className="button-group">
-        <button className="button button--solid button--primary button--large button-group__left">
+        <Button solid primary large className="button-group__left">
           left large
-        </button>
-        <button className="button button--primary button--outline button--large button-group__right">
+        </Button>
+        <Button primary outline large className="button-group__right">
           right large
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--primary button-group__left">
+        <Button solid primary className="button-group__left">
           left default
-        </button>
-        <button className="button button--primary button--outline button-group__right">
+        </Button>
+        <Button primary outline className="button-group__right">
           right default
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--primary button--small button-group__left">
+        <Button solid primary small className="button-group__left">
           left small
-        </button>
-        <button className="button button--primary button--outline button--small button-group__right">
+        </Button>
+        <Button primary outline small className="button-group__right">
           right small
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--primary button--xsmall button-group__left">
+        <Button solid primary xsmall className="button-group__left">
           left extra small
-        </button>
-        <button className="button button--primary button--outline button--xsmall button-group__right">
+        </Button>
+        <Button primary outline xsmall className="button-group__right">
           right extra small
-        </button>
+        </Button>
       </div>
     </>
   ))
   .add('Secondary', () => (
     <>
       <div className="button-group">
-        <button className="button button--solid button--secondary button--large button-group__left">
+        <Button solid secondary large className="button-group__left">
           left large
-        </button>
-        <button className="button button--secondary button--outline button--large button-group__right">
+        </Button>
+        <Button secondary outline large className="button-group__right">
           right large
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--secondary button-group__left">
+        <Button solid secondary className="button-group__left">
           left default
-        </button>
-        <button className="button button--secondary button--outline button-group__right">
+        </Button>
+        <Button secondary outline className="button-group__right">
           right default
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--secondary button--small button-group__left">
+        <Button solid secondary small className="button-group__left">
           left small
-        </button>
-        <button className="button button--secondary button--outline button--small button-group__right">
+        </Button>
+        <Button secondary outline small className="button-group__right">
           right small
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--secondary button--xsmall button-group__left">
+        <Button solid secondary xsmall className="button-group__left">
           left extra small
-        </button>
-        <button className="button button--secondary button--outline button--xsmall button-group__right">
+        </Button>
+        <Button secondary outline xsmall className="button-group__right">
           right extra small
-        </button>
+        </Button>
       </div>
     </>
   ))
   .add('Dark', () => (
     <>
       <div className="button-group">
-        <button className="button button--solid button--dark button--large button-group__left">
+        <Button solid dark large className="button-group__left">
           left large
-        </button>
-        <button className="button button--dark button--outline button--large button-group__right">
+        </Button>
+        <Button dark outline large className="button-group__right">
           right large
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--dark button-group__left">
+        <Button solid dark className="button-group__left">
           left default
-        </button>
-        <button className="button button--dark button--outline button-group__right">
+        </Button>
+        <Button dark outline className="button-group__right">
           right default
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--dark button--small button-group__left">
+        <Button solid dark small className="button-group__left">
           left small
-        </button>
-        <button className="button button--dark button--outline button--small button-group__right">
+        </Button>
+        <Button dark outline small className="button-group__right">
           right small
-        </button>
+        </Button>
       </div>
       <div className="button-group">
-        <button className="button button--solid button--dark button--xsmall button-group__left">
+        <Button solid dark xsmall className="button-group__left">
           left extra small
-        </button>
-        <button className="button button--dark button--outline button--xsmall button-group__right">
+        </Button>
+        <Button dark outline xsmall className="button-group__right">
           right extra small
-        </button>
+        </Button>
       </div>
     </>
   ))

@@ -44,6 +44,7 @@ const Button = ({
 const Size = PropTypes.oneOf(['xsmall', 'small', 'large', 'xlarge'])
 
 Button.propTypes = {
+  className: PropTypes.string,
   primary: PropTypes.bool,
   secondary: PropTypes.bool,
   solid: PropTypes.bool,

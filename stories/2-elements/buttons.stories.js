@@ -241,9 +241,6 @@ storiesOf('Elements|Buttons', module)
     () => (
       <div className="text-center">
         <p>Change the viewport and watch the button size change</p>
-        <button className="button button--xlarge@big-desktop button--xlarge@desktop button--large@tablet-landscape button--small@tablet-portrait button--xsmall@phone-only button--solid">
-          button
-        </button>
         <Button
           solid
           media={{
