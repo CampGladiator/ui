@@ -2,24 +2,27 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
+import Input from '../../packages/components/src/Input'
+import Button from '../../packages/components/src/Button'
+
 storiesOf('Elements|Inputs', module)
   .addParameters({ layout: { rows: 2, template: '300px', gap: '50px 0' } })
   .add(
     'Default',
     () => (
       <>
-        <input className="input" placeholder="Placeholder" />
-        <input className="input" value="Filled" />
-        <input className="input input--centered" placeholder="Placeholder" />
-        <input className="input input--centered" value="Filled" />
+        <Input placeholder="Placeholder" />
+        <Input input value="Filled" />
+        <Input inputType="centered" placeholder="Placeholder" />
+        <Input inputType="centered" value="Filled" />
       </>
     ),
     { layout: { rows: 4 } },
   )
   .add('Rounded', () => (
     <>
-      <input className="input input--rounded" placeholder="Placeholder" />
-      <input className="input input--rounded" value="Filled" />
+      <Input inputType="rounded" placeholder="Placeholder" />
+      <Input inputType="rounded" value="Filled" />
     </>
   ))
   .add(
@@ -40,9 +43,9 @@ storiesOf('Elements|Inputs', module)
           <label className="label" htmlFor="1">
             label:
           </label>
-          <input
+          <Input
             id="1"
-            className="input input--rounded"
+            inputType="rounded"
             placeholder="Placeholder"
           />
         </div>
@@ -50,7 +53,7 @@ storiesOf('Elements|Inputs', module)
           <label className="label" htmlFor="1">
             label:
           </label>
-          <input id="1" className="input input--rounded" value="Filled" />
+          <Input id="1" inputType="rounded" value="Filled" />
         </div>
       </>
     ),
@@ -63,23 +66,23 @@ storiesOf('Elements|Inputs', module)
     () => (
       <>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
-            <button className="button button--small button--solid button--secondary">
+            <Button solid secondary size="small">
               action
-            </button>
+            </Button>
           </div>
         </div>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
-            <button className="button button--xsmall button--outline button--gray">
+            <Button size="xsmall" outline gray>
               action
-            </button>
+            </Button>
           </div>
         </div>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
             <i className="icon icon--check" />
           </div>
@@ -93,16 +96,15 @@ storiesOf('Elements|Inputs', module)
     () => (
       <>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
-          <input className="input input--separator" placeholder="Placeholder" />
+          <Input  placeholder="Placeholder" />
+          <Input inputType="separator" placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
-          <input
-            className="input"
-            style={{ flex: '0 0 66%' }}
+          <Input
+            width="66%"
             placeholder="Placeholder"
           />
-          <input className="input input--separator" placeholder="Placeholder" />
+          <Input inputType="separator" placeholder="Placeholder" />
         </div>
       </>
     ),
