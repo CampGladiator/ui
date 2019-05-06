@@ -1,14 +1,14 @@
 {
   "name": "@campgladiator/components",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "version": "0.0.1",
+  "description": "A component library for CampGladiator's React apps",
   "author": "renanpvaz <renan.piresvz@gmail.com>",
   "homepage": "https://github.com/CampGladiator/CGUI/tree/master/packages/components#readme",
   "license": "",
-  "main": "lib/components.js",
+  "main": "",
+  "sideEffects": false,
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "__tests__"
   },
   "files": [
@@ -19,11 +19,18 @@
     "url": "git+https://github.com/CampGladiator/CGUI.git"
   },
   "scripts": {
-    "build": "babel lib -d build",
-    "start": "yarn build --watch"
+    "build": "babel src -d build",
+    "start": "yarn build --watch",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/CampGladiator/CGUI/issues"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-enzyme"
+    ],
+    "testEnvironment": "enzyme"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -31,6 +38,16 @@
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-react": "^7.0.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "jest": "^24.8.0",
+    "jest-environment-enzyme": "^7.0.2",
+    "jest-enzyme": "^7.0.2",
+    "prop-types": "^15.7.2",
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
   }
 }

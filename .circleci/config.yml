@@ -20,8 +20,11 @@ jobs:
           name: Ensure dependencies are present
           command: yarn install
       - run:
-          name: Lint styles
+          name: Run linter
           command: yarn run lint
+      - run:
+          name: Run tests
+          command: yarn run test
       - persist_to_workspace:
           root: /home/circleci
           paths:
