@@ -11,7 +11,7 @@ storiesOf('Elements|Inputs', module)
     'Default',
     () => (
       <>
-        <Input rounded placeholder="Placeholder" />
+        <Input placeholder="Placeholder" />
         <Input input value="Filled" />
         <Input centered placeholder="Placeholder" />
         <Input centered value="Filled" />
@@ -33,21 +33,13 @@ storiesOf('Elements|Inputs', module)
           <label className="label" htmlFor="1">
             label:
           </label>
-          <Input
-            id="1"
-            rounded
-            placeholder="Placeholder"
-          />
+          <Input id="1" rounded placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
           <label className="label" htmlFor="1">
             label:
           </label>
-          <Input
-            id="1"
-            rounded
-            placeholder="Placeholder"
-          />
+          <Input id="1" rounded placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
           <label className="label" htmlFor="1">
@@ -96,14 +88,11 @@ storiesOf('Elements|Inputs', module)
     () => (
       <>
         <div className="fieldset fieldset--inline">
-          <Input  placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
           <Input separator placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
-          <Input
-            width="66%"
-            placeholder="Placeholder"
-          />
+          <Input style={{ flex: '0 0 66%' }} placeholder="Placeholder" />
           <Input separator placeholder="Placeholder" />
         </div>
       </>
