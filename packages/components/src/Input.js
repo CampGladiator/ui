@@ -1,28 +1,19 @@
 import React from 'react'
-import cn from 'classnames'
 import PropTypes from 'prop-types'
 
+import mods from './internal/mods'
 
-const Input = ({
-  inputType,
-  placeholder,
-  value
-}) => (
+const Input = ({ centered, rounded, separator, className, ...rest }) => (
   <input
-    className={cn(
-      "input",
-      `input--${inputType}`
-    )}
-
-    placeholder={placeholder}
-    value={value}
+    className={mods('input', { centered, rounded, separator }, className)}
+    {...rest}
   />
 )
 
 Input.propTypes = {
-  inputType: PropTypes.string,
-  placeholder: PropTypes.string,
-  value: PropTypes.string
+  centered: PropTypes.bool,
+  rounded: PropTypes.bool,
+  separator: PropTypes.bool,
 }
 
 export default Input

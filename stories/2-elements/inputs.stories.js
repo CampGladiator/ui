@@ -11,18 +11,18 @@ storiesOf('Elements|Inputs', module)
     'Default',
     () => (
       <>
-        <Input placeholder="Placeholder" />
+        <Input rounded placeholder="Placeholder" />
         <Input input value="Filled" />
-        <Input inputType="centered" placeholder="Placeholder" />
-        <Input inputType="centered" value="Filled" />
+        <Input centered placeholder="Placeholder" />
+        <Input centered value="Filled" />
       </>
     ),
     { layout: { rows: 4 } },
   )
   .add('Rounded', () => (
     <>
-      <Input inputType="rounded" placeholder="Placeholder" />
-      <Input inputType="rounded" value="Filled" />
+      <Input rounded placeholder="Placeholder" />
+      <Input rounded value="Filled" />
     </>
   ))
   .add(
@@ -33,9 +33,9 @@ storiesOf('Elements|Inputs', module)
           <label className="label" htmlFor="1">
             label:
           </label>
-          <input
+          <Input
             id="1"
-            className="input input--rounded"
+            rounded
             placeholder="Placeholder"
           />
         </div>
@@ -45,7 +45,7 @@ storiesOf('Elements|Inputs', module)
           </label>
           <Input
             id="1"
-            inputType="rounded"
+            rounded
             placeholder="Placeholder"
           />
         </div>
@@ -53,7 +53,7 @@ storiesOf('Elements|Inputs', module)
           <label className="label" htmlFor="1">
             label:
           </label>
-          <Input id="1" inputType="rounded" value="Filled" />
+          <Input id="1" rounded value="Filled" />
         </div>
       </>
     ),
@@ -97,14 +97,14 @@ storiesOf('Elements|Inputs', module)
       <>
         <div className="fieldset fieldset--inline">
           <Input  placeholder="Placeholder" />
-          <Input inputType="separator" placeholder="Placeholder" />
+          <Input separator placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
           <Input
             width="66%"
             placeholder="Placeholder"
           />
-          <Input inputType="separator" placeholder="Placeholder" />
+          <Input separator placeholder="Placeholder" />
         </div>
       </>
     ),
