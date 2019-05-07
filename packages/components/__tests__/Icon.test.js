@@ -20,15 +20,13 @@ describe('<Icon />', () => {
     ).toHaveProperty('fontSize', 16)
   })
 
-  it('should use 18px as the default size', () => {
-    expect(
-      shallow(<Icon name="alert" />)
-        .first()
-        .prop('style'),
-    ).toHaveProperty('fontSize', 18)
-  })
-
   it('should render icon as an <i>', () => {
     expect(shallow(<Icon name="alert" />).name()).toBe('i')
+  })
+
+  it('should accept a className', () => {
+    expect(
+      shallow(<Icon className="my-icon" name="alert" />).hasClass('my-icon'),
+    ).toBe(true)
   })
 })

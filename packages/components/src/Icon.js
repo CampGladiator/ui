@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Icon = ({ name, size = 18, ariaHidden = true }) => (
+const Icon = ({ className = '', name, size, ariaHidden = true }) => (
   <i
-    className={`icon icon--${name}`}
+    className={`icon icon--${name} ${className}`}
     style={{ fontSize: size }}
     aria-hidden={ariaHidden}
   />

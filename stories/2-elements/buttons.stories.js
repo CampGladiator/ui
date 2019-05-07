@@ -53,21 +53,19 @@ storiesOf('Elements|Buttons', module)
       <Button primary size="xsmall">
         extra small
       </Button>
-      <Button solid size="xlarge">
-        <i className="button__icon icon icon--check" />
+      <Button solid size="xlarge" icon="check">
         extra large
       </Button>
-      <Button solid size="large">
-        <i className="button__icon icon icon--check" /> large
+      <Button solid size="large" icon="check">
+        large
       </Button>
-      <Button solid>
-        <i className="button__icon icon icon--check" /> default
+      <Button solid icon="check">
+        default
       </Button>
-      <Button solid size="small">
-        <i className="button__icon icon icon--check" /> small
+      <Button solid size="small" icon="check">
+        small
       </Button>
-      <Button solid size="xsmall">
-        <i className="button__icon icon icon--check" />
+      <Button solid size="xsmall" icon="check">
         extra small
       </Button>
     </>
