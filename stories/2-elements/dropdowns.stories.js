@@ -22,5 +22,5 @@ storiesOf('Elements|Dropdowns', module).add(
       </div>
     </>
   ),
-  { layout: { rows: 3, template: '300px' } },
+  { layout: { rows: 3, template: '300px' }, info: { maxPropArrayLength: 0 } },
 )
