@@ -12,7 +12,7 @@ storiesOf('Elements|Inputs', module)
     () => (
       <>
         <Input placeholder="Placeholder" />
-        <Input input value="Filled" />
+        <Input value="Filled" />
         <Input centered placeholder="Placeholder" />
         <Input centered value="Filled" />
       </>

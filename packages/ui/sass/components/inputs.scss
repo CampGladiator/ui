@@ -4,6 +4,7 @@ $input-border: 2px solid #ccc;
   display: flex;
   width: 100%;
   flex-direction: column;
+  line-height: normal;
 
   &--inline {
     flex-direction: row;
@@ -88,7 +89,6 @@ $input-border: 2px solid #ccc;
     border-radius: 999px;
     box-sizing: border-box;
     height: 41px;
-    line-height: 36px;
     padding: 0 16px;
   }
 
