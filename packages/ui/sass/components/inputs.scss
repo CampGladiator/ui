@@ -4,7 +4,6 @@ $input-border: 2px solid #ccc;
   display: flex;
   width: 100%;
   flex-direction: column;
-  line-height: normal;
 
   &--inline {
     flex-direction: row;
@@ -48,6 +47,7 @@ $input-border: 2px solid #ccc;
   box-sizing: content-box;
   color: $navy;
   display: inline-block;
+  line-height: normal;
   font-weight: 400;
   height: 38px;
   min-width: 1px;
