@@ -47,6 +47,7 @@ $input-border: 2px solid #ccc;
   box-sizing: content-box;
   color: $navy;
   display: inline-block;
+  line-height: normal;
   font-weight: 400;
   height: 38px;
   min-width: 1px;
@@ -88,7 +89,6 @@ $input-border: 2px solid #ccc;
     border-radius: 999px;
     box-sizing: border-box;
     height: 41px;
-    line-height: 36px;
     padding: 0 16px;
   }
 

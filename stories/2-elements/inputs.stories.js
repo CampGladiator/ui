@@ -2,24 +2,27 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
+import Input from '../../packages/components/src/Input'
+import Button from '../../packages/components/src/Button'
+
 storiesOf('Elements|Inputs', module)
   .addParameters({ layout: { rows: 2, template: '300px', gap: '50px 0' } })
   .add(
     'Default',
     () => (
       <>
-        <input className="input" placeholder="Placeholder" />
-        <input className="input" value="Filled" />
-        <input className="input input--centered" placeholder="Placeholder" />
-        <input className="input input--centered" value="Filled" />
+        <Input placeholder="Placeholder" />
+        <Input value="Filled" />
+        <Input centered placeholder="Placeholder" />
+        <Input centered value="Filled" />
       </>
     ),
     { layout: { rows: 4 } },
   )
   .add('Rounded', () => (
     <>
-      <input className="input input--rounded" placeholder="Placeholder" />
-      <input className="input input--rounded" value="Filled" />
+      <Input rounded placeholder="Placeholder" />
+      <Input rounded value="Filled" />
     </>
   ))
   .add(
@@ -30,27 +33,19 @@ storiesOf('Elements|Inputs', module)
           <label className="label" htmlFor="1">
             label:
           </label>
-          <input
-            id="1"
-            className="input input--rounded"
-            placeholder="Placeholder"
-          />
+          <Input id="1" rounded placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
           <label className="label" htmlFor="1">
             label:
           </label>
-          <input
-            id="1"
-            className="input input--rounded"
-            placeholder="Placeholder"
-          />
+          <Input id="1" rounded placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
           <label className="label" htmlFor="1">
             label:
           </label>
-          <input id="1" className="input input--rounded" value="Filled" />
+          <Input id="1" rounded value="Filled" />
         </div>
       </>
     ),
@@ -63,23 +58,23 @@ storiesOf('Elements|Inputs', module)
     () => (
       <>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
-            <button className="button button--small button--solid button--secondary">
+            <Button solid secondary size="small">
               action
-            </button>
+            </Button>
           </div>
         </div>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
-            <button className="button button--xsmall button--outline button--gray">
+            <Button size="xsmall" outline gray>
               action
-            </button>
+            </Button>
           </div>
         </div>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
           <div className="fieldset fieldset__addon">
             <i className="icon icon--check" />
           </div>
@@ -93,16 +88,12 @@ storiesOf('Elements|Inputs', module)
     () => (
       <>
         <div className="fieldset fieldset--inline">
-          <input className="input" placeholder="Placeholder" />
-          <input className="input input--separator" placeholder="Placeholder" />
+          <Input placeholder="Placeholder" />
+          <Input separator placeholder="Placeholder" />
         </div>
         <div className="fieldset fieldset--inline">
-          <input
-            className="input"
-            style={{ flex: '0 0 66%' }}
-            placeholder="Placeholder"
-          />
-          <input className="input input--separator" placeholder="Placeholder" />
+          <Input style={{ flex: '0 0 66%' }} placeholder="Placeholder" />
+          <Input separator placeholder="Placeholder" />
         </div>
       </>
     ),

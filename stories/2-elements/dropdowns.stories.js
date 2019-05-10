@@ -2,32 +2,25 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
+import Dropdown from '../../packages/components/src/Dropdown'
+
+const options = [
+  { label: 'item 1', value: '1' },
+  { label: 'item 2', value: '2' },
+  { label: 'item 3', value: '3' },
+]
+
 storiesOf('Elements|Dropdowns', module).add(
   'Default',
   () => (
     <>
-      <select className="input input--rounded input--dropdown">
-        <option value="">SELECT</option>
-        <option value="1">item 1</option>
-        <option value="2">item 2</option>
-        <option value="3">item 3</option>
-      </select>
-      <select className="input input--rounded input--dropdown" disabled>
-        <option value="">SELECT</option>
-        <option value="1">item 1</option>
-        <option value="2">item 2</option>
-        <option value="3">item 3</option>
-      </select>
+      <Dropdown options={options} />
+      <Dropdown disabled options={options} />
       <div className="fieldset">
         <label className="label">label:</label>
-        <select className="input input--rounded input--dropdown">
-          <option value="">SELECT</option>
-          <option value="1">item 1</option>
-          <option value="2">item 2</option>
-          <option value="3">item 3</option>
-        </select>
+        <Dropdown options={options} />
       </div>
     </>
   ),
-  { layout: { rows: 3, template: '300px' } },
+  { layout: { rows: 3, template: '300px' }, info: { maxPropArrayLength: 0 } },
 )
