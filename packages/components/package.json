@@ -6,6 +6,7 @@
   "homepage": "https://github.com/CampGladiator/CGUI/tree/master/packages/components#readme",
   "license": "",
   "main": "",
+  "private": true,
   "sideEffects": false,
   "directories": {
     "lib": "src",

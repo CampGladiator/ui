@@ -40,7 +40,7 @@ jobs:
             - '6d:92:f9:6e:b7:4e:05:34:df:a8:e6:c2:4d:32:a4:78'
       - run:
           name: Add NPM token
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+          command: npx lerna exec --no-private --bail=false -- "echo \"//registry.npmjs.org/:_authToken=$NPM_TOKEN\" > .npmrc"
       - run:
           name: Publish package to NPM
           command: yarn run release
