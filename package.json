@@ -5,13 +5,13 @@
   "scripts": {
     "start": "concurrently \"yarn run storybook\" \"lerna run start --stream\"",
     "build": "lerna run build",
-    "release": "lerna exec --no-private --bail=false -- \"npm publish\"",
+    "release": "lerna publish from-package --yes",
     "test": "lerna run test --stream --no-bail",
     "test:watch": "lerna run test --stream --no-bail -- --watch",
     "lint": "lerna run lint --stream --no-bail",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
-    "deploy": "storybook-to-ghpages --ci -t"
+    "deploy": "build-storybook && storybook-to-ghpages --ci --existing-output-dir=storybook-static"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^5.0.5",
