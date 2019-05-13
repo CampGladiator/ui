@@ -43,7 +43,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
       - run:
           name: Publish package to NPM
-          command: npm publish
+          command: yarn run release
       - run:
           name: Deploy Storybook to GitHub Pages
           command: yarn run deploy
