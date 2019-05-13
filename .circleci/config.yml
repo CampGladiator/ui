@@ -12,7 +12,7 @@ executors:
         <<: *dockerhub_auth
 
 jobs:
-  lint:
+  lint_and_test:
     executor: browser
     steps:
       - checkout
@@ -37,16 +37,29 @@ jobs:
           at: /home/circleci
       - add_ssh_keys:
           fingerprints:
-            - '6d:92:f9:6e:b7:4e:05:34:df:a8:e6:c2:4d:32:a4:78'
+            - '6e:5f:a1:a8:1b:1c:52:a4:92:7c:e6:32:21:58:c2:b9'
       - run:
-          name: Add NPM token
+          name: Build packages and Storybook
+          command: yarn run build
+      - run:
+          name: Deploy Storybook to GitHub Pages
+          command: |
+            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+            cd storybook-static
+            git config --get remote.origin.url
+            git init
+            git config user.name "GH Pages Bot"
+            git config user.email "hello@ghbot.com"
+            git config commit.gpgsign false
+            git add .
+            git commit -m "Deploy Storybook to GitHub Pages"
+            git push --force --quiet git@github.com:CampGladiator/ui.git master:gh-pages
+      - run:
+          name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $HOME/.npmrc
       - run:
           name: Publish package to NPM
           command: yarn run release
-      - run:
-          name: Deploy Storybook to GitHub Pages
-          command: yarn run deploy
 
 tag_regex: &tag_regex /^v[0-9]+\.[0-9]+\.[0-9]+$/
 
@@ -54,7 +67,7 @@ workflows:
   version: 2
   continous_integration:
     jobs:
-      - lint:
+      - lint_and_test:
           filters:
             branches:
               only: /.*/
@@ -63,7 +76,7 @@ workflows:
 
       - deploy:
           requires:
-            - lint
+            - lint_and_test
           filters:
             branches:
               ignore: /.*/

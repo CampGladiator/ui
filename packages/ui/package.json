@@ -46,9 +46,6 @@
     "semi": false,
     "trailingComma": "all"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
   "dependencies": {
     "classnames": "^2.2.6",

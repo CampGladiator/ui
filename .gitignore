@@ -9,3 +9,5 @@ build
 
 npm-debug.log
 yarn-error.log
+
+storybook-static
