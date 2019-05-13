@@ -12,7 +12,7 @@ executors:
         <<: *dockerhub_auth
 
 jobs:
-  lint:
+  lint_and_test:
     executor: browser
     steps:
       - checkout
@@ -35,18 +35,20 @@ jobs:
     steps:
       - attach_workspace:
           at: /home/circleci
-      - add_ssh_keys:
-          fingerprints:
-            - '6d:92:f9:6e:b7:4e:05:34:df:a8:e6:c2:4d:32:a4:78'
       - run:
-          name: Add NPM token
+          name: Build packages and Storybook
+          command: yarn run build
+      - run:
+          name: Deploy Storybook to GitHub Pages
+          command: |
+            echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+            yarn run deploy
+      - run:
+          name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $HOME/.npmrc
       - run:
           name: Publish package to NPM
           command: yarn run release
-      - run:
-          name: Deploy Storybook to GitHub Pages
-          command: yarn run deploy
 
 tag_regex: &tag_regex /^v[0-9]+\.[0-9]+\.[0-9]+$/
 
@@ -54,7 +56,7 @@ workflows:
   version: 2
   continous_integration:
     jobs:
-      - lint:
+      - lint_and_test:
           filters:
             branches:
               only: /.*/
@@ -63,7 +65,7 @@ workflows:
 
       - deploy:
           requires:
-            - lint
+            - lint_and_test
           filters:
             branches:
               ignore: /.*/
