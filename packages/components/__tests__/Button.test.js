@@ -45,4 +45,8 @@ describe('<Button />', () => {
 
     expect(handler).toHaveProperty('callCount', 1)
   })
+
+  it('should has some text content', () => {
+    expect(shallow(<Button textContent={'Placeholder'}/>).find('span').text()).toEqual('Placeholder')
+  })
 })
