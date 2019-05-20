@@ -3,7 +3,6 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Button from '../../packages/components/src/Button'
-import EllipsisLoader from '../../packages/components/src/EllipsisLoader'
 
 storiesOf('Components|EllipsisLoader', module)
     .addParameters({ layout: { rows: 5, gap: '10px 0' } })
