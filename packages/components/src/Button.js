@@ -5,7 +5,7 @@ import Media from './internal/Media'
 import Icon from './Icon'
 import mods from './internal/mods'
 import bp from './breakpoints'
-import EllipsisLoader from './EllipsisLoader';
+import EllipsisLoader from './EllipsisLoader'
 
 const Button = ({
   className,
@@ -23,7 +23,6 @@ const Button = ({
   children,
   onClick,
   icon,
-  textContent
 }) => (
   <button
     className={mods(
@@ -31,11 +30,11 @@ const Button = ({
       { primary, secondary, solid, outline, dark, gray, white },
       size && `button--${size}`,
       Media.toModifiers('button', media),
-      loading && "button--disabled-color",
+      loading && 'button__loading',
       className,
     )}
     disabled={disabled}
-    onClick= {onClick}
+    onClick={onClick}
   >
     {icon && <Icon className="button__icon" name={icon} />}
     {loading ? <EllipsisLoader /> : children}
@@ -59,7 +58,6 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   children: PropTypes.node,
   media: Media.propTypeFor(Size),
-  textContent: PropTypes.string,
 }
 
 export default Button
