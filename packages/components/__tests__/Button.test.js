@@ -11,7 +11,9 @@ describe('<Button />', () => {
   })
 
   it('accepts any extra classes', () => {
-    expect(shallow(<Button className="my-button" />).hasClass('my-button')).toBe(true)
+    expect(
+      shallow(<Button className="my-button" />).hasClass('my-button'),
+    ).toBe(true)
   })
 
   it('renders button with modifier class', () => {
@@ -44,9 +46,5 @@ describe('<Button />', () => {
       .simulate('click')
 
     expect(handler).toHaveProperty('callCount', 1)
-  })
-
-  it('should has some text content', () => {
-    expect(shallow(<Button textContent={'Placeholder'}/>).find('span').text()).toEqual('Placeholder')
   })
 })

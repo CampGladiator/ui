@@ -1,15 +1,16 @@
 import React from 'react'
 
-const EllipsisLoader = ({
-}) => (
-      <div className="loader">
-        {[...Array(3)].map((n, i) => {
-          return <div className="loader__circle" key={i + 1}></div>
-        }
-      )}
-      </div>
-  )
-
-
+const EllipsisLoader = ({ label = 'loading' }) => (
+  <figure
+    className="loader"
+    role="alert"
+    aria-live="assertive"
+    aria-label={label}
+  >
+    <div className="loader__circle" key={1} />
+    <div className="loader__circle" key={2} />
+    <div className="loader__circle" key={3} />
+  </figure>
+)
 
 export default EllipsisLoader
