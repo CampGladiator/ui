@@ -89,6 +89,10 @@ $white-tint: rgba(255, 255, 255, 0.4);
     cursor: default;
   }
 
+  &--disabled-color {
+    border-color: #c8102e
+  }
+
   &__icon {
     margin-right: 10px;
   }

@@ -3,28 +3,23 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Button from '../../packages/components/src/Button'
-import Loader from '../../packages/components/src/Loader'
+import EllipsisLoader from '../../packages/components/src/EllipsisLoader'
 
-storiesOf('Components|Loader', module)
+storiesOf('Components|EllipsisLoader', module)
     .addParameters({ layout: { rows: 5, gap: '10px 0' } })
     .add(
     'Default',
     () => (
         <>
-            <Button textContent={'Placeholder'} category={'loader'} red outline size="xlarge">
-              <Loader />
+            <Button loading={true} outline size="xlarge">
             </Button>
-            <Button textContent={'Placeholder'} category={'loader'} red outline size="large">
-              <Loader />
+            <Button outline size="large">
             </Button>
-            <Button textContent={'Placeholder'} category={'loader'} red outline>
-              <Loader />
+            <Button loading={true} outline>
             </Button>
-            <Button textContent={'Placeholder'} category={'loader'} red outline size="small">
-              <Loader />
+            <Button outline size="small">
             </Button>
-            <Button textContent={'Placeholder'} category={'loader'} red outline size="xsmall">
-              <Loader />
+            <Button loading={true} outline size="xsmall">
             </Button>
         </>
     ),

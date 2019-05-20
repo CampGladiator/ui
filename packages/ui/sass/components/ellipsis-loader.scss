@@ -2,7 +2,6 @@ $background_color: #FF0000;
 
 @keyframes loader {
 	50% {
-    /* transform: translateY(-10px); */
     transform: scale(.5,.5);
 		opacity: 0.3;
   }
@@ -17,7 +16,7 @@ $background_color: #FF0000;
 	margin: 0 auto;
 	position: relative;
 	right: -5%;
-	.loader__circle {
+	&__circle {
 		height: 10px;
 		width: 10px;
 		background-color: $background_color;
@@ -27,7 +26,7 @@ $background_color: #FF0000;
 		opacity: 0.5;
 		border-radius: 50%;
 	}
-	>.loader__circle {
+	>&__circle {
 		&:nth-child(1) {
 			animation-delay: 0.1s;
 		}
@@ -38,8 +37,4 @@ $background_color: #FF0000;
 			animation-delay: 0.3s;
 		}
 	}
-}
-
-.button--disabled-color {
-  border-color: #c8102e
 }

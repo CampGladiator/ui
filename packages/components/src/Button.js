@@ -5,15 +5,7 @@ import Media from './internal/Media'
 import Icon from './Icon'
 import mods from './internal/mods'
 import bp from './breakpoints'
-
-const startLoader = (event) => {
-  let textButton = event.currentTarget.firstElementChild
-  event.currentTarget.lastElementChild.classList.toggle("loader")
-  event.currentTarget.disabled = true
-  event.currentTarget.classList.toggle("button--disabled-color")
-  event.currentTarget.removeChild(textButton)
-
-}
+import EllipsisLoader from './EllipsisLoader';
 
 const Button = ({
   className,
@@ -24,7 +16,7 @@ const Button = ({
   dark,
   gray,
   white,
-  category,
+  loading,
   size,
   media = {},
   disabled,
@@ -39,19 +31,18 @@ const Button = ({
       { primary, secondary, solid, outline, dark, gray, white },
       size && `button--${size}`,
       Media.toModifiers('button', media),
+      loading && "button--disabled-color",
       className,
     )}
     disabled={disabled}
-    onClick= {category === 'loader' ? startLoader : onClick}
+    onClick= {onClick}
   >
-    <span>{textContent}</span>
     {icon && <Icon className="button__icon" name={icon} />}
-    {children}
+    {loading ? <EllipsisLoader /> : children}
   </button>
 )
 
 const Size = PropTypes.oneOf(['xsmall', 'small', 'large', 'xlarge'])
-const Category = PropTypes.oneOf(['normal', 'loader'])
 
 Button.propTypes = {
   className: PropTypes.string,
@@ -64,7 +55,7 @@ Button.propTypes = {
   gray: PropTypes.bool,
   white: PropTypes.bool,
   size: Size,
-  category: Category,
+  loading: PropTypes.bool,
   disabled: PropTypes.bool,
   children: PropTypes.node,
   media: Media.propTypeFor(Size),
