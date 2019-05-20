@@ -89,7 +89,7 @@ $white-tint: rgba(255, 255, 255, 0.4);
     cursor: default;
   }
 
-  &__loading {
+  &--loading {
     pointer-events: none;
   }
 
