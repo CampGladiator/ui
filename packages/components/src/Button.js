@@ -30,7 +30,7 @@ const Button = ({
       { primary, secondary, solid, outline, dark, gray, white },
       size && `button--${size}`,
       Media.toModifiers('button', media),
-      loading && 'button__loading',
+      loading && 'button--loading',
       className,
     )}
     disabled={disabled}
