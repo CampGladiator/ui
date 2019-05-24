@@ -3,6 +3,7 @@ import { shallow } from 'enzyme'
 import sinon from 'sinon'
 
 import Button from '../src/Button'
+import EllipsisLoader from '../src/EllipsisLoader'
 import bp from '../src/breakpoints'
 
 describe('<Button />', () => {
@@ -35,6 +36,16 @@ describe('<Button />', () => {
       shallow(<Button media={{ [bp.phoneOnly]: 'xsmall' }} />).hasClass(
         'button--xsmall@phone-only',
       ),
+    ).toBe(true)
+  })
+
+  it('renders a loader when in loading state', () => {
+    expect(shallow(<Button loading />).contains(<EllipsisLoader />)).toBe(true)
+  })
+
+  it('renders a white loader the button is solid and loading', () => {
+    expect(
+      shallow(<Button solid loading />).contains(<EllipsisLoader white />),
     ).toBe(true)
   })
 
