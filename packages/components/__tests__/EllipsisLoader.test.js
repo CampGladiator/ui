@@ -8,8 +8,14 @@ describe('<EllipsisLoader />', () => {
     expect(
       shallow(<EllipsisLoader />)
         .first()
-        .find('div.loader__circle'),
+        .children(),
     ).toHaveLength(3)
+  })
+
+  it('should add `white` modifier', () => {
+    expect(
+      shallow(<EllipsisLoader white />).find('.ellipsis-loader--white'),
+    ).toExist()
   })
 
   it('should have the `aria-live` attribute set to "assertive"', () => {
