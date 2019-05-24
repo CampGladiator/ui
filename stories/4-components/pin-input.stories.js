@@ -13,7 +13,7 @@ storiesOf('Components|Pin Input', module).add(
             className="pin-input__char form-field"
             placeholder="-"
             type="tel"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <span className="pin-input-part">
@@ -22,7 +22,7 @@ storiesOf('Components|Pin Input', module).add(
             className="pin-input__char form-field"
             placeholder="-"
             type="tel"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <span className="pin-input-part">
@@ -31,7 +31,7 @@ storiesOf('Components|Pin Input', module).add(
             className="pin-input__char form-field"
             placeholder="-"
             type="tel"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <span className="pin-input-part">
@@ -40,7 +40,7 @@ storiesOf('Components|Pin Input', module).add(
             className="pin-input__char form-field"
             placeholder="-"
             type="tel"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <button className="pin-input__toggle-visibility" type="button">
@@ -55,7 +55,7 @@ storiesOf('Components|Pin Input', module).add(
             placeholder="-"
             type="tel"
             value="1"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <span className="pin-input-part pin-input-part--filled">
@@ -65,7 +65,7 @@ storiesOf('Components|Pin Input', module).add(
             placeholder="-"
             type="tel"
             value="1"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <span className="pin-input-part pin-input-part--filled">
@@ -75,7 +75,7 @@ storiesOf('Components|Pin Input', module).add(
             placeholder="-"
             type="tel"
             value="1"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <span className="pin-input-part pin-input-part--filled">
@@ -85,7 +85,7 @@ storiesOf('Components|Pin Input', module).add(
             placeholder="-"
             type="tel"
             value="1"
-            inputmode="numeric"
+            inputMode="numeric"
           />
         </span>
         <button className="pin-input__toggle-visibility" type="button">

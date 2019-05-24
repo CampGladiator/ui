@@ -89,6 +89,10 @@ $white-tint: rgba(255, 255, 255, 0.4);
     cursor: default;
   }
 
+  &--loading {
+    pointer-events: none;
+  }
+
   &__icon {
     margin-right: 10px;
   }

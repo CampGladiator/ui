@@ -2,6 +2,7 @@
 @import 'sass/settings/variables';
 
 @import 'sass/tools/breakpoints';
+@import 'sass/tools/animations';
 
 @import 'sass/generic/normalize';
 @import 'sass/generic/box-sizing';
@@ -14,6 +15,7 @@
 
 @import 'sass/components/buttons';
 @import 'sass/components/button-groups';
+@import 'sass/components/ellipsis-loader';
 @import 'sass/components/inputs';
 @import 'sass/components/checkboxes';
 @import 'sass/components/labels';
