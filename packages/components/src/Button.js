@@ -37,7 +37,7 @@ const Button = ({
     onClick={onClick}
   >
     {icon && <Icon className="button__icon" name={icon} />}
-    {loading ? <EllipsisLoader /> : children}
+    {loading ? <EllipsisLoader white={solid} /> : children}
   </button>
 )
 

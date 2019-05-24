@@ -251,6 +251,30 @@ storiesOf('Elements|Buttons', module)
     },
   )
   .add(
+    'Loading',
+    () => (
+      <>
+        <Button loading size="xlarge">
+          Placeholder
+        </Button>
+        <Button outline loading size="xlarge">
+          Placeholder
+        </Button>
+        <Button primary solid loading size="xlarge">
+          Placeholder
+        </Button>
+        <Button secondary solid loading size="xlarge">
+          Placeholder
+        </Button>
+        <Button dark solid loading size="xlarge">
+          Placeholder
+        </Button>
+      </>
+    ),
+    { layout: { rows: 6, gap: '10px 0' } },
+  )
+
+  .add(
     'Responsive',
     () => (
       <div className="text-center">
