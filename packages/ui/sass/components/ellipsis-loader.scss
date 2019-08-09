@@ -2,10 +2,6 @@
   display: inline-block;
   width: 34px;
 
-  &--white &__dot {
-    background-color: white;
-  }
-
   &__dot {
     height: 8px;
     width: 8px;
@@ -13,6 +9,10 @@
     float: left;
     animation: bounce 0.7s infinite;
     border-radius: 50%;
+
+    &--white {
+      background-color: white;
+    }
 
     & + & {
       margin-left: 5px;
