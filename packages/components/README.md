@@ -3,7 +3,7 @@
 A component library for CampGladiator's React apps. Depends on [```@campgladiator/ui```](https://github.com/CampGladiator/ui/tree/master/packages/ui).
 
 ```bash
-$ yarn add @campgladiator/components
+$ yarn add @campgladiator/ui @campgladiator/components
 ```
 
 ## Usage
