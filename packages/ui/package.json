@@ -9,15 +9,17 @@
     "url": "git+https://github.com/CampGladiator/CGUI.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "UNLICENSED",
+	"author": "renanpvaz <renan.piresvz@gmail.com>",
+  "license": "SEE LICENSE IN license.txt",
   "bugs": {
     "url": "https://github.com/CampGladiator/CGUI/issues"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "clean-css-cli": "^4.2.1",
+    "fstream": "^1.0.12",
     "lerna": "^3.13.4",
+    "lodash": "^4.17.13",
     "node-sass": "^4.12.0",
     "postcss-cli": "^6.1.1",
     "rimraf": "^2.6.3",

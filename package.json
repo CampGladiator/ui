@@ -25,7 +25,9 @@
     "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.5",
     "concurrently": "^4.1.0",
+    "fstream": "^1.0.12",
     "lerna": "^3.13.4",
+    "lodash": "^4.17.13",
     "prettier": "1.17.0",
     "storybook-react-omit": "^1.0.0"
   },
