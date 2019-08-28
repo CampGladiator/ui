@@ -1,6 +1,6 @@
 {
   "name": "@campgladiator/ui",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Sass implementation of CampGladiator's Design System",
   "style": "build/main.css",
   "sass": "main.sass",
@@ -9,7 +9,7 @@
     "url": "git+https://github.com/CampGladiator/CGUI.git"
   },
   "keywords": [],
-	"author": "renanpvaz <renan.piresvz@gmail.com>",
+  "author": "renanpvaz <renan.piresvz@gmail.com>",
   "license": "SEE LICENSE IN license.txt",
   "bugs": {
     "url": "https://github.com/CampGladiator/CGUI/issues"
