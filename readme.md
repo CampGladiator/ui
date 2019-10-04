@@ -2,13 +2,16 @@
   <img src="header.png" alt="CampGladiator's UI">
   <br>
   <br>
-  <p>The implementation of Camp Gladiator's Design System.</p>
+  <p>NPM Packages for Camp Gladiator's Design System.</p>
   <p>
     <a aria-label="npm package" href="https://www.npmjs.com/package/@campgladiator/ui">
-      <img alt="" src="https://img.shields.io/npm/v/@campgladiator/ui.svg">
+      <img alt="npm package" src="https://img.shields.io/npm/v/@campgladiator/ui.svg">
     </a>
     <a aria-label="last commit" href="https://github.com/primer/css/commits/master">
-      <img alt="" src="https://img.shields.io/github/last-commit/CampGladiator/cgui.svg">
+      <img alt="last commit" src="https://img.shields.io/github/last-commit/CampGladiator/cgui.svg">
+    </a>
+    <a aria-label="lerna badge" href="https://lerna.js.org/">
+      <img alt="lerna badge" src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg">
     </a>
   </p>
 </div>
@@ -18,10 +21,29 @@
 - [```@campgladiator/components```](https://github.com/CampGladiator/ui/tree/master/packages/components): collection of React components that depends on the above;
 
 
-## Basic Usage for React apps
-Install the necessary dependencies:
+## Basic Usage
+CGUI can be used in two ways:
+1. As a collection of react components
+2. As a stripped-down sass library
+
+Using the react component library offers the most benefits. This is always recommended for react apps.
+
+For apps not using react, the Sass library can be used to allow you to access basic styles and create your own components based on the existing style library.
+
+*Note: The Sass library is standalone, but the React components require the Sass library as a dependency.*
+
+**Install the necessary dependencies:**
+
+*React Component Library*
 ```bash
 $ yarn add @campgladiator/ui @campgladiator/components
+```
+
+**OR:**
+
+*Standalone Sass Library*
+```bash
+$ yarn add @campgladiator/ui 
 ```
 
 The included source files are written in Sass. After installing you can add your project's `node_modules` directory to your Sass [include paths](https://github.com/sass/node-sass#includepaths), then import it like this:

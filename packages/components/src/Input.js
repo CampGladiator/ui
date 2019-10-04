@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import mods from './internal/mods'
 
 const Input = ({ centered, rounded, separator, className, ...rest }) => (

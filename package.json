@@ -5,7 +5,7 @@
   "scripts": {
     "start": "concurrently \"yarn run storybook\" \"lerna run start --stream\"",
     "build": "lerna run build && build-storybook",
-    "release": "lerna publish --yes",
+    "release": "lerna publish from-package --yes",
     "test": "lerna run test --stream --no-bail",
     "test:watch": "lerna run test --stream --no-bail -- --watch",
     "lint": "lerna run lint --stream --no-bail",
