@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import mods from './internal/mods'
+import Icon from './Icon'
 
 const Growl = ({ isError, children, onClick }) => (
   <div className={mods('growl-msg', isError && 'growl-msg--error')}>
     <div className="growl-msg__text">{children}</div>
-    <a className="fa fa-close growl-msg__close-btn" onClick={onClick} />
+    <Icon className="growl-msg__close-btn" name='close' onClick={onClick}/>
   </div>
 )
 

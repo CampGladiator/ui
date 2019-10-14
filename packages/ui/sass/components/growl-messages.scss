@@ -1,0 +1,39 @@
+.growl-msg {
+  font-family: 'Gotham';
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 90%;
+  color: white;
+  background-color: $navy;
+  font-weight: 300;
+  padding: 25px 25px;
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  transition: 0.2s color linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9997;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  animation: fade-in-right 0.75s;
+
+  &--error {
+    background-color: $gladiator;
+  }
+
+  &__close-btn {
+    display: block;
+    margin-left: 25px;
+    font-size: 16px;
+    -webkit-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    transition: 0.15s color linear;
+  }
+
+  &__close-btn:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
