@@ -28,6 +28,7 @@
     "fstream": "^1.0.12",
     "lerna": "^3.13.4",
     "lodash": "^4.17.13",
+    "mixin-deep": "^1.3.2",
     "prettier": "1.17.0",
     "storybook-react-omit": "^1.0.0"
   },
