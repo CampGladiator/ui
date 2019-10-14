@@ -12,10 +12,16 @@ In addition the the requirements above, we maintain the following standards for 
 * Code contributed to the repository should be free and clear of bugs or unworking features that cause breakage of the software.
 * Comments should be removed from the code. The code should be readable enough without the use of comments. This includes //TODO and other comments designed to point to future functionality. If additional work is needed, simply create a new issue card for the feature so the entire team has visibility of the need and is able to act on it.
 * Keep the application in a deployable state at all times. This means any code contributed should be tested and ready for deployment to the system, assuming the PR is approved.
-* All PRs must be approved by at least one other developer who has not worked on the PR.
+* **All PRs must be approved by at least one other developer who has not worked on the PR.**
 * Ensure you have clearly outlined the problem addressed with each PR and stated how you addressed the problem with your code changes.
 * Keep PRs as small as possible. Large PRs require a lengthy review and are more likely to introduce bugs into the platform. It is imperative that developers keep each PR targeted to the problem addressed with the issue card. If you find a problem in the code seperate from the problem the card is designed to address, it is best to open a new issue card and address that problem in a seperate PR.
 * Every PR must be attributed to a specific issue card or issue number.
+
+## Segmenting UI from Components
+
+When developing in this project, keep in mind that the ui package is a dependency of the components package. Additionally, the ui package is standalone. With this in mind, ALL styling should exist in the ui package only. The components package can then be used simply to create simple react components that consume styles from the ui package. 
+
+Additionally, consider keeping the react components as lightweight and scalable as possible to ensure we reduce complexity and interpendency for future projects.
 
 ## Pull Request Process
 
