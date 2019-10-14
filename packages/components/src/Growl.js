@@ -4,9 +4,9 @@ import mods from './internal/mods'
 import Icon from './Icon'
 
 const Growl = ({ isError, children, onClick }) => (
-  <div className={mods('growl-msg', isError && 'growl-msg--error')}>
+  <div className={mods('growl-msg', {}, isError && 'growl-msg--error')}>
     <div className="growl-msg__text">{children}</div>
-    <Icon className="growl-msg__close-btn" name='close' onClick={onClick}/>
+    <Icon className="growl-msg__close-btn" name="close" onClick={onClick} />
   </div>
 )
 

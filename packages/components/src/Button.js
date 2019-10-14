@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import Media from './internal/Media'
 import Icon from './Icon'
 import mods from './internal/mods'
-import bp from './breakpoints'
 import EllipsisLoader from './EllipsisLoader'
 
 const Button = ({
