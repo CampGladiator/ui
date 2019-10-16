@@ -5,7 +5,7 @@
 	"author": "renanpvaz <renan.piresvz@gmail.com>",
 	"homepage": "https://github.com/CampGladiator/CGUI/tree/master/packages/components#readme",
 	"license": "SEE LICENSE IN license.txt",
-	"main": "",
+	"main": "build/",
 	"sideEffects": false,
 	"directories": {
 		"lib": "src",

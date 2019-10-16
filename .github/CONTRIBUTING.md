@@ -27,7 +27,8 @@ Additionally, consider keeping the react components as lightweight and scalable 
 
 Requirements for new PRs can be found in `.github/PULL_REQUEST_TEMPLATE.md`. The contents of this file is also automatically inserted in the description of any PRs that are created ensuring you are able to review each item and check it off before requesting a code review of your PR.
 
-1. New feature documentation in confluence, repo README, or, for non features, explanation of change in commit and issue card.
-1. Minimum 1 test that covers the update/feature.
+1. New feature documentation added and deployed to storybook (yarn deploy).
+1. Minimum 1 unit test that covers the component.
+1. Linter run prior to creation of pull request (yarn lint).
 1. All tests run and passed prior to creation of pull request.
 1. Rebased from Master prior to creation of pull request.
