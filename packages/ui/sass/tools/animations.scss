@@ -8,14 +8,3 @@
     transform: scale(1);
   }
 }
-
-@keyframes fade-in-right {
-  from {
-    opacity: 0;
-    right: -100%;
-  }
-  to {
-    opacity: 1;
-    right: 20px;
-  }
-}
