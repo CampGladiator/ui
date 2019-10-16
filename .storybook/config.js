@@ -2,9 +2,7 @@ import React from 'react'
 
 import { configure, addDecorator, addParameters } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { withA11y } from '@storybook/addon-a11y'
 import { withOmission } from 'storybook-react-omit'
-
 import { storybookTheme, infoAddonStyles } from './theming'
 import StoryLayout from './StoryLayout'
 import '../packages/ui/build/main.css'
@@ -30,6 +28,8 @@ addDecorator(
   }),
 )
 
+addDecorator(withInfo)
+
 addDecorator((story, { parameters }) =>
   parameters.layout ? (
     <StoryLayout {...parameters.layout}>{story()}</StoryLayout>
@@ -37,8 +37,6 @@ addDecorator((story, { parameters }) =>
     story()
   ),
 )
-
-addDecorator(withA11y)
 
 const req = require.context('../stories', true, /.stories.js$/)
 function loadStories() {

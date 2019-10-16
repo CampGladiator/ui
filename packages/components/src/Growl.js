@@ -3,16 +3,22 @@ import PropTypes from 'prop-types'
 import mods from './internal/mods'
 import Icon from './Icon'
 
-const Growl = ({ isError, children, onClick }) => (
-  <div className={mods('growl-msg', {}, isError && 'growl-msg--error')}>
+const Growl = ({ className, id, isError, children, onClick }) => (
+  <div
+    id={id}
+    className={mods('growl-msg', {}, isError && 'growl-msg--error', className)}
+  >
     <div className="growl-msg__text">{children}</div>
-    <Icon className="growl-msg__close-btn" name="close" onClick={onClick} />
+    <a class="growl-msg__close-btn" onClick={onClick}>
+      <Icon className="growl-msg__close-btn" name="close" />
+    </a>
   </div>
 )
 
 Growl.propTypes = {
+  className: PropTypes.string,
+  id: PropTypes.string,
   isError: PropTypes.bool,
-  autoClose: PropTypes.bool,
   children: PropTypes.node,
 }
 
