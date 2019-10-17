@@ -1,0 +1,56 @@
+.logo {
+  display: block;
+  outline: 0;
+  width: auto;
+  height: auto;
+  border: 0 none;
+  text-indent: -9999px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: contain;
+
+  &--cg-full-color-black {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-color-black.svg');
+  }
+
+  &--cg-full-color-white {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-color-white.svg');
+  }
+
+  &--cg-full-black-white {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-black-white.svg');
+  }
+
+  &--cg-full-white {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-white.svg');
+  }
+
+  &--cg-full-black {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-black.svg');
+  }
+
+  &--cg-icon-default {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-default.svg');
+  }
+
+  &--cg-icon-white {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-white.svg');
+  }
+
+  &--cg-icon-black {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-black.svg');
+  }
+
+  &--cg-icon-gray {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-gray.svg');
+  }
+
+  &--cg-icon-light {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-light.svg');
+  }
+
+  &--cg-icon-navy {
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-navy.svg');
+  }
+}
