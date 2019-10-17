@@ -1,18 +1,17 @@
 {
 	"name": "@campgladiator/components",
-	"version": "1.0.1",
+	"version": "1.0.11",
 	"description": "A component library for CampGladiator's React apps",
 	"author": "renanpvaz <renan.piresvz@gmail.com>",
 	"homepage": "https://github.com/CampGladiator/CGUI/tree/master/packages/components#readme",
 	"license": "SEE LICENSE IN license.txt",
-	"main": "build/",
-	"sideEffects": false,
+	"main": "",
 	"directories": {
 		"lib": "src",
 		"test": "__tests__"
 	},
 	"files": [
-		"lib"
+		"src"
 	],
 	"repository": {
 		"type": "git",
