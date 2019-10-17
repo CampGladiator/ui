@@ -1,0 +1,81 @@
+$badge-cdn-path: 'https://s3.amazonaws.com/cgcdn/global-ui/images/badges/';
+
+@mixin add-badge-background-image($name) {
+  @include add-background-image($badge-cdn-path, $name);
+}
+
+%badge-shared {
+  display: block;
+  outline: 0;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.badge {
+  @extend %badge-shared;
+  &--default {
+    @include add-badge-background-image('badge-placeholder.png');
+  }
+  &--bold {
+    @include add-badge-background-image('badge-bold.png');
+  }
+  &--bronze {
+    @include add-badge-background-image('badge-bronze.png');
+  }
+  &--silver {
+    @include add-badge-background-image('badge-silver.png');
+  }
+  &--gold {
+    @include add-badge-background-image('badge-gold.png');
+  }
+  &--elite {
+    @include add-badge-background-image('badge-elite.png');
+  }
+}
+
+.plate {
+  @extend %badge-shared;
+  &--default {
+    @include add-badge-background-image('plate-placeholder.png');
+  }
+  &--bold {
+    @include add-badge-background-image('plate-bold.png');
+  }
+  &--bronze {
+    @include add-badge-background-image('plate-bronze.png');
+  }
+  &--silver {
+    @include add-badge-background-image('plate-silver.png');
+  }
+  &--gold {
+    @include add-badge-background-image('plate-gold.png');
+  }
+  &--elite {
+    @include add-badge-background-image('plate-elite.png');
+  }
+}
+
+.badge-with-plate {
+  @extend %badge-shared;
+  &--default {
+    @include add-badge-background-image('badge-with-plate-placeholder.png');
+  }
+  &--bold {
+    @include add-badge-background-image('badge-with-plate-bold.png');
+  }
+  &--bronze {
+    @include add-badge-background-image('badge-with-plate-bronze.png');
+  }
+  &--silver {
+    @include add-badge-background-image('badge-with-plate-silver.png');
+  }
+  &--gold {
+    @include add-badge-background-image('badge-with-plate-gold.png');
+  }
+  &--elite {
+    @include add-badge-background-image('badge-with-plate-elite.png');
+  }
+}

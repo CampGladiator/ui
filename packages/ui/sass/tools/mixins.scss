@@ -1,0 +1,3 @@
+@mixin add-background-image($path, $img) {
+  background-image: url($path+$img);
+}
