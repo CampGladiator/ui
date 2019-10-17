@@ -17,28 +17,6 @@ $badge-cdn-path: 'https://s3.amazonaws.com/cgcdn/global-ui/images/badges/';
 .badge {
   @extend %badge-shared;
   &--default {
-    @include add-badge-background-image('badge-with-plate-placeholder.png');
-  }
-  &--bold {
-    @include add-badge-background-image('badge-with-plate-bold.png');
-  }
-  &--bronze {
-    @include add-badge-background-image('badge-with-plate-bronze.png');
-  }
-  &--silver {
-    @include add-badge-background-image('badge-with-plate-silver.png');
-  }
-  &--gold {
-    @include add-badge-background-image('badge-with-plate-gold.png');
-  }
-  &--elite {
-    @include add-badge-background-image('badge-with-plate-elite.png');
-  }
-}
-
-.badge-tag {
-  @extend %badge-shared;
-  &--default {
     @include add-badge-background-image('badge-placeholder.png');
   }
   &--bold {
@@ -58,7 +36,7 @@ $badge-cdn-path: 'https://s3.amazonaws.com/cgcdn/global-ui/images/badges/';
   }
 }
 
-.badge-plate {
+.plate {
   @extend %badge-shared;
   &--default {
     @include add-badge-background-image('plate-placeholder.png');
@@ -77,5 +55,27 @@ $badge-cdn-path: 'https://s3.amazonaws.com/cgcdn/global-ui/images/badges/';
   }
   &--elite {
     @include add-badge-background-image('plate-elite.png');
+  }
+}
+
+.badge-with-plate {
+  @extend %badge-shared;
+  &--default {
+    @include add-badge-background-image('badge-with-plate-placeholder.png');
+  }
+  &--bold {
+    @include add-badge-background-image('badge-with-plate-bold.png');
+  }
+  &--bronze {
+    @include add-badge-background-image('badge-with-plate-bronze.png');
+  }
+  &--silver {
+    @include add-badge-background-image('badge-with-plate-silver.png');
+  }
+  &--gold {
+    @include add-badge-background-image('badge-with-plate-gold.png');
+  }
+  &--elite {
+    @include add-badge-background-image('badge-with-plate-elite.png');
   }
 }
