@@ -3,6 +3,7 @@
 
 @import 'sass/tools/breakpoints';
 @import 'sass/tools/animations';
+@import 'sass/tools/mixins';
 
 @import 'sass/generic/normalize';
 @import 'sass/generic/box-sizing';
@@ -29,6 +30,7 @@
 @import 'sass/components/set-selector';
 @import 'sass/components/pin-input';
 @import 'sass/components/card';
+@import 'sass/components/badges';
 
 @import 'sass/utilities/text';
 @import 'sass/utilities/color';
