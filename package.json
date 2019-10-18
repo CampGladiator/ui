@@ -14,22 +14,23 @@
     "deploy": "storybook-to-ghpages --ci --existing-output-dir=storybook-static"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^5.0.5",
-    "@storybook/addon-actions": "^5.0.3",
-    "@storybook/addon-centered": "^5.0.3",
-    "@storybook/addon-info": "^5.0.10",
-    "@storybook/addon-links": "^5.0.3",
-    "@storybook/addon-viewport": "^5.0.3",
-    "@storybook/addons": "^5.0.10",
-    "@storybook/react": "^5.0.10",
+    "@babel/core": "^7.6.4",
+    "@storybook/addon-a11y": "^5.2.4",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-centered": "^5.2.4",
+    "@storybook/addon-info": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addon-viewport": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
     "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.5",
     "concurrently": "^4.1.0",
     "fstream": "^1.0.12",
-    "lerna": "^3.13.4",
+    "lerna": "^3.18.1",
     "lodash": "^4.17.13",
     "mixin-deep": "^1.3.2",
-    "prettier": "1.17.0",
+    "prettier": "1.18.2",
     "storybook-react-omit": "^1.0.0"
   },
   "private": true,
@@ -52,5 +53,8 @@
   },
   "homepage": "https://github.com/CampGladiator/CGUI#readme",
   "name": "CGUI",
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
 }

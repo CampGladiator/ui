@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { storiesOf } from '@storybook/react'
-
 import Icon from '../../packages/components/src/Icon'
 
 const iconList = [
@@ -122,29 +120,33 @@ const iconList = [
   'user-corp-outline',
 ]
 
-storiesOf('Base|Icons', module).add(
-  'List',
-  () => (
-    <>
-      {iconList.map(name => (
-        <span data-tooltip={name}>
-          <Icon name={name} />
-        </span>
-      ))}
+export default {
+  title: 'Base|Icons',
+}
 
-      <style>
-        {`
-        span[data-tooltip] {
-          padding: 15px;
-        }
+export const list = () => (
+  <>
+    {iconList.map(name => (
+      <span data-tooltip={name}>
+        <Icon name={name} />
+      </span>
+    ))}
 
-        span[data-tooltip]:hover i {
-          color: #263746;
-          transform: scale(1.8);
-        }
-      `}
-      </style>
-    </>
-  ),
-  { layout: { rows: 6 } },
+    <style>
+      {`
+      span[data-tooltip] {
+        padding: 15px;
+      }
+
+      span[data-tooltip]:hover i {
+        color: #263746;
+        transform: scale(1.8);
+      }
+    `}
+    </style>
+  </>
 )
+
+list.story = {
+  parameters: { layout: { rows: 6 } },
+}
