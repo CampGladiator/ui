@@ -1,3 +1,9 @@
+$logo-cdn-path: 'https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/';
+
+@mixin add-logo-background-image($name) {
+  @include add-background-image($logo-cdn-path, $name);
+}
+
 .logo {
   display: block;
   outline: 0;
@@ -11,46 +17,46 @@
   background-size: contain;
 
   &--cg-full-color-black {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-color-black.svg');
+    @include add-logo-background-image('full-color-black.svg');
   }
 
   &--cg-full-color-white {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-color-white.svg');
+    @include add-logo-background-image('full-color-white.svg');
   }
 
   &--cg-full-black-white {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-black-white.svg');
+    @include add-logo-background-image('full-black-white.svg');
   }
 
   &--cg-full-white {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-white.svg');
+    @include add-logo-background-image('full-white.svg');
   }
 
   &--cg-full-black {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/full-black.svg');
+    @include add-logo-background-image('full-black.svg');
   }
 
   &--cg-icon-default {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-default.svg');
+    @include add-logo-background-image('icon-default.svg');
   }
 
   &--cg-icon-white {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-white.svg');
+    @include add-logo-background-image('icon-white.svg');
   }
 
   &--cg-icon-black {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-black.svg');
+    @include add-logo-background-image('icon-black.svg');
   }
 
   &--cg-icon-gray {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-gray.svg');
+    @include add-logo-background-image('icon-gray.svg');
   }
 
   &--cg-icon-light {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-light.svg');
+    @include add-logo-background-image('icon-light.svg');
   }
 
   &--cg-icon-navy {
-    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/icon-navy.svg');
+    @include add-logo-background-image('icon-navy.svg');
   }
 }
