@@ -14,6 +14,7 @@
     "deploy": "storybook-to-ghpages --ci --existing-output-dir=storybook-static"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
     "@storybook/addon-a11y": "^5.2.4",
     "@storybook/addon-actions": "^5.2.4",
     "@storybook/addon-centered": "^5.2.4",
