@@ -7,18 +7,18 @@
 	"license": "SEE LICENSE IN license.txt",
 	"main": "",
 	"directories": {
-		"lib": "src",
+		"lib": "lib",
 		"test": "__tests__"
 	},
 	"files": [
-		"src"
+		"lib"
 	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/CampGladiator/CGUI.git"
 	},
 	"scripts": {
-		"build": "babel src -d build",
+		"build": "babel lib -d build",
 		"start": "yarn build --watch",
 		"test": "jest"
 	},
