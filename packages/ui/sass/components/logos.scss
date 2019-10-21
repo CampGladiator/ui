@@ -1,0 +1,62 @@
+$logo-cdn-path: 'https://s3.amazonaws.com/cgcdn/global-ui/images/logos/campgladiator/';
+
+@mixin add-logo-background-image($name) {
+  @include add-background-image($logo-cdn-path, $name);
+}
+
+.logo {
+  display: block;
+  outline: 0;
+  width: auto;
+  height: auto;
+  border: 0 none;
+  text-indent: -9999px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: contain;
+
+  &--cg-full-color-black {
+    @include add-logo-background-image('full-color-black.svg');
+  }
+
+  &--cg-full-color-white {
+    @include add-logo-background-image('full-color-white.svg');
+  }
+
+  &--cg-full-black-white {
+    @include add-logo-background-image('full-black-white.svg');
+  }
+
+  &--cg-full-white {
+    @include add-logo-background-image('full-white.svg');
+  }
+
+  &--cg-full-black {
+    @include add-logo-background-image('full-black.svg');
+  }
+
+  &--cg-icon-default {
+    @include add-logo-background-image('icon-default.svg');
+  }
+
+  &--cg-icon-white {
+    @include add-logo-background-image('icon-white.svg');
+  }
+
+  &--cg-icon-black {
+    @include add-logo-background-image('icon-black.svg');
+  }
+
+  &--cg-icon-gray {
+    @include add-logo-background-image('icon-gray.svg');
+  }
+
+  &--cg-icon-light {
+    @include add-logo-background-image('icon-light.svg');
+  }
+
+  &--cg-icon-navy {
+    @include add-logo-background-image('icon-navy.svg');
+  }
+}
