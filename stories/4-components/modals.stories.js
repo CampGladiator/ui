@@ -1,6 +1,6 @@
 import React from 'react'
-import Icon from '../../packages/components/src/Icon'
-import Button from '../../packages/components/src/Button'
+import Icon from '../../packages/components/lib/Icon'
+import Button from '../../packages/components/lib/Button'
 
 const toggleModal = () =>
   document.getElementById('modal').classList.toggle('modal--open')

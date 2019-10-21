@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Button from '../../packages/components/src/Button'
+import Button from '../../packages/components/lib/Button'
 
 export default {
   title: 'Components|Button groups',

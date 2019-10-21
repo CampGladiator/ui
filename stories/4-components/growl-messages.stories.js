@@ -1,6 +1,6 @@
 import React from 'react'
-import Growl from '../../packages/components/src/Growl'
-import Button from '../../packages/components/src/Button'
+import Growl from '../../packages/components/lib/Growl'
+import Button from '../../packages/components/lib/Button'
 
 const toggleGrowl = () =>
   document.getElementById('growlInfo').classList.toggle('growl-msg--open')
