@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Dropdown from '../../packages/components/src/Dropdown'
+import Dropdown from '../../packages/components/lib/Dropdown'
 
 const options = [
   { label: 'item 1', value: '1' },

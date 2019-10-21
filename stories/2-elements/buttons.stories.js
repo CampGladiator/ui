@@ -2,8 +2,8 @@ import React from 'react'
 
 import omit from 'storybook-react-omit'
 
-import Button from '../../packages/components/src/Button'
-import bp from '../../packages/components/src/breakpoints'
+import Button from '../../packages/components/lib/Button'
+import bp from '../../packages/components/lib/breakpoints'
 
 export default {
   title: 'Elements|Buttons',

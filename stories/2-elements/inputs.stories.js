@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Input from '../../packages/components/src/Input'
-import Button from '../../packages/components/src/Button'
+import Input from '../../packages/components/lib/Input'
+import Button from '../../packages/components/lib/Button'
 
 export default {
   title: 'Elements|Inputs',

@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../../packages/components/src/Button'
-import Icon from '../../packages/components/src/Icon'
+import Button from '../../packages/components/lib/Button'
+import Icon from '../../packages/components/lib/Icon'
 
 export default {
   title: 'Components|Flash Messages',

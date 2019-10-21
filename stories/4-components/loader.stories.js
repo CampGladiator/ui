@@ -1,6 +1,6 @@
 import React from 'react'
 
-import EllipsisLoader from '../../packages/components/src/EllipsisLoader'
+import EllipsisLoader from '../../packages/components/lib/EllipsisLoader'
 
 export default {
   title: 'Components|Loader',

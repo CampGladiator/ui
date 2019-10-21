@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Icon from '../../packages/components/src/Icon'
+import Icon from '../../packages/components/lib/Icon'
 
 const iconList = [
   'arrow-down',
