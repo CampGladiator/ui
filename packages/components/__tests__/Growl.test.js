@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Growl from '../src/Growl'
+import Growl from '../lib/Growl'
 
 describe('<Growl />', () => {
   it('should render the element with the correct classes', () => {

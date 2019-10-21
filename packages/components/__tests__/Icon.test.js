@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-
-import Icon from '../src/Icon'
+import Icon from '../lib/Icon'
 
 describe('<Icon />', () => {
   it('should use the given name as modifier', () => {
