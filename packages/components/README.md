@@ -11,7 +11,7 @@ This component library is meant to be [tree-shakeable](https://webpack.js.org/gu
 
 ```js
 import { render } from 'react-dom'
-import Button from '@campgladiator/components/lib/Button'
+import Button from '@campgladiator/components/build/Button'
 
 render(
   <Button solid primary>cool, it works</Button>,
