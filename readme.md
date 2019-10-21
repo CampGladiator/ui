@@ -49,14 +49,14 @@ $ yarn add @campgladiator/ui
 The included source files are written in Sass. After installing you can add your project's `node_modules` directory to your Sass [include paths](https://github.com/sass/node-sass#includepaths), then import it like this:
 
 ```scss
-@import '@campgladiator/ui/main';
+@import '~@campgladiator/ui/main';
 ```
 
 The component library is meant to be [tree-shakeable](https://webpack.js.org/guides/tree-shaking/), therefore you need to import each component individually:
 
 ```js
 import { render } from 'react-dom'
-import Button from '@campgladiator/components/Button'
+import Button from '@campgladiator/components/build/Button'
 
 render(
   <Button solid primary>cool, it works</Button>,

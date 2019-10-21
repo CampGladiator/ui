@@ -58,4 +58,6 @@ Requirements for new PRs can be found in `.github/PULL_REQUEST_TEMPLATE.md`. The
 
 ## Deployment process
 
-This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, ensure you have updated the package.json file for each package in /packages in which you have made changes. Lerna checks the version number of each package in the NPM remote library and will automatically deploy any packages that have updated version numbers.
+This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, ensure you have updated the version number in the package.json file for each package in /packages in which you have made changes. Lerna checks the version number of each package in the NPM remote library and will automatically deploy any packages that have updated version numbers.
+
+Creating a tag in Github will trigger our CI process to deploy all updated packages with version numbers different from what is currently in NPM.
