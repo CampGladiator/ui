@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-
-import EllipsisLoader from '../src/EllipsisLoader'
+import EllipsisLoader from '../lib/EllipsisLoader'
 
 describe('<EllipsisLoader />', () => {
   it('should has render three circle by default', () => {

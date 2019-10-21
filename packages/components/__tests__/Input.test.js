@@ -1,8 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import sinon from 'sinon'
-
-import Input from '../src/Input'
+import Input from '../lib/Input'
 
 describe('<Input />', () => {
   it('should be set various attributes', () => {

@@ -1,8 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import sinon from 'sinon'
-
-import Dropdown from '../src/Dropdown'
+import Dropdown from '../lib/Dropdown'
 
 describe('<Button />', () => {
   it('should display a list of <option> for given data', () => {

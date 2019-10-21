@@ -2,9 +2,9 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import sinon from 'sinon'
 
-import Button from '../src/Button'
-import EllipsisLoader from '../src/EllipsisLoader'
-import bp from '../src/breakpoints'
+import Button from '../lib/Button'
+import EllipsisLoader from '../lib/EllipsisLoader'
+import bp from '../lib/breakpoints'
 
 describe('<Button />', () => {
   it('renders without crashing', () => {
