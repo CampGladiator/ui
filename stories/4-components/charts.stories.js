@@ -6,15 +6,9 @@ export default {
 
 export const defaultCounterStory = () => (
   <>
-    <div className="counter counter--red counter--font--large counter--default counter--default--large ">
-      12
-    </div>
-    <div className="counter counter--navy counter--font--normal counter--default counter--default--normal">
-      8
-    </div>
-    <div className="counter counter--gray counter--font--small counter--default counter--default--small">
-      2
-    </div>
+    <div className="counter-default counter-default--large">12</div>
+    <div className="counter-default counter-default--normal">8</div>
+    <div className="counter-default counter-default--small">2</div>
   </>
 )
 
@@ -25,9 +19,7 @@ defaultCounterStory.story = {
 
 export const condensedCounterStory = () => (
   <>
-    <div className="counter counter--red counter--font--small counter--condensed counter--condensed--small">
-      12
-    </div>
+    <div className="counter-condensed counter-condensed--normal">12</div>
   </>
 )
 
