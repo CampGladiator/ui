@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"yarn run storybook\" \"lerna run start --stream\"",
-    "version": "lerna version --conventional-commits --yes --create-release github",
+    "bump": "lerna version --conventional-commits --yes --create-release github",
     "build": "lerna run build && build-storybook",
     "release": "lerna publish from-package --yes",
     "test": "lerna run test --stream --no-bail",
