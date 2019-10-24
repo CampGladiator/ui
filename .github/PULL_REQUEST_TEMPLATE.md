@@ -6,6 +6,6 @@ If an item can not be satisfied, please provide a brief explanation as to why th
 - [ ] Linter run prior to creation of pull request.
 - [ ] All tests run and passed prior to creation of pull request.
 - [ ] Rebased from Master prior to creation of pull request.
-- [ ] Included a conventional commit message for any commits including updates to packages.
+- [ ] Updated version numbers of any packages with changes.
 
 **Provide a brief description of your update:**

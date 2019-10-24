@@ -2,10 +2,5 @@
   "npmClient": "yarn",
   "packages": ["packages/*"],
   "version": "independent",
-  "useWorkspaces": true,
-  "command": {
-    "version": {
-      "allowBranch": "master"
-    }
-  }
+  "useWorkspaces": true
 }

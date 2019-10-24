@@ -13,7 +13,7 @@
 
 .counter-default {
   @extend %counter-shared;
-  border: 10px solid white;
+  border: 10px solid #ffffff;
 
   &--large {
     font-size: 64px;
