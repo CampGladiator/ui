@@ -63,6 +63,3 @@ render(
   document.getElementById('app')
 )
 ```
-
-## Contributing
-If you are contributing to this repo, first please fully read the [Contributing documentation](https://github.com/CampGladiator/ui/blob/master/.github/CONTRIBUTING.md).

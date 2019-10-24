@@ -19,43 +19,6 @@ In addition the the requirements above, we maintain the following standards for 
 * Keep PRs as small as possible. Large PRs require a lengthy review and are more likely to introduce bugs into the platform. It is imperative that developers keep each PR targeted to the problem addressed with the issue card. If you find a problem in the code seperate from the problem the card is designed to address, it is best to open a new issue card and address that problem in a seperate PR.
 * Every PR must be attributed to a specific issue card or issue number.
 
-## Contributing to this repository
-
-This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository.
-
-Lerna automatically manages the npm versioning of all updated packages in this repo. Rather than updating version numbers manually in the package.json files of each package, we can use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) to trigger this behavior automatically via CI at time of deployment.
-
-To ensure version bumping takes place correctly, we need to slightly modify the way we structure our commit messages for commits that affect packages. **We also need to keep changes to individual packages seperate rather than allowing changes to mulitple packages in a single commit.**
-
-**Updating version numbers using Conventional Commits:**
-To ensure a package's version number is bumped (and subsequently gets published to the NPM library) we need to prefix one of the following syntax/keywords in the commit(s) that contain the code changes to that package: 
-
-**PATCH:**
-
-```fix: [<card number>] <description>```
-
-This keywork will bump the **PATCH** semver. Ex: from `v1.8.5` to `v1.8.6`
-
-**MINOR:**
-
-```feat: [<card number>] <description>```
-
-This keywork will bump the **MINOR** semver. Ex: from `v1.8.6` to `v1.9.0`
-
-**MAJOR:**
-
-```BREAKING CHANGE: [<card number>] <description>```
-
-This keywork will bump the **MAJOR** semver. Ex: from `v1.9.0` to `v2.0.0`
-
-**Examples:**
-
-```
-git commit -m "fix: TRAINER-1228/change color code to variable"
-git commit -m "feat: TRAINER-1229/add button component"
-git commit -m "BREAKING CHANGE: TRAINER-1230/refactor class names for charts"
-```
-
 ## Other Considerations
 
 **Design Review:**
@@ -91,10 +54,10 @@ Requirements for new PRs can be found in `.github/PULL_REQUEST_TEMPLATE.md`. The
 1. Linter run prior to creation of pull request.
 1. All tests run and passed prior to creation of pull request.
 1. Rebased from Master prior to creation of pull request.
-1. Included a conventional commit message for any commits including updates to packages.
+1. Updated version numbers of any packages with changes.
 
 ## Deployment process
 
-This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, ensure you have included the correct syntax in the commit message for any commits that include changes to packages. Once your branch is merged to master, CI will use lerna to manage versioning of updated packages, generate CHANGELOG.md files in each updated package, and create a new commit and tag in github to handle these updates.
+This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, ensure you have updated the version number in the package.json file for each package in /packages in which you have made changes. Lerna checks the version number of each package in the NPM remote library and will automatically deploy any packages that have updated version numbers.
 
-Creating a tag in Github will trigger our CI process to deploy all updated packages.
+Creating a tag in Github will trigger our CI process to deploy all updated packages with version numbers different from what is currently in NPM.
