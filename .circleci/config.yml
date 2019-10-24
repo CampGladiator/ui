@@ -39,6 +39,9 @@ jobs:
           fingerprints:
             - '6e:5f:a1:a8:1b:1c:52:a4:92:7c:e6:32:21:58:c2:b9'
       - run:
+          name: Bump version numbers for any updated packages
+          command: yarn run bump
+      - run:
           name: Build packages and Storybook
           command: yarn run build
       - run:
