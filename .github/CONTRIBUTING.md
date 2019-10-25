@@ -33,9 +33,9 @@ Be sure you have read and understand the [UI/UX Design Guide in Confluence](http
 
 **Segmenting UI from Components**
 
-When developing in this project, keep in mind that the ui package is a dependency of the components package. Additionally, the ui package is standalone. With this in mind, ALL styling should exist in the ui package only. The components package can then be used simply to create simple react components that consume styles from the ui package. 
+When developing in this project, keep in mind that the ui package is a dependency of the components package. Additionally, the ui package is standalone. With this in mind, ALL styling should exist in the ui package only. The components package can then be used simply to create simple react components that consume styles from the ui package.
 
-Additionally, consider keeping the react components as lightweight and scalable as possible to ensure we reduce complexity and interpendency for future projects.
+Additionally, consider keeping the react components as lightweight and scalable as possible to ensure we reduce complexity and inter-dependency for future projects.
 
 **Documenting Your Changes:**
 
