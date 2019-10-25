@@ -33,9 +33,9 @@ Be sure you have read and understand the [UI/UX Design Guide in Confluence](http
 
 **Segmenting UI from Components**
 
-When developing in this project, keep in mind that the ui package is a dependency of the components package. Additionally, the ui package is standalone. With this in mind, ALL styling should exist in the ui package only. The components package can then be used simply to create simple react components that consume styles from the ui package. 
+When developing in this project, keep in mind that the ui package is a dependency of the components package. Additionally, the ui package is standalone. With this in mind, ALL styling should exist in the ui package only. The components package can then be used simply to create simple react components that consume styles from the ui package.
 
-Additionally, consider keeping the react components as lightweight and scalable as possible to ensure we reduce complexity and interpendency for future projects.
+Additionally, consider keeping the react components as lightweight and scalable as possible to ensure we reduce complexity and inter-dependency for future projects.
 
 **Documenting Your Changes:**
 
@@ -54,10 +54,10 @@ Requirements for new PRs can be found in `.github/PULL_REQUEST_TEMPLATE.md`. The
 1. Linter run prior to creation of pull request.
 1. All tests run and passed prior to creation of pull request.
 1. Rebased from Master prior to creation of pull request.
-1. Updated version numbers of any packages with changes.
+1. Ran `yarn bump` to update semver of any updated packages.
 
 ## Deployment process
 
-This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, ensure you have updated the version number in the package.json file for each package in /packages in which you have made changes. Lerna checks the version number of each package in the NPM remote library and will automatically deploy any packages that have updated version numbers.
+This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, you must run `yarn bump` to update version numbers on any updated packages. This command will prompt you with instructions on selecting the semver number you want to use for each updated package. This command will automatically generate a new commit and tag for the updates. You'll need to use `git push --force-with-lease` to push these new branches up to remote.
 
-Creating a tag in Github will trigger our CI process to deploy all updated packages with version numbers different from what is currently in NPM.
+Once your PR has been approved by another team member and merged to master, you can create a tag in Github which will trigger our CI process to deploy all updated packages to the NPM library.

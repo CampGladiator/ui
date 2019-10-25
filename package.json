@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"yarn run storybook\" \"lerna run start --stream\"",
+    "bump": "lerna version --amend --no-push",
     "build": "lerna run build && build-storybook",
     "release": "lerna publish from-package --yes",
     "test": "lerna run test --stream --no-bail",

@@ -2,5 +2,6 @@
   "npmClient": "yarn",
   "packages": ["packages/*"],
   "version": "independent",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "ignoreChanges": ["**/__tests__/**"]
 }
