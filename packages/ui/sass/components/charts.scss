@@ -45,7 +45,7 @@
 
 .counter-condensed {
   @extend %counter-shared;
-  border: 4px solid #ffffff;
+  border: 4px solid white;
 
   &--normal {
     font-size: 24px;
