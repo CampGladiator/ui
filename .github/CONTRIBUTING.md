@@ -54,10 +54,10 @@ Requirements for new PRs can be found in `.github/PULL_REQUEST_TEMPLATE.md`. The
 1. Linter run prior to creation of pull request.
 1. All tests run and passed prior to creation of pull request.
 1. Rebased from Master prior to creation of pull request.
-1. Updated version numbers of any packages with changes.
+1. Ran `yarn bump` to update semver of any updated packages.
 
 ## Deployment process
 
-This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, ensure you have updated the version number in the package.json file for each package in /packages in which you have made changes. Lerna checks the version number of each package in the NPM remote library and will automatically deploy any packages that have updated version numbers.
+This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, you must run `yarn bump` to update version numbers on any updated packages. This command will prompt you with instructions on selecting the semver number you want to use for each updated package. Once this is done, you can `git add` the changes to the version number and create your PR.
 
-Creating a tag in Github will trigger our CI process to deploy all updated packages with version numbers different from what is currently in NPM.
+Once your PR has been approved by another team members and merged to master, you can create a tag in Github which will trigger our CI process to deploy all updated packages to the NPM library.
