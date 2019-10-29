@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Components|Checkboxes',
+  title: 'Elements|Checkboxes',
 
   parameters: {
     layout: { rows: 2, justify: 'center', gap: '20px' },
