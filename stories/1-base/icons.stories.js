@@ -120,8 +120,18 @@ const iconList = [
   'user-corp-outline',
 ]
 
+const iconsInfoText = `
+  ## ICONS
+  Icons are delightful, beautifully crafted glyph used to represent common actions and items.
+`
+
 export default {
   title: 'Base|Icons',
+  parameters: {
+    info: {
+      text: iconsInfoText,
+    },
+  },
 }
 
 export const list = () => (
