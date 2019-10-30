@@ -92,7 +92,7 @@ opened.story = {
     info: {
       text: `
         ### Opened
-        Opned modal is a container to display content in an overlay window.
+        Opened modal is a container to display content in an overlay window.
       `
     }
   }
