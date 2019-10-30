@@ -20,5 +20,10 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
-  parameters: { layout: { rows: 2, gap: '50px' } },
+  parameters: { 
+    layout: { rows: 2, gap: '50px' },
+    info: {
+      text: `A switch has the markup of a custom checkbox but uses the 'switch switch--on' class to render a toggle switch and used to select a boolean value.`
+    }
+  }
 }

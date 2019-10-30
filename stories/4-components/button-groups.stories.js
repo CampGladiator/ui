@@ -45,11 +45,26 @@ export const primaryStory = () => (
       </Button>
     </div>
   </>
-)
+);
 
 primaryStory.story = {
-  name: 'Primary',
-}
+  name: "Primary",
+  parameters: {
+    layout: { rows: 4, gap: "20px 0" },
+    info: {
+      text: `
+        ## Button Group
+        Button groups that allow the user to toggle between two options. These are helpful for allowing users to change data views within your UI. 
+        Button group must have a parent container with the only items in the container being the button controls. 
+        Use the '.button-group' class on the parent container.
+        
+        ### Primary button group
+        Primary button can be combined with outline button to display two different buttons in a group.
+        The left primary button should have class "button-group__left" and the right outlined button should have class "button-group__right".
+      `
+    }
+  }
+};
 
 export const secondaryStory = () => (
   <>
@@ -86,11 +101,21 @@ export const secondaryStory = () => (
       </Button>
     </div>
   </>
-)
+);
 
 secondaryStory.story = {
-  name: 'Secondary',
-}
+  name: "Secondary",
+  parameters: {
+    layout: { rows: 4, gap: "20px 0" },
+    info: {
+      text: `
+        ### Secondary button group
+        Secondary button can be combined with outline button to display toggle option with a secondary button.
+        The left secondary button should have class "button-group__left" and the right outlined button should have class "button-group__right".
+      `
+    }
+  }
+};
 
 export const darkStory = () => (
   <>
@@ -127,8 +152,18 @@ export const darkStory = () => (
       </Button>
     </div>
   </>
-)
+);
 
 darkStory.story = {
-  name: 'Dark',
-}
+  name: "Dark",
+  parameters: {
+    layout: { rows: 4, gap: "20px 0" },
+    info: {
+      text: `
+        ### Dark button group
+        Dark button can be combined with outline button to display toggle option with a dark button.
+        The left dark button should have class "button-group__left" and the right outlined button should have class "button-group__right".
+      `
+    }
+  }
+};

@@ -97,5 +97,16 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
-  parameters: { layout: { rows: 2, gap: '20px' } },
+  parameters: { 
+    layout: { rows: 2, gap: '20px' },
+    info: {
+      text: `
+        ## Pin Input
+        Currently, the masked input field is designed specifically for collecting the user's pin code when creating a pin. 
+        Other use-cases may apply in the future. 
+        Info text can be added below a single input field to give the user instructions or additional information 
+        about the field.
+      `
+    }
+  }
 }
