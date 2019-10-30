@@ -29,7 +29,7 @@ export default {
 
   parameters: {
     layout: { rows: 5, columns: 3, gap: '24px 0' },
-    layout: { rows: 5, gap: '24px 100px' }
+    layout: { rows: 5, gap: '24px 100px' },
   },
 }
 
