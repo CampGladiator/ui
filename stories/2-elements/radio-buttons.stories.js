@@ -1,7 +1,7 @@
 import React from 'react'
 
 const radioButtonsInfoText = `
-  # RADIO BUTTONS
+  ## RADIO BUTTONS
   Radio Buttons are typically used to allow a user to select a single option from a list of preset options.
   Radio buttons are often arranged in a group of at least two or more options. They take the form of a hollow circle which represents a "Deselected" state and a circle with a dot inside for a "Selected" state.
   A user is allowed to choose only a single option or radio button among the set or group.

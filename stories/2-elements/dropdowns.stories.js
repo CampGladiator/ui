@@ -9,7 +9,7 @@ const options = [
 ]
 
 const dropdownsInfoText = `
-  # DROPDOWNS
+  ## DROPDOWNS
   Dropdowns are typically used to allow a user to select a single option from a list of preset options. These can be expanded in functionality to improve the user-experience. For example, dropdowns with a lot of options could include an embedded type-to-search form. Currently this type of custom functionality is not built in to the component. Info text can be added below a single input field to give the user instructions or additional information about the field.
   `
 

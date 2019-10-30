@@ -21,7 +21,7 @@ export const defaultStory = () => (
 )
 
 const defaultInfoText = `
-  # DEFAULT
+  ## DEFAULT
   Default input fields can be used for collecting data that is standalone and does not have a logical grouping with other data. Info text can be added below a single input field to give the user instructions or additional information about the field.
 `
 
@@ -43,7 +43,7 @@ export const roundedStory = () => (
 )
 
 const roundedInfoText = `
-  # ROUNDED
+  ## ROUNDED
   Rounded input fields behaviour are similar to that of default input fields which can be used for collecting data that is standalone and does not have a logical grouping with other data.
   Info text can be added below a single input field to give the user instructions or additional information about the field.
 `
@@ -79,7 +79,7 @@ export const labeled = () => (
 )
 
 const labeledInfoText = `
-  # LABELED
+  ## LABELED
     The label is used to tell users the value that should be entered in the associated input field. Example uses include user basic info (email/phone)
 `
 
@@ -118,7 +118,7 @@ export const addon = () => (
 )
 
 const addonInfoText = `
-  # Addon
+  ## Addon
   The Addon field is a micro-form interaction that is well-suited for building single input form fields requiring submission or validation.
   These are commonly used for login fields but can also be used for a variety of other uses including: input requiring pre-validation (ie. password validation or friend referral validation), file uploads, and forgot pin/password fields.
 `
@@ -143,7 +143,7 @@ export const grouped = () => (
 )
 
 const groupedInfoText = `
-  # GROUPED
+  ## GROUPED
   Grouped input fields are useful for collecting data that is related to allow the user to see that information in common groupings. Example uses include user basic info (first/last/email/phone) or a credit card form (cc/cvc/exp/zip).
 
 `
