@@ -60,7 +60,7 @@ Requirements for new PRs can be found in `.github/PULL_REQUEST_TEMPLATE.md`. The
 
 This repo consists of multiple NPM packages managed by Lerna. Lerna allows us to manage and deploy multiple NPM packages from a single repository. Additionally, Storybook is used to document all cooresponding ui styles/components that belong to those packages. Before deploying, you must run `yarn bump` to update version numbers on any updated packages. 
 
-**Important:** running `yarn bump` will automatically generate a new commit. It is important that you stage and commit your existing changes before running this command or you risk your changes getting overridden by the automatted commit.
+**Important:** running `yarn bump` will automatically generate a new commit. It is important that you stage and commit your existing changes before running this command or you risk your changes getting overridden by the automated commit.
 
 Running the `yarn bump` command will prompt you with instructions on selecting the semver number you want to use for each updated package. This command will automatically generate a new commit and tag for the updates. You'll need to use `git push --force-with-lease` to push these new branches up to remote.
 
