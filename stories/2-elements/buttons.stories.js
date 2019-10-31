@@ -213,7 +213,9 @@ const disabledText = `
 disabledStory.story = {
   name: 'Disabled',
   parameters: {
-    info: disabledText
+    info: {
+      text: disabledText
+    }
   }
 }
 
@@ -342,7 +344,9 @@ loadingStory.story = {
   name: 'Loading',
   parameters: {
     layout: { rows: 6, gap: '10px 0' },
-    info: loadingInfoText,
+    info: {
+      text: loadingInfoText
+    },
   },
 }
 
@@ -405,6 +409,8 @@ const responsiveInfoText = `
 responsive.story = {
   parameters: {
     layout: { rows: 1 } ,
-    info: responsiveInfoText
+    info: {
+      text: responsiveInfoText
+    }
   },
 }

@@ -51,7 +51,9 @@ const roundedInfoText = `
 roundedStory.story = {
   name: 'Rounded',
   parameters: {
-    info: roundedInfoText
+    info: {
+      text: roundedInfoText
+    }
   }
 }
 
@@ -86,7 +88,9 @@ const labeledInfoText = `
 labeled.story = {
   parameters: {
     layout: { rows: 3, template: 'minmax(auto, 500px)', justify: 'stretch' },
-    info: labeledInfoText
+    info: {
+      text: labeledInfoText
+    }
   },
 }
 
@@ -125,7 +129,9 @@ const addonInfoText = `
 addon.story = {
   parameters: {
     layout: { rows: 3 },
-    info: addonInfoText
+    info: {
+      text: addonInfoText
+    }
   },
 }
 
@@ -150,6 +156,8 @@ const groupedInfoText = `
 grouped.story = {
   parameters: {
     layout: { template: '500px', justify: 'stretch' },
-    info: groupedInfoText
+    info: {
+      text: groupedInfoText
+    }
   },
 }

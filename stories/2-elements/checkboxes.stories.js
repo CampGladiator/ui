@@ -59,6 +59,8 @@ const labeledInfoText = `
 `
 labeled.story = {
   parameters: {
-    info: labeledInfoText
+    info: {
+      text: labeledInfoText
+    }
   },
 }
