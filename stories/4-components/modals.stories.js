@@ -37,7 +37,24 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
-  parameters: { layout: { height: '80vw' } },
+  parameters: { 
+    layout: { height: '80vw' },
+    info: {
+      text: `
+        ## Modal
+        Modals are highly disruptive overlays helpful for forcing the user's attention to a certain context. 
+        Modals can allow manual closing by the user, or this feature can be removed to prevent the user from interacting 
+        with other parts of the interface without first completing the action(s) provided by the modal. 
+        While modals are powerful, they can be quite disruptive to the user and should therefore be used sparingly 
+        and with the user-experience in mind. Examples of common modal content include: showing a video, 
+        requesting the user confirm their address, and requiring the user to accept terms and conditions before continuing. 
+        Only one modal should be active at a time.
+
+        ### Default
+        Default modal is a container to display content in an overlay window on request.
+      `
+    }
+  }
 }
 
 export const opened = () => (
@@ -70,5 +87,13 @@ export const opened = () => (
 )
 
 opened.story = {
-  parameters: { layout: { height: '80vh' } },
+  parameters: { 
+    layout: { height: '80vh' },
+    info: {
+      text: `
+        ### Opened
+        Opened modal is a container to display content in an overlay window.
+      `
+    }
+  }
 }

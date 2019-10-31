@@ -2,6 +2,21 @@ import React from 'react'
 
 export default {
   title: 'Components|Card',
+  parameters: { 
+    layout: { template: '500px' },
+    info: {
+      text: `
+      ## Cards
+      A card is a flexible and extensible content container. 
+      Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization.
+      If you’re familiar with popular open source css libraries, cards replace our old panels, wells, and thumbnails. 
+      Similar functionality to those components is available as modifier classes for cards.
+
+      ### Default
+      It includes options for headers a wide variety of content. 
+      `
+    }
+  }
 }
 
 export const defaultStory = () => (
@@ -71,7 +86,15 @@ export const multipleContainers = () => (
 )
 
 multipleContainers.story = {
-  parameters: { layout: { template: '500px' } },
+  parameters: { 
+    layout: { template: '500px' },
+    info: {
+      text: `
+        ### Multi Container
+        It includes options for headers and footers, a wide variety of content, contextual background colors.
+      `
+    }
+  }
 }
 
 export const media = () => (
@@ -98,5 +121,13 @@ export const media = () => (
 )
 
 media.story = {
-  parameters: { layout: { template: '500px' } },
+  parameters: { 
+    layout: { template: '500px' },
+    info: {
+      text: `
+        ### Media
+        It includes options for headers and footers, a wide variety of content, contextual background colors, and buttons.
+      `
+    }
+  }
 }

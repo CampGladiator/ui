@@ -17,6 +17,18 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
+  parameters: { 
+    layout: { template: '80vw' },
+    info: {
+      text: `
+          ## Tooltip
+          Tooltip provides advisory information for a component.
+
+          ### Default
+          By default it opens up on a mouseenter event.
+      `
+    }
+  }
 }
 
 export const fixed = () => (
@@ -25,3 +37,16 @@ export const fixed = () => (
     <legend className="tooltip__content">Tooltip message</legend>
   </figure>
 )
+
+fixed.story = {
+  name: 'Fixed',
+  parameters: { 
+    layout: { template: '80vw' },
+    info: {
+      text: `
+          ### Fixed
+          Tooltip will remain in a fixed position and does not depend on mouseevent.
+      `
+    }
+  }
+}

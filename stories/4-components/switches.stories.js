@@ -20,5 +20,14 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
-  parameters: { layout: { rows: 2, gap: '50px' } },
+  parameters: { 
+    layout: { rows: 2, gap: '50px' },
+    info: {
+      text: `
+      ## Switch
+      Switch is a custom checkbox which uses the 'switch' and  'switch--on' class to render a toggle switch.
+      A switch can mimic the HTML checkbox behavior to toggle between boolean values.
+      `
+    }
+  }
 }

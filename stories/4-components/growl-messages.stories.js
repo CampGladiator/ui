@@ -58,5 +58,11 @@ export const error = () => (
 error.story = {
   parameters: {
     layout: { template: '40vw' },
-  },
+    info: {
+      text: `
+            ### Error Message
+            Error growl messages are lightweight notifications designed to mimic the push notifications when we need to hightlight an error.
+          `
+    }
+  }
 }

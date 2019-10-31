@@ -14,5 +14,12 @@ export const ellipsis = () => (
 )
 
 ellipsis.story = {
-  parameters: { layout: { rows: 2, gap: '50px 0', background: '#231F20' } },
+  parameters: { 
+    layout: { rows: 2, gap: '50px 0', background: '#231F20' },
+    info: {
+      text: ` 
+        ## Loader
+        CG loader is a process status indicator.`
+    } 
+  }
 }

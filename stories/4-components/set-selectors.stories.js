@@ -44,5 +44,15 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
-  parameters: { layout: { rows: 3, gap: '20px' } },
+  parameters: { 
+    layout: { rows: 3, gap: '20px' },
+    info: {
+      text: `
+        ## Set Selector
+        The component provides multiple size options to choose from. 
+        Add a class 'set-selector-item--selected' to display selected item.
+        This can also be displayed disabled by applying HTML disabled attribute.
+      `
+    }
+  }
 }
