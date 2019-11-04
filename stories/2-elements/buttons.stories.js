@@ -5,6 +5,25 @@ import omit from 'storybook-react-omit'
 import Button from '../../packages/components/lib/Button'
 import bp from '../../packages/components/lib/breakpoints'
 
+const primaryInfoText = `
+  ## BUTTONS
+  Buttons are a very common component used throughout CG interfaces. Almost all calls-to-action are accompanied by one or more buttons. Because of their frequent use, there are several styles to choose from and they should be selected with functionality in mind.
+
+  ### BUTTON RULES:
+    * When grouped, buttons should always be the same size.
+    * When grouped, buttons should not share the same styles (except for size) [ie. a solid red button should not be next to another solid red button]. In these cases, use a different style such as outline and/or a different color combo. Using solid buttons alongside outline buttons of the same color is a safe practice.
+    * Do not manipulate the hover states of buttons, as this can cause inconsistency in the design system.
+
+  #### SOLID
+    Solid buttons are the most commonly used and should be the primary button type used, especially when you have only one button used in a view.
+
+  #### OUTLINE
+    Outline buttons allow for a different visual effect. This is helpful when buttons are shown in groups to break up the monotony that would be created by having multiple solid buttons next to eachother.
+
+  #### SIZES
+    Button sizes convey heirarchy and meaning and can help drive attention and engagement to important calls-to-action. The default style should be uesd in the majority of cases. When grouping buttons be sure all buttons in the group are of the same size. Also keep in mind that the most extreme sizes are typically reserved for device specific circumstances (ie. extra-large buttons work well for the largest call to action on a desktop, while extra-small buttons are good for mobile.
+`
+
 export default {
   title: 'Elements|Buttons',
 
@@ -79,6 +98,11 @@ export const primaryStory = () => (
 
 primaryStory.story = {
   name: 'Primary',
+  parameters: {
+    info: {
+      text: primaryInfoText,
+    }
+  }
 }
 
 export const secondaryStory = () => (
@@ -182,9 +206,17 @@ export const disabledStory = () => (
     </Button>
   </>
 )
-
+const disabledText = `
+  ## DISABLED
+  Disabled buttons are designed to serve as placeholders for active buttons when the button action is not available. This is especially useful for things like login or continue buttons that aren't available until the user completes a certain action (ie. entering their login info). Using disabled buttons can help improve the user experience by letting the user know they can't continue without further action. Disabled buttons should replace active buttons along with e.preventDefault() logic after a form submission button has been pressed in order to prevent the user from submitting the form multiple times.
+`
 disabledStory.story = {
   name: 'Disabled',
+  parameters: {
+    info: {
+      text: disabledText
+    }
+  }
 }
 
 export const darkStory = () => (
@@ -302,10 +334,20 @@ export const loadingStory = () => (
     </Button>
   </>
 )
+const loadingInfoText = `
+  ## LOADING
+  Loading buttons are designed to use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.
+  Using loading buttons can help improve the user experience by letting the user know they can't continue further until the browser actions are performed.
+`
 
 loadingStory.story = {
   name: 'Loading',
-  parameters: { layout: { rows: 6, gap: '10px 0' } },
+  parameters: {
+    layout: { rows: 6, gap: '10px 0' },
+    info: {
+      text: loadingInfoText
+    },
+  },
 }
 
 export const responsive = () => (
@@ -359,6 +401,16 @@ export const responsive = () => (
   </div>
 )
 
+const responsiveInfoText = `
+  ## RESPONSIVE
+  Responsive buttons are designed to support different resolutions of viewport, The button size changes based on changing viewport resolution.
+`
+
 responsive.story = {
-  parameters: { layout: { rows: 1 } },
+  parameters: {
+    layout: { rows: 1 } ,
+    info: {
+      text: responsiveInfoText
+    }
+  },
 }

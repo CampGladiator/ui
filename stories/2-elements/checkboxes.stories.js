@@ -21,8 +21,17 @@ export const defaultStory = () => (
   </>
 )
 
+const checkboxInfoText = `
+  ## CHECKBOXES
+  Checkboxes are currently used for user validation such as agreeing to terms of service, opting in to a newsletter, or verifying user elegibility.
+`
 defaultStory.story = {
   name: 'Default',
+  parameters: {
+    info: {
+      text: checkboxInfoText
+    }
+  }
 }
 
 export const labeled = () => (
@@ -43,3 +52,15 @@ export const labeled = () => (
     </div>
   </>
 )
+
+const labeledInfoText = `
+  ## LABELED
+  The labeled checkbox is used to tell users the value that is associated to the input field. Example uses include user basic info like Gender
+`
+labeled.story = {
+  parameters: {
+    info: {
+      text: labeledInfoText
+    }
+  },
+}
