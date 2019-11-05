@@ -6,7 +6,7 @@ $white-tint: rgba(255, 255, 255, 0.4);
   --base-color: #{$gladiator};
   --shadow-color: #{$red-tint};
   --shadow-size: 3px;
-  font-family: #{$gotham};
+  font-family: $font-primary;
   font-weight: 700;
   font-size: 12px;
   line-height: 1;

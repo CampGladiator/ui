@@ -21,7 +21,7 @@ h3,
 .h1,
 .h2,
 .h3 {
-  font-family: $united;
+  font-family: $font-primary;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -44,30 +44,30 @@ h5,
 
 h1,
 .h1 {
-  font-size: $size-xxl;
+  font-size: $h1-primary-size;
 }
 
 h2,
 .h2 {
-  font-size: $size-xl;
+  font-size: $h2-primary-size;
 }
 
 h3,
 .h3 {
-  font-size: $size-l;
+  font-size: $h3-primary-size;
 }
 
 h4,
 .h4 {
-  font-size: $size-m;
+  font-size: $h4-primary-size;
 }
 
 h5,
 .h5 {
-  font-size: $size-s;
+  font-size: $h5-primary-size;
 }
 
 h6,
 .h6 {
-  font-size: $size-xs;
+  font-size: $h6-primary-size;
 }

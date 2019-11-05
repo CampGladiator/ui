@@ -1,6 +1,6 @@
 .label {
   display: inline-block;
-  font-family: $gotham;
+  font-family: $font-primary;
   font-size: 14px;
   letter-spacing: 1.53px;
   color: $medium-gray;
@@ -16,7 +16,7 @@
   line-height: 35px;
   padding: 0 15px;
   background: $medium-gray;
-  font-family: $united;
+  font-family: $font-display;
   font-size: 24px;
   color: white;
   text-transform: uppercase;

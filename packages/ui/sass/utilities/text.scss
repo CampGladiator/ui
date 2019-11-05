@@ -10,15 +10,50 @@
   text-align: right;
 }
 
-.font-united {
-  font-family: $united;
+.font-display {
+  font-family: $font-display;
   text-transform: uppercase;
-  letter-spacing: normal;
+
+  &--h1 {
+    font-size: $h1-display-size;
+    line-height: 84px;
+    letter-spacing: 2px;
+  }
+
+  &--h2 {
+    font-size: $h2-display-size;
+    line-height: 60x;
+    letter-spacing: 2px;
+  }
+
+  &--h3 {
+    font-size: $h3-display-size;
+    line-height: 48px;
+    letter-spacing: 1px;
+  }
+
+  &--h4 {
+    font-size: $h4-display-size;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  &--h5 {
+    font-size: $h5-display-size;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+  }
+
+  &--h6 {
+    font-size: $h6-display-size;
+    line-height: 20px;
+  }
 }
 
-.font-gotham {
-  font-family: $gotham;
+.font-primary {
+  font-family: $font-primary;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .text-xxl {

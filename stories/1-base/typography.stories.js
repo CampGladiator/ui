@@ -7,43 +7,45 @@ export default {
 export const headings = () => (
   <>
     <div>
-      <h1>heading 1</h1>
-      <h2>heading 2</h2>
-      <h3>heading 3</h3>
-      <h4 className="font-united">heading 4</h4>
-      <h5 className="font-united">heading 5</h5>
-      <h6 className="font-united">heading 6</h6>
+      <h1 className="font-primary">heading 1</h1>
+      <h2 className="font-primary">heading 2</h2>
+      <h3 className="font-primary">heading 3</h3>
+      <h4 className="font-primary">heading 4</h4>
+      <h5 className="font-primary">heading 5</h5>
+      <h6 className="font-primary">heading 6</h6>
     </div>
-    <div className="text-right">
-      <h1 className="font-gotham">heading 1</h1>
-      <h2 className="font-gotham">heading 2</h2>
-      <h3 className="font-gotham">heading 3</h3>
-      <h4>heading 4</h4>
-      <h5>heading 5</h5>
-      <h6>heading 6</h6>
+    <div className="text-left">
+      <h1 className="font-display font-display--h1">heading 1</h1>
+      <h2 className="font-display font-display--h2">heading 2</h2>
+      <h3 className="font-display font-display--h3">heading 3</h3>
+      <h4 className="font-display font-display--h4">heading 4</h4>
+      <h5 className="font-display font-display--h5">heading 5</h5>
+      <h6 className="font-display font-display--h6">heading 6</h6>
     </div>
   </>
 )
 
 const headingsInfoText = `
   ## TYPOGRAPHY
-  Typography for CG for UI's is strictly limited to our two main font families: 'United Italic Condensed Heavy' and 'Gotham'. 
+  Typography for CG for UI's is strictly limited to our two main font families: 'United Italic Condensed Heavy' and 'Gotham'.
   Used together, these typefaces unify our brand and work well to communicate the energy and mission of CG.
 
-  ### UNITED HEADINGS
-  United font is a display heading font only. It is well-suited for large page header sections. 
+  ### PRIMARY HEADINGS - Gotham
+  Font Primary uses 'Gotham' headings, these are more versitile than United and can be useful in a larger array of situations.
+  When creating a heading/subheading that both use the Gotham font,
+  try pairing an H1, H2, or H3 with an H4, or H5. Since H1-H3 use a bold font-weight and H4-H5 use the normal font-weight,
+  these groupings tend to be more visually appealing and make it easier to discern hierarchy.
+  Example: H2 heading text would pair well with H5 subheading text. Gotham headings should always be ALL-CAPS.
+
+  ### DISPLAY HEADINGS - United
+  Font Display uses 'United Italic Condensed Heavy' font, Its used for display heading font only. It is well-suited for large page header sections. 
   Rarely if ever should United headings be used in tandem. Typically, if a subheading or sibling heading is needed, 
   Gotham is the best choice. Additionally, United should be the larger of the paired text, 
   using Gotham for the subheading and/or smaller text sections. 
   It's best to use this font sparingly in order to maximize it's visual impact. 
   As per CG brand standards, the United font must always be ALL-CAPS.
 
-  ### GOTHAM HEADINGS
-  Gotham headings are more versitile than United and can be useful in a larger array of situations. 
-  When creating a heading/subheading that both use the Gotham font, 
-  try pairing an H1, H2, or H3 with an H4, or H5. Since H1-H3 use a bold font-weight and H4-H5 use the normal font-weight, 
-  these groupings tend to be more visually appealing and make it easier to discern hierarchy. 
-  Example: H2 heading text would pair well with H5 subheading text. Gotham headings should always be ALL-CAPS.
+
 `
 
 headings.story = {
