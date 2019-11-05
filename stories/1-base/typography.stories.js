@@ -30,14 +30,14 @@ const headingsInfoText = `
   Typography for CG for UI's is strictly limited to our two main font families: 'United Italic Condensed Heavy' and 'Gotham'.
   Used together, these typefaces unify our brand and work well to communicate the energy and mission of CG.
 
-  ### FONT PRIMARY HEADINGS
+  ### PRIMARY HEADINGS - Gotham
   Font Primary uses 'Gotham' headings, these are more versitile than United and can be useful in a larger array of situations.
   When creating a heading/subheading that both use the Gotham font,
   try pairing an H1, H2, or H3 with an H4, or H5. Since H1-H3 use a bold font-weight and H4-H5 use the normal font-weight,
   these groupings tend to be more visually appealing and make it easier to discern hierarchy.
   Example: H2 heading text would pair well with H5 subheading text. Gotham headings should always be ALL-CAPS.
 
-  ### FONT DISPLAY HEADINGS
+  ### DISPLAY HEADINGS - United
   Font Display uses 'United Italic Condensed Heavy' font, Its used for display heading font only. It is well-suited for large page header sections. 
   Rarely if ever should United headings be used in tandem. Typically, if a subheading or sibling heading is needed, 
   Gotham is the best choice. Additionally, United should be the larger of the paired text, 
