@@ -37,7 +37,7 @@ $input-border: 2px solid #ccc;
 }
 
 .input {
-  font-family: font-primary;
+  font-family: $font-primary;
   background-color: white;
   border: 0;
   border-bottom: $input-border;
