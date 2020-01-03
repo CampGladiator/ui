@@ -1,9 +1,9 @@
 {
 	"name": "@campgladiator/components",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"description": "A component library for CampGladiator's React apps",
 	"author": "renanpvaz <renan.piresvz@gmail.com>",
-	"homepage": "https://github.com/CampGladiator/CGUI/tree/master/packages/components#readme",
+	"homepage": "https://github.com/CampGladiator/ui/tree/master/packages/components#readme",
 	"license": "SEE LICENSE IN license.txt",
 	"main": "",
 	"directories": {
@@ -15,7 +15,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/CampGladiator/CGUI.git"
+		"url": "git+https://github.com/CampGladiator/ui.git"
 	},
 	"scripts": {
 		"build": "babel lib -d build",
@@ -23,7 +23,7 @@
 		"test": "jest"
 	},
 	"bugs": {
-		"url": "https://github.com/CampGladiator/CGUI/issues"
+		"url": "https://github.com/CampGladiator/ui/issues"
 	},
 	"jest": {
 		"setupFilesAfterEnv": [

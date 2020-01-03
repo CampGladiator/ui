@@ -1,18 +1,18 @@
 {
   "name": "@campgladiator/ui",
-  "version":  "2.0.0",
+  "version": "2.0.1",
   "description": "Sass implementation of CampGladiator's Design System",
   "style": "build/main.css",
   "sass": "main.sass",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CampGladiator/CGUI.git"
+    "url": "git+https://github.com/CampGladiator/ui.git"
   },
   "keywords": [],
   "author": "renanpvaz <renan.piresvz@gmail.com>",
   "license": "SEE LICENSE IN license.txt",
   "bugs": {
-    "url": "https://github.com/CampGladiator/CGUI/issues"
+    "url": "https://github.com/CampGladiator/ui/issues"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.5",
@@ -49,7 +49,7 @@
     "semi": false,
     "trailingComma": "all"
   },
-  "homepage": "https://github.com/CampGladiator/CGUI#readme",
+  "homepage": "https://github.com/CampGladiator/ui#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "storybook-react-omit": "0.0.3"
