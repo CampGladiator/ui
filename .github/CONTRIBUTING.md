@@ -51,7 +51,7 @@ Requirements for new PRs can be found in `.github/PULL_REQUEST_TEMPLATE.md`. The
 
 1. New feature documentation added to storybook.
 1. Provided at least 1 unit test that covers any components created/updated.
-1. Linter run prior to creation of pull request.
+1. Linter run prior to creation of pull request `yarn lint`.
 1. All tests run and passed prior to creation of pull request.
 1. Rebased from Master prior to creation of pull request.
 1. Ran `yarn bump` to update semver of any updated packages.

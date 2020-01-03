@@ -40,20 +40,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CampGladiator/CGUI.git"
+    "url": "git+https://github.com/CampGladiator/ui.git"
   },
   "author": "",
   "license": "",
   "bugs": {
-    "url": "https://github.com/CampGladiator/CGUI/issues"
+    "url": "https://github.com/CampGladiator/ui/issues"
   },
   "prettier": {
     "singleQuote": true,
     "semi": false,
     "trailingComma": "all"
   },
-  "homepage": "https://github.com/CampGladiator/CGUI#readme",
-  "name": "CGUI",
+  "homepage": "https://github.com/CampGladiator/ui#readme",
+  "name": "ui",
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
