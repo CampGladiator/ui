@@ -7,10 +7,6 @@ $input-border: 2px solid #ccc;
 
   &--inline {
     flex-direction: row;
-
-    @include breakpoint(phone-only) {
-      flex-direction: column;
-    }
   }
 
   &--inline .label {
