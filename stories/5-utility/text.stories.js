@@ -12,7 +12,7 @@ export const color = () => (
       <p className="text-pavement">.text-pavement</p>
       <p className="text-dark-gray">.text-dark-gray</p>
       <p className="text-medium-gray">.text-medium-gray</p>
-      <p className="text-light-gray">.text-light-gray</p>
+      <p className="text-lighter-gray">.text-lighter-gray</p>
     </div>
     <div>
       <p className="background-gladiator text-white">.background-gladiator</p>
@@ -22,7 +22,9 @@ export const color = () => (
       <p className="background-medium-gray text-white">
         .background-medium-gray
       </p>
-      <p className="background-light-gray text-white">.background-light-gray</p>
+      <p className="background-lighter-gray text-white">
+        .background-lighter-gray
+      </p>
     </div>
   </>
 )

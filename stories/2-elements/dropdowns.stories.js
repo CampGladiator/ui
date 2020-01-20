@@ -30,13 +30,17 @@ export const defaultStory = () => (
       <label className="label">label:</label>
       <Dropdown options={options} />
     </div>
+    <div className="fieldset fieldset--inline">
+      <label className="label">label:</label>
+      <Dropdown options={options} />
+    </div>
   </>
 )
 
 defaultStory.story = {
   name: 'Default',
   parameters: {
-    layout: { rows: 3, template: '300px' },
+    layout: { rows: 4, template: 'minmax(auto, 500px)', justify: 'stretch', gap: '50px 0' },
     info: { maxPropArrayLength: 0 },
   },
 }

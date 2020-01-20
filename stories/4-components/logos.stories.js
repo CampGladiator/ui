@@ -7,7 +7,7 @@ export default {
 export const fullLogos = () => (
   <>
     <div className="container">
-      <div className="background-light-gray text-pavement space-x-m space-y-xxxl text-center">
+      <div className="background-lighter-gray text-pavement space-x-m space-y-xxxl text-center">
         <a
           href=""
           className="logo logo--cg-full-color-black"
@@ -64,7 +64,7 @@ fullLogos.story = {
 export const logoIcons = () => (
   <>
     <div className="container">
-      <div className="background-light-gray text-pavement space-x-m space-y-xxxl text-center">
+      <div className="background-lighter-gray text-pavement space-x-m space-y-xxxl text-center">
         <a
           href=""
           className="logo logo--cg-icon-default"

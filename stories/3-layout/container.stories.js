@@ -11,7 +11,7 @@ export const defaultStory = () => (
     <div className="container container--small">
       {omit(
         <div className="container container--small">
-          <div className="background-light-gray text-pavement space-x-m space-y-xxxl text-center">
+          <div className="background-lighter-gray text-pavement space-x-m space-y-xxxl text-center">
             <p>
               ...and this one is only <code>560px</code>
             </p>
@@ -21,7 +21,7 @@ export const defaultStory = () => (
     </div>
     <div className="container">
       {omit(
-        <div className="background-light-gray text-pavement space-x-m space-y-xxxl text-center">
+        <div className="background-lighter-gray text-pavement space-x-m space-y-xxxl text-center">
           <p>
             This is a container for a page's content.
             <br />
@@ -33,7 +33,7 @@ export const defaultStory = () => (
     <div className="container container--large">
       {omit(
         <div className="container container--large">
-          <div className="background-light-gray text-pavement space-x-m space-y-xxxl text-center">
+          <div className="background-lighter-gray text-pavement space-x-m space-y-xxxl text-center">
             <p>
               This one is large.
               <br />

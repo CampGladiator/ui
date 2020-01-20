@@ -1,4 +1,4 @@
-$input-border: 2px solid #ccc;
+$input-border: 2px solid $light-gray;
 
 .fieldset {
   display: flex;
@@ -7,14 +7,17 @@ $input-border: 2px solid #ccc;
 
   &--inline {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   &--inline .label {
     flex: 0 0 40%;
+    align-self: center;
   }
 
   &--inline .input {
-    flex: 1;
+    flex: auto;
+    min-width: 270px;
   }
 
   & + & {
@@ -61,7 +64,7 @@ $input-border: 2px solid #ccc;
 
   &::placeholder {
     font-weight: 300;
-    color: #ccc;
+    color: $light-gray;
     opacity: 1;
   }
 
@@ -81,22 +84,23 @@ $input-border: 2px solid #ccc;
 
   &--rounded {
     border: 2px solid;
-    border-color: #ccc;
+    border-color: $light-gray;
+    background-color: $lightest-gray;
     border-radius: 999px;
     box-sizing: border-box;
     height: 41px;
-    padding: 0 16px;
+    padding: 0 22px;
   }
 
   &--dropdown {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background: url('https://s3.amazonaws.com/cgcdn/global-ui/images/icons/arrow-down-solid.svg');
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/icons/arrow-down-solid.svg');
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 16px;
-    background-color: white;
+    letter-spacing: 1.53px;
     cursor: pointer;
     font-size: $size-xs;
   }
