@@ -9,7 +9,7 @@ const Growl = ({ className, id, isError, children, onClick }) => (
     className={mods('growl-msg', {}, isError && 'growl-msg--error', className)}
   >
     <div className="growl-msg__text">{children}</div>
-    <a class="growl-msg__close-btn" onClick={onClick}>
+    <a className="growl-msg__close-btn" onClick={onClick}>
       <Icon className="growl-msg__close-btn" name="close" />
     </a>
   </div>
