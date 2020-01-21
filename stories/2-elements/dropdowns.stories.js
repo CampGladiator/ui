@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Dropdown from '../../packages/components/lib/Dropdown'
 
 const options = [
@@ -30,13 +29,17 @@ export const defaultStory = () => (
       <label className="label">label:</label>
       <Dropdown options={options} />
     </div>
+    <div className="fieldset fieldset--inline">
+      <label className="label">label:</label>
+      <Dropdown options={options} />
+    </div>
   </>
 )
 
 defaultStory.story = {
   name: 'Default',
   parameters: {
-    layout: { rows: 3, template: '300px' },
+    layout: { rows: 4, template: 'minmax(270px, 500px)', gap: '50px', justify: 'stretch' },
     info: { maxPropArrayLength: 0 },
   },
 }

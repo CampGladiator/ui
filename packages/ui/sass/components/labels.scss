@@ -1,12 +1,14 @@
 .label {
   display: inline-block;
   font-family: $font-primary;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 1.53px;
   color: $medium-gray;
   text-align: left;
   text-transform: uppercase;
-  line-height: 41px;
+  line-height: 1.2;
+  padding: 10px 10px 10px 0;
 }
 
 .image-label {

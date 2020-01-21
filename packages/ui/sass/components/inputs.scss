@@ -1,4 +1,4 @@
-$input-border: 2px solid #ccc;
+$input-border: 2px solid $light-gray;
 
 .fieldset {
   display: flex;
@@ -7,6 +7,10 @@ $input-border: 2px solid #ccc;
 
   &--inline {
     flex-direction: row;
+
+    & .label {
+      align-self: flex-start;
+    }
 
     @include breakpoint(phone-only) {
       flex-direction: column;
@@ -20,10 +24,11 @@ $input-border: 2px solid #ccc;
   @include breakpoint(tablet-portrait) {
     &--inline .label {
       flex: 0 0 40%;
+      align-self: center;
     }
 
     &--inline .input {
-      flex: 1;
+      flex: auto;
     }
   }
 
@@ -71,7 +76,7 @@ $input-border: 2px solid #ccc;
 
   &::placeholder {
     font-weight: 300;
-    color: #ccc;
+    color: $light-gray;
     opacity: 1;
   }
 
@@ -93,7 +98,7 @@ $input-border: 2px solid #ccc;
 
   &--rounded {
     border: 2px solid;
-    border-color: #ccc;
+    border-color: $light-gray;
     border-radius: 999px;
     box-sizing: border-box;
     height: 41px;
@@ -104,13 +109,14 @@ $input-border: 2px solid #ccc;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background: url('https://s3.amazonaws.com/cgcdn/global-ui/images/icons/arrow-down-solid.svg');
+    background-image: url('https://s3.amazonaws.com/cgcdn/global-ui/images/icons/arrow-down-solid.svg');
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 16px;
-    background-color: white;
+    background-color: $lightest-gray;
     cursor: pointer;
     font-size: $size-xs;
+    text-transform: uppercase;
   }
 
   &[disabled] {
