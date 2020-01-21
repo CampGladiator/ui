@@ -8,6 +8,10 @@ $input-border: 2px solid $light-gray;
   &--inline {
     flex-direction: row;
 
+    & .label {
+      align-self: flex-start;
+    }
+
     @include breakpoint(phone-only) {
       flex-direction: column;
     }
@@ -20,6 +24,7 @@ $input-border: 2px solid $light-gray;
   @include breakpoint(tablet-portrait) {
     &--inline .label {
       flex: 0 0 40%;
+      align-self: center;
     }
 
     &--inline .input {
@@ -108,9 +113,10 @@ $input-border: 2px solid $light-gray;
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-size: 16px;
-    background-color: white;
+    background-color: $lightest-gray;
     cursor: pointer;
     font-size: $size-xs;
+    text-transform: uppercase;
   }
 
   &[disabled] {
