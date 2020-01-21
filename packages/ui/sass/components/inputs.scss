@@ -7,14 +7,24 @@ $input-border: 2px solid #ccc;
 
   &--inline {
     flex-direction: row;
+
+    @include breakpoint(phone-only) {
+      flex-direction: column;
+    }
   }
 
-  &--inline .label {
-    flex: 0 0 40%;
+  &--inline-addon {
+    flex-direction: row;
   }
 
-  &--inline .input {
-    flex: 1;
+  @include breakpoint(tablet-portrait) {
+    &--inline .label {
+      flex: 0 0 40%;
+    }
+
+    &--inline .input {
+      flex: 1;
+    }
   }
 
   & + & {
@@ -74,9 +84,11 @@ $input-border: 2px solid #ccc;
     text-align: center;
   }
 
-  &--separator {
-    border-left: $input-border;
-    padding-left: 16px;
+  @include breakpoint(tablet-portrait) {
+    &--separator {
+      border-left: $input-border;
+      padding-left: 16px;
+    }
   }
 
   &--rounded {

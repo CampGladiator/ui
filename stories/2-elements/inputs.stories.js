@@ -96,7 +96,7 @@ labeled.story = {
 
 export const addon = () => (
   <>
-    <div className="fieldset fieldset--inline">
+    <div className="fieldset fieldset--inline-addon">
       <Input placeholder="Placeholder" />
       <div className="fieldset fieldset__addon">
         <Button solid secondary size="small">
@@ -104,7 +104,7 @@ export const addon = () => (
         </Button>
       </div>
     </div>
-    <div className="fieldset fieldset--inline">
+    <div className="fieldset fieldset--inline-addon">
       <Input placeholder="Placeholder" />
       <div className="fieldset fieldset__addon">
         <Button size="xsmall" outline gray>
@@ -112,7 +112,7 @@ export const addon = () => (
         </Button>
       </div>
     </div>
-    <div className="fieldset fieldset--inline">
+    <div className="fieldset fieldset--inline-addon">
       <Input placeholder="Placeholder" />
       <div className="fieldset fieldset__addon">
         <i className="icon icon--check" />
