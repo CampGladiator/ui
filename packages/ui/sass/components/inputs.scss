@@ -89,10 +89,13 @@ $input-border: 2px solid $light-gray;
     text-align: center;
   }
 
-  @include breakpoint(tablet-portrait) {
-    &--separator {
+  &--separator {
+    @include breakpoint(tablet-portrait) {
       border-left: $input-border;
       padding-left: 16px;
+    }
+    @include breakpoint(phone-only) {
+      margin-top: 32px;
     }
   }
 
