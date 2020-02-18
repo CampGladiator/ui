@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import mods from './internal/mods'
 
-const Input = ({ centered, rounded, separator, className, ...rest }) => (
-  <input
-    className={mods('input', { centered, rounded, separator }, className)}
-    {...rest}
-  />
+const Input = forwardRef(
+  ({ centered, rounded, separator, className, ...rest }, ref) => (
+    <input
+      className={mods('input', { centered, rounded, separator }, className)}
+      ref={ref}
+      {...rest}
+    />
+  ),
 )
 
+Input.displayName = 'Input'
 Input.propTypes = {
   centered: PropTypes.bool,
   rounded: PropTypes.bool,
