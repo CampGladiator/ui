@@ -22,6 +22,7 @@ const Button = ({
   children,
   onClick,
   icon,
+  ...rest
 }) => (
   <button
     className={mods(
@@ -34,6 +35,7 @@ const Button = ({
     )}
     disabled={disabled}
     onClick={onClick}
+    {...rest}
   >
     {icon && <Icon className="button__icon" name={icon} />}
     {loading ? <EllipsisLoader white={solid} /> : children}
