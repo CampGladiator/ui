@@ -1,0 +1,87 @@
+.steps {
+  display: flex;
+  margin: auto;
+  width: 75%;
+
+  @include for-tablet-portrait-down {
+    width: 85%;
+  }
+
+  @include for-phone-only {
+    margin-left: 20px;
+  }
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+
+  &--current {
+    opacity: 1;
+
+    @include for-phone-only {
+      margin-right: 10px;
+    }
+  }
+
+  &--disabled {
+    filter: grayscale(1);
+  }
+
+  &__bullet {
+    min-height: 35px;
+    min-width: 35px;
+    color: $white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background: $gladiator;
+    border-radius: 70px;
+    padding: 11px 5px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+
+  @include for-phone-only {
+    &__bullet {
+      min-height: 25px;
+      min-width: 25px;
+      border-radius: 50px;
+      padding: 6px 5px;
+    }
+
+    &__text {
+      margin-left: 5px;
+      margin-right: 2px;
+    }
+  }
+
+  @include for-phone-landscape-down {
+    &:not(.step--current) &__text {
+      opacity: 0;
+      transform: scaleX(0);
+      width: 0;
+    }
+  }
+
+  @include for-tablet-portrait-up {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include for-tablet-landscape-up {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

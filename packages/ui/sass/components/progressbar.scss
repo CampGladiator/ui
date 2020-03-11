@@ -1,0 +1,17 @@
+.progress-bar {
+  background: $lighter-gray;
+  overflow: hidden;
+
+  &__content {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: ease transform 0.3s;
+    height: 10px;
+    width: 100%;
+    padding-right: 4px;
+
+    @include for-phone-only {
+      height: 5px;
+    }
+  }
+}

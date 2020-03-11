@@ -1,3 +1,33 @@
 @mixin add-background-image($path, $img) {
   background-image: url($path+$img);
 }
+
+@mixin for-phone-only {
+  @include breakpoint(phone-only) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @include breakpoint(tablet-portrait) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @include breakpoint(tablet-landscape) {
+    @content;
+  }
+}
+
+@mixin for-phone-landscape-down {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-down {
+  @media (min-width: 768px) and (max-width: 900px) {
+    @content;
+  }
+}
