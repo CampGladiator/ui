@@ -1,6 +1,6 @@
 {
 	"name": "@campgladiator/components",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "A component library for CampGladiator's React apps",
 	"author": "renanpvaz <renan.piresvz@gmail.com>",
 	"homepage": "https://github.com/CampGladiator/ui/tree/master/packages/components#readme",
