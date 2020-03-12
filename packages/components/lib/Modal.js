@@ -1,9 +1,10 @@
 import React, { memo } from 'react'
 import Icon from './Icon'
 import PropTypes from 'prop-types'
+import mods from './internal/mods'
 
-const ModalOpen = memo(({ className, ...props }) => (
-  <div className={`modal modal--open ${className}`} {...props} />
+const ModalOpen = memo(({ className, open, ...props }) => (
+  <div className={mods('modal', { open }, className)} {...props} />
 ))
 
 const ModalContainer = memo(props => (
@@ -42,15 +43,15 @@ const Modal = ({
   onModalClose,
 }) => {
   const modalCloseHandler = e => {
-    if (e) {
-      e.preventDefault()
+    e.preventDefault()
+    if (onModalClose) {
       onModalClose(e)
     }
   }
 
   if (showModal) {
     return (
-      <ModalOpen className={className}>
+      <ModalOpen className={className} open={showModal}>
         <ModalContainer>
           <ModalClose onClick={modalCloseHandler}>
             <Icon name="close" onClick={modalCloseHandler} />
